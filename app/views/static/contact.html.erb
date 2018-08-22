@@ -1,0 +1,24 @@
+<div class="banner-pages" style="background-image: linear-gradient(-225deg, rgba(4, 43, 104, 0.7) 30%, rgba(4, 43, 104, 0.5) 50%), url('<%= asset_path('contact.jpg') %>'); background-size: cover;
+  background-position-y: 33%;">
+  <div class="banner-content-pages">
+    <h1><strong>Title</strong></h1>
+  </div>
+</div>
+
+<div class="wraper-white">
+  <div class="container">
+    <div class="objects-container">
+      <h2>Contact information</h2>
+      <div class="adress">
+        <p>University of Trento</p>
+        <p>Mind/Brain center - CIMeC</p>
+        <p>via delle Regole, 101</p>
+        <p>Trento, 38122 - IT</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% if !user_signed_in? %>
+<%= link_to "Admin", new_user_session_path, class: "btn-hidden" %>
+<% end %>

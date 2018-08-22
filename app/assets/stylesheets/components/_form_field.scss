@@ -1,0 +1,31 @@
+// Devise forms
+#user_email, #user_password {
+  width: 100%;
+}
+
+// Research forms
+#research_title {
+  height: 60px;
+  width: 100%;
+}
+
+#research_descr_one, #research_descr_two {
+  height: 120px;
+  width: 100%;
+}
+
+// Pubication forms
+#publication_title, #publication_authors, #publication_journal, #publication_year {
+  width: 100%;
+}
+
+// People forms
+#collaborator_first_name, #collaborator_last_name, #collaborator_position, #collaborator_avatar {
+  width: 100%;
+}
+
+ #collaborator_description_one, #collaborator_description_two {
+  width: 100%;
+  height: 80px;
+ }
+// News forms

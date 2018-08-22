@@ -1,0 +1,39 @@
+<div class="banner-pages" style="background-image: linear-gradient(-225deg, rgba(4, 43, 104, 0.7) 30%, rgba(4, 43, 104, 0.5) 50%), url('<%= asset_path('publications.jpg') %>'); background-size: cover;
+  background-position-y: 33%;">
+  <div class="banner-content-pages">
+    <h1><strong>Publications</strong></h1>
+  </div>
+</div>
+<div class="container">
+  <div class="objects-container">
+    <div class="objects-header">
+      <h2>Publications</h2>
+      <% if current_user && current_user.id == 1 %>
+      <div class="button-container">
+          <%= link_to new_publication_path, class: "btn btn-big btn-blue" do %>
+            <i class="fas fa-plus"></i> Add a new publication
+          <% end %>
+      </div>
+      <% end %>
+    </div>
+
+    <% @publications.each do |publication| %>
+      <div class="one-object">
+        <div class="object-header">
+          <p class="object-content"><strong><%= "#{publication.authors} (#{publication.year.year}). "%></strong><%= publication.title %>
+            <i><%= publication.journal %></i>
+          </p>
+
+          <% if current_user && current_user.id == 1 %>
+
+          <%= link_to edit_publication_path(publication), class:"btn-icon" do %><i class="far fa-edit"></i>
+            <% end %>
+
+          <%= link_to publication_path(publication), method: :delete, data:{confirm: "Delete this publication?"}, class:"btn-icon" do %><i class="far fa-trash-alt"></i>
+            <% end %>
+          <% end %>
+        </div>
+        </div>
+    <% end %>
+  </div>
+</div>

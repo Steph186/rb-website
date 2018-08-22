@@ -1,0 +1,13 @@
+.admin-banner {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  padding: 5px 10px;
+  background-color: white;
+  color: #276c82;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: space-between;
+}

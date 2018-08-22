@@ -1,0 +1,42 @@
+<div class="padding-all">
+    <%= form_for(@collaborator) do |f| %>
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      <div class="form-inputs padding-top">
+        <div>
+          <%= f.label :first_name %>
+          <%= f.text_field :first_name %>
+        </div>
+        <div>
+          <%= f.label :last_name %>
+          <%= f.text_field :last_name %>
+        </div>
+        <div>
+          <%= f.label :position %>
+          <%= f.text_field :position %>
+        </div>
+
+        <div>
+          <%= f.label :avatar %>
+          <%= f.text_field :avatar %>
+        </div>
+
+        <div>
+          <%= f.label :description_one %>
+          <%= f.text_field :description_one %>
+        </div>
+
+        <div>
+          <%= f.label :description_two %>
+          <%= f.text_field :description_two %>
+        </div>
+        <div class="text-center margin-bottom">
+          <div><%= f.submit "Save", class: "btn btn-blue btn-big margin-top" %>
+          </div>
+        </div>
+        <hr class="divider padding-left-right">
+        <div>
+          <%= link_to "Go Back", people_path %>
+        </div>
+        </div>
+    <% end %>
+</div>

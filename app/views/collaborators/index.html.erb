@@ -1,0 +1,47 @@
+<div class="banner-pages" style="background-image: linear-gradient(-225deg, rgba(4, 43, 104, 0.7) 30%, rgba(4, 43, 104, 0.5) 50%), url('<%= asset_path('people.png') %>'); background-size: cover;
+  background-position-y: 33%;">
+  <div class="banner-content-pages">
+    <h1><strong>People</strong></h1>
+  </div>
+</div>
+
+<div class="container">
+  <div class="objects-container">
+
+    <div class="objects-header">
+      <h2>People</h2>
+
+      <% if current_user && current_user.id == 1 %>
+        <div class="button-container">
+          <%= link_to new_collaborator_path, class: "btn btn-big btn-blue" do %>
+            <i class="fas fa-plus"></i> Add a new collaborator
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+
+    <% @people.each do |collaborator| %>
+      <div class="one-object margin-bottom margin-top">
+        <div class="one-content">
+          <div class="object-header">
+            <p><strong><%= "#{collaborator.first_name.capitalize} #{collaborator.last_name.capitalize}"%></strong></p>
+            <% if current_user && current_user.id == 1 %>
+              <%= link_to edit_collaborator_path(collaborator), class:"btn-icon" do %><i class="far fa-edit"></i>
+              <% end %>
+
+              <%= link_to collaborator_path(collaborator), method: :delete, data:{confirm: "Delete this collaborator?"}, class:"btn-icon" do %><i class="far fa-trash-alt"></i>
+            <% end %>
+          <% end %>
+          </div>
+          <p class="margin-bottom"><%= collaborator.position %></p>
+          <p class="margin-bottom"><%= collaborator.description_one %></p>
+          <p class="margin-bottom"><%= collaborator.description_two %></p>
+        </div>
+          <%= image_tag collaborator.avatar, class: "margin-left" %>
+        </div>
+
+
+    <% end %>
+  </div>
+</div>
+

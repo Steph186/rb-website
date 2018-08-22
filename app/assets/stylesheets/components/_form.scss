@@ -1,0 +1,39 @@
+.form-actions {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.form-control-label {
+  font-size: 30px !important;
+}
+
+.divider {
+  border-top: 1px solid gray;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.btn-password-recovery {
+  width: 80%;
+}
+
+.banner-form {
+  height: calc(100vh - 70px);
+}
+
+.form-info p {
+  margin-left: 0px;
+}
+
+.form-inputs {
+  padding: 0 40px;
+}
+
+.banner-form-full-height {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+}
+

@@ -1,0 +1,29 @@
+.objects-container {
+  margin-top: 80px;
+  h2 {
+    margin-bottom: 30px;
+  }
+}
+
+.one-object {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.object-header {
+  display: flex;
+}
+
+.objects-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.object-content {
+  flex: 1 1 auto;
+}
+
+.avatar {
+  border-radius: 50%;
+}

@@ -1,0 +1,61 @@
+.btn-big {
+  flex: 0 1 auto;
+  border-radius: 30px;
+  font-size: 18px;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-small {
+  flex: 0 0 80px;
+  padding: 8px 15px;
+  border-radius: 30px;
+  font-size: 12px;
+  text-decoration: none;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.btn-blue {
+  background-color: #276c82;
+  color: white;
+  opacity: 1;
+}
+
+.btn-blue:hover {
+  opacity: 0.8;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-white {
+  color: #276c82;
+  text-decoration: none;
+  border: solid 2px #276c82 !important;
+  font-weight: bold;
+}
+
+.btn-white:hover {
+  opacity: 0.6;
+}
+
+.btn-discrete {
+  color: #276c82;
+  background-color: transparent;
+  opacity: 1;
+  margin: 30px 0px;
+}
+.btn-discrete:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.btn-icon {
+  margin-left: 15px;
+  color: #276c82;
+}
+
+.btn-icon:hover {
+  margin-left: 15px;
+}
