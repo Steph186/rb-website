@@ -33,4 +33,12 @@
 input {
   border: 1px solid rgba(0,0,0,.15);
   border-radius: 5px;
+  padding: .5rem .75rem;
+}
+
+input:focus {
+  color: #464a4c;
+  background-color: #fff;
+  border-color: #5cb3fd;
+  outline: 0;
 }
