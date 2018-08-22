@@ -21,6 +21,19 @@
   background-color: #276c82;
   color: #eef;
   z-index: 100;
+  .navbar-links {
+  display: flex;
+  list-style-type: none;
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  a:hover {
+    text-decoration: none;
+    color: lightgray;
+  }
+}
 }
 
 .navbar-item {

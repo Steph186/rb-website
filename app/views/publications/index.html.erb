@@ -6,7 +6,7 @@
 </div>
 <div class="container">
   <div class="objects-container">
-    <div class="objects-header">
+    <div class="objects-header margin-bottom">
       <h2>Publications</h2>
       <% if current_user && current_user.id == 1 %>
       <div class="button-container">
@@ -19,20 +19,20 @@
 
     <% @publications.each do |publication| %>
       <div class="one-object">
-        <div class="object-header">
-          <p class="object-content"><strong><%= "#{publication.authors} (#{publication.year.year}). "%></strong><%= publication.title %>
+          <div class="object-content">
+            <p><strong><%= "#{publication.authors} (#{publication.year.year}). "%></strong><%= publication.title %>
             <i><%= publication.journal %></i>
-          </p>
+            </p>
+          </div>
 
           <% if current_user && current_user.id == 1 %>
-
           <%= link_to edit_publication_path(publication), class:"btn-icon" do %><i class="far fa-edit"></i>
             <% end %>
-
           <%= link_to publication_path(publication), method: :delete, data:{confirm: "Delete this publication?"}, class:"btn-icon" do %><i class="far fa-trash-alt"></i>
             <% end %>
+
           <% end %>
-        </div>
+
         </div>
     <% end %>
   </div>
