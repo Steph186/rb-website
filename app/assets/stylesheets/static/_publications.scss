@@ -8,9 +8,11 @@
 
 .publication-link:hover {
   background-color: rgba(44, 108, 129, 0.05);
-  text-decoration: none;
   p {
     color: black;
-    text-decoration: none;
   }
+}
+
+.publication-link:hover > * {
+  text-decoration: none;
 }
