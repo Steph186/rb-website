@@ -20,87 +20,90 @@ publications_attr = [
     year: Date.new(2018,2),
     title: "How visual experience and task context modulate the use of internal and external spatial coordinate for perception and action",
     journal: "PsyArXiv",
+    url: "https://scholar.google.com/citations?user=_rV7XZgAAAAJ&hl=en",
   },
   {
     authors: "M Barilari, A de Heering, V Crollen, O Collignon, R Bottini",
     year: Date.new(2018,4),
     title: "Is red heavier than yellow even for blind?",
     journal: "i-Perception",
+    url: "https://scholar.google.com/citations?user=_rV7XZgAAAAJ&hl=en",
   },
   {
     authors: "MJ Van Ackeren, FM Barbero, S Mattioni, R Bottini, O Collignon",
     year: Date.new(2018,1),
     title: "Neuronal populations in the occipital cortex of the blind synchronize to the temporal dynamics of speech",
     journal: "Elife",
+    url: "https://scholar.google.com/citations?user=_rV7XZgAAAAJ&hl=en",
   },
   {
     authors: "R Bottini, M Barilari, O Collignon",
     year: Date.new(2017,2),
     title: "Sound Symbolism in Sighted and Blind The role of orthography and vision in sound-shape correspondences",
     journal: "PsyArXiv",
+    url: "https://scholar.google.com/citations?user=_rV7XZgAAAAJ&hl=en",
   },
   {
     authors: "Stefania Mattioni, Mohamed Rezk, Karen Cuculiza, Ceren Battal, Roberto Bottini, Markus Van Ackeren, Nick Oosterhof, Olivier Collignon",
     year: Date.new(2017,9),
     title: "A-modal versus Cross-modal: How input modality and visual experience affect categorical representation in the visual cortex",
     journal: "Journal of Vision",
+    url: "https://scholar.google.com/citations?user=_rV7XZgAAAAJ&hl=en",
   },
   {
     authors: "R Bottini, S Mattioni, O Collignon",
     year: Date.new(2016,1),
     title: "Early blindness alters the spatial organization of verbal working memory",
     journal: "Cortex",
+    url: "https://scholar.google.com/citations?user=_rV7XZgAAAAJ&hl=en",
   },
   {
     authors: "R Bottini, M Bucur, D Crepaldi",
     year: Date.new(2016,11),
     title: "The nature of semantic priming by subliminal spatial words. Embodied or disembodied?",
     journal: "Journal of Experimental Psychology: General",
+    url: "https://scholar.google.com/citations?user=_rV7XZgAAAAJ&hl=en",
   },
   {
     authors: "R Bottini, D Crepaldi, D Casasanto, V Crollen, O Collignon",
     year: Date.new(2015,3),
     title: "Space and time in the sighted and blind",
     journal: "Cognition",
+    url: "https://scholar.google.com/citations?user=_rV7XZgAAAAJ&hl=en",
   },
   {
     authors: "R Bottini, D Casasanto, A Nadalini, D Crepaldi",
     year: Date.new(2016,6),
     title: "Stepping out of the Chinese Room: Word meaning with and without consciousness",
     journal: "CLiC it",
+    url: "https://scholar.google.com/citations?user=_rV7XZgAAAAJ&hl=en",
   },
   {
     authors: "D Casasanto, R Bottini",
     year: Date.new(2014,2),
     title: "Mirror reading can reverse the flow of time.",
     journal: "Journal of Experimental Psychology: General",
+    url: "https://scholar.google.com/citations?user=_rV7XZgAAAAJ&hl=en",
   },
   {
     authors: "D Casasanto, R Bottini",
     year: Date.new(2014,8),
     title: "Spatial language and abstract concepts",
     journal: "Wiley Interdisciplinary Reviews: Cognitive Science 5",
+    url: "https://scholar.google.com/citations?user=_rV7XZgAAAAJ&hl=en",
   },
   {
     authors: "R Bottini, D Casasanto",
     year: Date.new(2013,6),
     title: "Space and time in the child's mind: metaphoric or ATOMic?",
     journal: "Frontiers in psychology",
+    url: "https://scholar.google.com/citations?user=_rV7XZgAAAAJ&hl=en",
   }
 ]
 
 publications_attr.each do |publication_details|
   Publication.create!(publication_details)
 end
-
-## CREATE NEW PUBLICATIONS
-# ,
-#   {
-#     authors: "",
-#     year: "",
-#     title: "",
-#     journal: "",
-#   }
 
 # conferences_attr = [
 #   {

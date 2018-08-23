@@ -19,11 +19,13 @@
 
     <% @publications.each do |publication| %>
       <div class="one-object">
-          <div class="object-content">
-            <p><strong><%= "#{publication.authors} (#{publication.year.year}). "%></strong><%= publication.title %>
-            <i><%= publication.journal %></i>
-            </p>
-          </div>
+          <%= link_to publication.url do %>
+            <div class="object-content">
+              <p><strong><%= "#{publication.authors} (#{publication.year.year}). "%></strong><%= publication.title %>
+              <i><%= publication.journal %></i><i class="fas fa-link"></i>
+              </p>
+            </div>
+          <% end %>
 
           <% if current_user && current_user.id == 1 %>
           <%= link_to edit_publication_path(publication), class:"btn-icon" do %><i class="far fa-edit"></i>
