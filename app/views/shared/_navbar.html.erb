@@ -1,28 +1,28 @@
-<!-- <div id="navbar-home">
+<div id="navbar-home">
 
   <% # LOGO on the left, send to root page %>
   <div class="navbar-logo navbar-item">
-    <%#= link_to root_path, target: "_self" do %>
-      <%#= image_tag asset_path("logo.png"), class: "navbar-logo" %>
-    <%# end %>
+    <%= link_to root_path, target: "_self" do %>
+      <%= image_tag asset_path("logo.png"), class: "navbar-logo" %>
+    <% end %>
   </div>
 
   <% # pages LINKS on the right for DESKTOP %>
   <ul class="navbar-links d-none d-md-block d-xl-block">
-    <%#= link_to "Home", root_path, class: "navbar-item" %>
-    <%#= link_to "Research", researches_path, class: "navbar-item" %>
-    <%#= link_to "People", people_path, class: "navbar-item" %>
-    <%#= link_to "Publications", publications_path, class: "navbar-item"%>
-    <%#= link_to "News", news_path, class: "navbar-item" %>
-    <%#= link_to "Contact", contact_path, class: "navbar-item" %>
+    <%= link_to "Home", root_path, class: "navbar-item" %>
+    <%= link_to "Research", researches_path, class: "navbar-item" %>
+    <%= link_to "People", people_path, class: "navbar-item" %>
+    <%= link_to "Publications", publications_path, class: "navbar-item"%>
+    <%= link_to "News", news_path, class: "navbar-item" %>
+    <%= link_to "Contact", contact_path, class: "navbar-item" %>
   </ul>
 
   <% # hamburger menu on PHONE %>
   <ul class="navbar-links d-block d-md-none d-md-none d-xl-none">
     <i class="fa fa-bars navbar-item"></i>
   </ul>
-</div> -->
-
+</div>
+<!--
 <nav class="nav">
 
   <div class="hamburger-container">
@@ -41,3 +41,4 @@
   </ul>
 
 </nav>
+ -->
