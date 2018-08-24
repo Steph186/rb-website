@@ -208,32 +208,49 @@ research_attr.each do |research_details|
   Research.create!(research_details)
 end
 
-url = "https://res.cloudinary.com/did3jv3n4/image/upload/v1535098665/eo06k0n5zibcsolutlml.png"
+# url = "https://res.cloudinary.com/did3jv3n4/image/upload/v1535098665/eo06k0n5zibcsolutlml.png"
 picture = Picture.new(page: "home")
-picture.remote_photo_url = url
+# picture.remote_photo_url = url
 picture.save
 
-url = "https://res.cloudinary.com/did3jv3n4/image/upload/v1535098721/cpse57fwt4wgmoqfkeq9.jpg"
+# url = "https://res.cloudinary.com/did3jv3n4/image/upload/v1535098721/cpse57fwt4wgmoqfkeq9.jpg"
 picture = Picture.new(page: "researches")
-picture.remote_photo_url = url
+# picture.remote_photo_url = url
 picture.save
 
-url = "https://www.oliverwyman.com/content/dam/oliver-wyman/v2/expertise/Contact-us-1600x602.jpg.imgix.banner.jpg"
+# url = "https://www.oliverwyman.com/content/dam/oliver-wyman/v2/expertise/Contact-us-1600x602.jpg.imgix.banner.jpg"
 picture = Picture.new(page: "people")
-picture.remote_photo_url = url
+# picture.remote_photo_url = url
 picture.save
 
-url = "https://www.oliverwyman.com/content/dam/oliver-wyman/v2/expertise/Contact-us-1600x602.jpg.imgix.banner.jpg"
+# url = "https://www.oliverwyman.com/content/dam/oliver-wyman/v2/expertise/Contact-us-1600x602.jpg.imgix.banner.jpg"
 picture = Picture.new(page: "publications")
-picture.remote_photo_url = url
+# picture.remote_photo_url = url
 picture.save
 
-url = "https://www.oliverwyman.com/content/dam/oliver-wyman/v2/expertise/Contact-us-1600x602.jpg.imgix.banner.jpg"
+# url = "https://www.oliverwyman.com/content/dam/oliver-wyman/v2/expertise/Contact-us-1600x602.jpg.imgix.banner.jpg"
 picture = Picture.new(page: "news")
-picture.remote_photo_url = url
+# picture.remote_photo_url = url
 picture.save
 
-url = "https://www.oliverwyman.com/content/dam/oliver-wyman/v2/expertise/Contact-us-1600x602.jpg.imgix.banner.jpg"
+# url = "https://www.oliverwyman.com/content/dam/oliver-wyman/v2/expertise/Contact-us-1600x602.jpg.imgix.banner.jpg"
 picture = Picture.new(page: "contact")
-picture.remote_photo_url = url
+# picture.remote_photo_url = url
 picture.save
+
+
+
+stories_attr = [
+  {
+  title: "Robi got his ERC! congratulations to him!!",
+  content: "Robi is going to start a new lab with his newly acquired ERC. His has funding for five years. Best of luch to him ad his team."
+},
+{
+  title: "The lab is hiring a post-doc",
+  content: "Open position: we are looking for a new post-doc, for a three years position."
+},
+]
+
+stories_attr.each do |story_details|
+  Story.create!(story_details)
+end
