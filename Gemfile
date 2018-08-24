@@ -34,6 +34,7 @@ gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'font-awesome-sass', '~> 5.0.9'
 gem 'simple_form'
+gem 'cloudinary'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
