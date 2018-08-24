@@ -207,3 +207,33 @@ research_attr = [
 research_attr.each do |research_details|
   Research.create!(research_details)
 end
+
+url = "https://res.cloudinary.com/did3jv3n4/image/upload/v1535098665/eo06k0n5zibcsolutlml.png"
+picture = Picture.new(page: "home")
+picture.remote_photo_url = url
+picture.save
+
+url = "https://res.cloudinary.com/did3jv3n4/image/upload/v1535098721/cpse57fwt4wgmoqfkeq9.jpg"
+picture = Picture.new(page: "researches")
+picture.remote_photo_url = url
+picture.save
+
+url = "https://www.oliverwyman.com/content/dam/oliver-wyman/v2/expertise/Contact-us-1600x602.jpg.imgix.banner.jpg"
+picture = Picture.new(page: "people")
+picture.remote_photo_url = url
+picture.save
+
+url = "https://www.oliverwyman.com/content/dam/oliver-wyman/v2/expertise/Contact-us-1600x602.jpg.imgix.banner.jpg"
+picture = Picture.new(page: "publications")
+picture.remote_photo_url = url
+picture.save
+
+url = "https://www.oliverwyman.com/content/dam/oliver-wyman/v2/expertise/Contact-us-1600x602.jpg.imgix.banner.jpg"
+picture = Picture.new(page: "news")
+picture.remote_photo_url = url
+picture.save
+
+url = "https://www.oliverwyman.com/content/dam/oliver-wyman/v2/expertise/Contact-us-1600x602.jpg.imgix.banner.jpg"
+picture = Picture.new(page: "contact")
+picture.remote_photo_url = url
+picture.save

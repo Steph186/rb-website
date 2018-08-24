@@ -1,0 +1,25 @@
+<div class="padding-all">
+    <%= simple_form_for(@picture) do |f| %>
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      <div class="form-inputs padding-top">
+        <div>
+          <%= f.label :page %>
+          <%= f.text_field :page %>
+        </div>
+
+        <div>
+          <%= f.input :photo %>
+          <%= f.input :photo_cache, as: :hidden %>
+        </div>
+
+        <div class="text-center margin-bottom">
+          <div><%= f.submit "Save", class: "btn btn-blue btn-big margin-top" %>
+          </div>
+        </div>
+        <hr class="divider padding-left-right">
+        <div class="text-center">
+          <%= link_to "Go Back", root_path %>
+        </div>
+      </div>
+    <% end %>
+</div>

@@ -1,8 +1,15 @@
-<div class="banner-pages" style="background-image: linear-gradient(-225deg, rgba(4, 43, 104, 0.7) 30%, rgba(4, 43, 104, 0.5) 50%), url('<%= asset_path('contact.jpg') %>'); background-size: cover;
-  background-position-y: 33%;">
+<div class="banner-pages"
+  style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+         url('<%= cl_image_path Picture.last.photo %>')">
   <div class="banner-content-pages">
     <h1><strong>Contact</strong></h1>
   </div>
+  <% if current_user && current_user.id == 1 %>
+    <p class="edit_picture_icon">
+    <%= link_to edit_picture_path(Picture.last) do %><i class="far fa-edit"></i>
+      <% end %>
+    </p>
+  <% end %>
 </div>
 
 <div class="wraper-white">

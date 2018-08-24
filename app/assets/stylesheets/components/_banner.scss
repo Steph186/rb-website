@@ -1,5 +1,8 @@
 .banner-home {
   height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: abolute;
 }
 
 .banner-content-home {
@@ -12,6 +15,9 @@
 
 .banner-pages {
   height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: abolute;
 }
 
 .banner-content-pages {
@@ -21,3 +27,18 @@
   justify-content: center;
   color: white;
 }
+
+.edit_picture_icon {
+  position: relative;
+  bottom: 50px;
+  font-size: 30px;
+  padding-left: 15px;
+  a {
+    color: white;
+  }
+  a:hover {
+    color: #2c6c81;
+  }
+}
+
+
