@@ -1,5 +1,5 @@
 <div class="padding-all">
-    <%= form_for(@collaborator) do |f| %>
+    <%= simple_form_for(@collaborator) do |f| %>
       <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
       <div class="form-inputs padding-top">
         <div>
@@ -14,11 +14,11 @@
           <%= f.label :position %>
           <%= f.text_field :position %>
         </div>
-
+<!--
         <div>
           <%= f.label :avatar %>
           <%= f.text_field :avatar %>
-        </div>
+        </div> -->
 
         <div>
           <%= f.label :description_one %>
@@ -29,6 +29,12 @@
           <%= f.label :description_two %>
           <%= f.text_field :description_two %>
         </div>
+
+        <div>
+          <%= f.input :photo %>
+          <%= f.input :photo_cache, as: :hidden %>
+        </div>
+
         <div class="text-center margin-bottom">
           <div><%= f.submit "Save", class: "btn btn-blue btn-big margin-top" %>
           </div>

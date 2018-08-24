@@ -61,6 +61,6 @@ skip_before_action :authenticate_user!, only: :index
   end
 
   def collaborator_params
-    params.require(:collaborator).permit(:first_name, :last_name, :position, :avatar, :description_one, :description_two)
+    params.require(:collaborator).permit(:first_name, :last_name, :position, :avatar, :description_one, :description_two, :photo)
   end
 end

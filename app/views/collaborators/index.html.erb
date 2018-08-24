@@ -37,7 +37,8 @@
           <p class="margin-bottom"><%= collaborator.description_one %></p>
           <p class="margin-bottom"><%= collaborator.description_two %></p>
         </div>
-          <%= image_tag collaborator.avatar, class: "margin-left" %>
+          <%#= image_tag collaborator.avatar, class: "margin-left" %>
+          <%= cl_image_tag collaborator.photo, height: 300, width: 400, crop: :fill %>
         </div>
 
 
