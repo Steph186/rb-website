@@ -4,6 +4,7 @@ before_action :set_story, only: [:update, :destroy, :edit]
 
   def index
     @stories = Story.all.order('updated_at DESC')
+    @first_story = Story.first
   end
 
   def edit

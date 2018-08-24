@@ -29,7 +29,11 @@
 
     <% @stories.each do |story| %>
       <div class="one-object margin-top-medium">
+        <% if story == @first_story%>
+        <div class="one-story margin-bottom-big">
+        <% else %>
         <div class="one-story">
+        <% end %>
           <%= cl_image_tag story.photo, class:"story-image margin-bottom" %>
           <div class="object-header">
             <p class="title margin-bottom-small"><strong><%= "#{story.title.capitalize}"%></strong></p>
@@ -45,7 +49,9 @@
             <p><%= "#{story.content.capitalize}" %></p>
         </div>
         </div>
+        <% if story != @first_story%>
         <hr class="divider-stories padding-left-right">
+        <% end %>
     <% end %>
   </div>
 </div>
