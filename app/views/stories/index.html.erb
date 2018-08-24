@@ -28,11 +28,11 @@
     </div>
 
     <% @stories.each do |story| %>
-      <div class="one-object margin-bottom margin-top">
-        <div class="one-content">
+      <div class="one-object margin-top-medium">
+        <div class="one-story">
+          <%= cl_image_tag story.photo, class:"story-image margin-bottom" %>
           <div class="object-header">
-            <p><strong><%= "#{story.title.capitalize}"%></strong></p>
-            <p><%= "#{story.content.capitalize}" %></p>
+            <p class="title margin-bottom-small"><strong><%= "#{story.title.capitalize}"%></strong></p>
             <% if current_user && current_user.id == 1 %>
               <%= link_to edit_story_path(story), class:"btn-icon" do %><i class="far fa-edit"></i>
               <% end %>
@@ -41,11 +41,11 @@
             <% end %>
           <% end %>
           </div>
+            <p class="published_at margin-bottom">Published on <%= "#{story.updated_at}" %></p>
+            <p><%= "#{story.content.capitalize}" %></p>
         </div>
-          <%= cl_image_tag story.photo, height: 300, width: 400, crop: :fill %>
         </div>
-
-
+        <hr class="divider-stories padding-left-right">
     <% end %>
   </div>
 </div>
