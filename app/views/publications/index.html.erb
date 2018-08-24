@@ -34,15 +34,14 @@
               </p>
             </div>
           <% end %>
-
-          <% if current_user && current_user.id == 1 %>
-          <%= link_to edit_publication_path(publication), class:"btn-icon" do %><i class="far fa-edit"></i>
+          <div class="icon-container">
+            <% if current_user && current_user.id == 1 %>
+            <%= link_to edit_publication_path(publication), class:"btn-icon" do %><i class="far fa-edit"></i>
+              <% end %>
+            <%= link_to publication_path(publication), method: :delete, data:{confirm: "Delete this publication?"}, class:"btn-icon" do %><i class="far fa-trash-alt"></i>
+              <% end %>
             <% end %>
-          <%= link_to publication_path(publication), method: :delete, data:{confirm: "Delete this publication?"}, class:"btn-icon" do %><i class="far fa-trash-alt"></i>
-            <% end %>
-
-          <% end %>
-
+          </div>
         </div>
     <% end %>
   </div>
