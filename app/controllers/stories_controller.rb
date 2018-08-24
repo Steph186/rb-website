@@ -3,7 +3,7 @@ skip_before_action :authenticate_user!, only: :index
 before_action :set_story, only: [:update, :destroy, :edit]
 
   def index
-    @news = Story.all.order('updated_at DESC')
+    @stories = Story.all.order('updated_at DESC')
   end
 
   def edit
@@ -11,16 +11,16 @@ before_action :set_story, only: [:update, :destroy, :edit]
     if current_user.id == 1
     # go to edit view
     else
-      redirect_to news_path
+      redirect_to stories_path
     end
   end
 
   def update
     if current_user.id == 1
       @story.update(story_params)
-      redirect_to news_path
+      redirect_to stories_path
     else
-      redirect_to news_path
+      redirect_to stories_path
     end
   end
 
@@ -28,12 +28,12 @@ before_action :set_story, only: [:update, :destroy, :edit]
     if current_user.id == 1
       @story = Story.new(story_params)
       if @story.save
-        redirect_to news_path
+        redirect_to stories_path
       else
         render :new
       end
     else
-      redirect_to news_path
+      redirect_to stories_path
     end
   end
 
@@ -41,16 +41,16 @@ before_action :set_story, only: [:update, :destroy, :edit]
     if current_user.id == 1
       @story = Story.new
     else
-      redirect_to news_path
+      redirect_to stories_path
     end
   end
 
   def destroy
     if current_user.id == 1
       @story.destroy
-      redirect_to news_path
+      redirect_to stories_path
     else
-      redirect_to news_path
+      redirect_to stories_path
     end
   end
 

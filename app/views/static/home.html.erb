@@ -1,23 +1,23 @@
-<!-- <div class="banner-home" style="background-image: linear-gradient(-225deg, rgba(4, 43, 104, 0.7) 30%, rgba(4, 43, 104, 0.5) 50%), url('<%= asset_path('brain.png') %>'); background-size: cover;
+<!-- <div class="banner-home" style="background-image: linear-gradient(-225deg, rgba(4, 43, 104, 0.7) 30%, rgba(4, 43, 104, 0.5) 50%), url('<%#= asset_path('brain.png') %>'); background-size: cover;
   background-position-y: 33%;">
   <div class="banner-content-home">
     <h1><strong>This is your landing phrase!</strong></h1>
   </div>
 </div> -->
 
-<div class="banner-home"
+<!-- <div class="banner-home"
   style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
-         url('<%= cl_image_path Picture.first.photo %>')">
+         url('<%#= cl_image_path Picture.first.photo %>')">
   <div class="banner-content-home">
     <h1><strong>This is your landng phrase !</strong></h1>
   </div>
-  <% if current_user && current_user.id == 1 %>
+  <%# if current_user && current_user.id == 1 %>
     <p class="edit_picture_icon">
-    <%= link_to edit_picture_path(Picture.first) do %><i class="far fa-edit"></i>
-      <% end %>
+    <%#= link_to edit_picture_path(Picture.first) do %><i class="far fa-edit"></i>
+      <%# end %>
     </p>
-  <% end %>
-</div>
+  <%# end %>
+</div> -->
 
 
 

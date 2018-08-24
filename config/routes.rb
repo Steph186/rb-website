@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :collaborators, only: [:create, :edit, :update, :new, :destroy]
   get 'publications', to: "publications#index"
   resources :publications, only: [:create, :edit, :update, :new, :destroy]
-  get 'news', to: "stories#index"
+  get 'stories', to: "stories#index"
   resources :stories, only: [:create, :edit, :update, :new, :destroy]
   get 'contact', to: "static#contact"
   resources :pictures, only: [:edit, :update]
