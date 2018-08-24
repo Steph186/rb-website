@@ -19,8 +19,8 @@
     <% if user_signed_in? %>
       <%= render 'shared/admin'%>
     <% end %>
-      <%= render 'shared/navbar' %>
-    <%#= render 'shared/flashes' %>
+    <%= render 'shared/navbar' %>
     <%= yield %>
+    <%= render 'shared/footer' %>
   </body>
 </html>
