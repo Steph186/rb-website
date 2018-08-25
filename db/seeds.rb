@@ -208,12 +208,12 @@ research_attr.each do |research_details|
   Research.create!(research_details)
 end
 
-url = "https://res.cloudinary.com/did3jv3n4/image/upload/v1535098665/eo06k0n5zibcsolutlml.png"
+url = "https://image.freepik.com/free-photo/cute-cat-picture_1122-449.jpg"
 picture = Picture.new(page: "home")
 picture.remote_photo_url = url
 picture.save
 
-url = "https://res.cloudinary.com/did3jv3n4/image/upload/v1535098721/cpse57fwt4wgmoqfkeq9.jpg"
+url = "https://image.freepik.com/free-photo/cute-cat-picture_1122-449.jpg"
 picture = Picture.new(page: "researches")
 picture.remote_photo_url = url
 picture.save

@@ -11,7 +11,7 @@
   <div class="banner-content-home">
     <h1><strong>This is your landng phrase !</strong></h1>
   </div>
-  <%# if current_user && current_user.id == 1 %>
+  <% if current_user && current_user.id == 1 %>
     <p class="edit_picture_icon">
     <%= link_to edit_picture_path(Picture.first) do %><i class="far fa-edit"></i>
       <% end %>
