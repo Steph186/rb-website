@@ -1,16 +1,16 @@
-<!-- <div class="banner-pages"
+<div class="banner-pages"
   style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
-         url('<%#= cl_image_path Picture.last.photo %>')">
+         url('<%= cl_image_path Picture.last.photo %>')">
   <div class="banner-content-pages">
     <h1><strong>Contact</strong></h1>
   </div>
-  <%# if current_user && current_user.id == 1 %>
+  <% if current_user && current_user.id == 1 %>
     <p class="edit_picture_icon">
-    <%#= link_to edit_picture_path(Picture.last) do %><i class="far fa-edit"></i>
-      <%# end %>
+    <%= link_to edit_picture_path(Picture.last) do %><i class="far fa-edit"></i>
+      <% end %>
     </p>
-  <%# end %>
-</div> -->
+  <% end %>
+</div>
 
 <div class="wraper-white">
   <div class="container">

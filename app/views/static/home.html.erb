@@ -5,19 +5,19 @@
   </div>
 </div> -->
 
-<!-- <div class="banner-home"
+<div class="banner-home"
   style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
-         url('<%#= cl_image_path Picture.first.photo %>')">
+         url('<%= cl_image_path Picture.first.photo %>')">
   <div class="banner-content-home">
     <h1><strong>This is your landng phrase !</strong></h1>
   </div>
   <%# if current_user && current_user.id == 1 %>
     <p class="edit_picture_icon">
-    <%#= link_to edit_picture_path(Picture.first) do %><i class="far fa-edit"></i>
-      <%# end %>
+    <%= link_to edit_picture_path(Picture.first) do %><i class="far fa-edit"></i>
+      <% end %>
     </p>
-  <%# end %>
-</div> -->
+  <% end %>
+</div>
 
 
 
