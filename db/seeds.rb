@@ -243,11 +243,11 @@ picture.save
 stories_attr = [
   {
   title: "Robi got his ERC! congratulations to him!!",
-  content: "Robi is going to start a new lab with his newly acquired ERC. His has funding for five years. Best of luch to him ad his team."
+  content: "Robi is going to start a new lab with his newly acquired ERC. His has funding for five years. Best of luck to him ad his team. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate rem ratione, similique, culpa deserunt sit vero aperiam officia ducimus vel maxime cumque tempore soluta rerum tempora incidunt quisquam iusto asperiores."
 },
 {
   title: "The lab is hiring a post-doc",
-  content: "Open position: we are looking for a new post-doc, for a three years position."
+  content: "Open position: we are looking for a new post-doc, for a three years position. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sequi hic animi necessitatibus nobis eligendi repellendus veniam laboriosam. Nam, tempore fuga assumenda quisquam accusantium cumque labore facere necessitatibus in illo."
 },
 ]
 
