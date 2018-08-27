@@ -1,9 +1,12 @@
 <div id="footer">
   <div class="logo-container">
     <%= image_tag asset_path('logo_unitn_it.png'), class: "logo-img margin-left" %>
-    <div>
+    <div class="padding-top">
       <p>BottiniLab</p>
       <p>Made with love by Stephanie Cattoir</p>
+      <% if !user_signed_in? %>
+        <%= link_to "Admin", new_user_session_path, class: "btn-hidden" %>
+      <% end %>
     </div>
   </div>
   <div class="link-container">

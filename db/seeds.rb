@@ -208,27 +208,27 @@ research_attr.each do |research_details|
   Research.create!(research_details)
 end
 
-url = "https://image.freepik.com/free-photo/cute-cat-picture_1122-449.jpg"
+url = "https://res.cloudinary.com/did3jv3n4/image/upload/v1535101667/pa5swnbi9ioiqxxllbyt.png"
 picture = Picture.new(page: "home")
 picture.remote_photo_url = url
 picture.save
 
-url = "https://image.freepik.com/free-photo/cute-cat-picture_1122-449.jpg"
+url = "https://res.cloudinary.com/did3jv3n4/image/upload/v1535101589/n5vi105mnioyrtdhe6ss.jpg"
 picture = Picture.new(page: "researches")
 picture.remote_photo_url = url
 picture.save
 
-url = "https://www.oliverwyman.com/content/dam/oliver-wyman/v2/expertise/Contact-us-1600x602.jpg.imgix.banner.jpg"
+url = "https://res.cloudinary.com/did3jv3n4/image/upload/v1535101832/jmicofz40lk9i9txtxwr.webp"
 picture = Picture.new(page: "people")
 picture.remote_photo_url = url
 picture.save
 
-url = "https://www.oliverwyman.com/content/dam/oliver-wyman/v2/expertise/Contact-us-1600x602.jpg.imgix.banner.jpg"
+url = "https://res.cloudinary.com/did3jv3n4/image/upload/v1535101633/xm4jvfghslswhmvrl5h8.jpg"
 picture = Picture.new(page: "publications")
 picture.remote_photo_url = url
 picture.save
 
-url = "https://www.oliverwyman.com/content/dam/oliver-wyman/v2/expertise/Contact-us-1600x602.jpg.imgix.banner.jpg"
+url = "https://res.cloudinary.com/did3jv3n4/image/upload/v1535101926/eyk5rccav6wnaa9ryjpu.jpg"
 picture = Picture.new(page: "news")
 picture.remote_photo_url = url
 picture.save
