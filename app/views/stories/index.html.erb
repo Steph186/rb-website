@@ -1,6 +1,6 @@
 <div class="banner-pages"
-  style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
-         url('<%= cl_image_path Picture.fifth.photo %>')">
+  style="background-image: linear-gradient(-225deg, rgba(4, 43, 104, 0.7) 30%, rgba(4, 43, 104, 0.5) 50%),
+         url('<%= cl_image_path Picture.fifth.photo %>'); background-size: cover; background-position-y: 47%;">
   <div class="banner-content-pages">
     <h1><strong>News</strong></h1>
   </div>
@@ -13,6 +13,7 @@
 </div>
 
 <div class="container">
+  <!-- <p class="margin-top">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quo iste sit doloremque accusamus atque rerum id cum sint eveniet repellat dolore vitae ipsa commodi iusto voluptatibus ea, non, dolorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quo iste sit doloremque accusamus atque rerum id cum sint eveniet repellat dolore vitae ipsa commodi iusto voluptatibus ea, non, dolorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quo iste sit doloremque accusamus atque rerum id cum sint eveniet repellat dolore vitae ipsa commodi iusto voluptatibus ea, non, dolorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quo iste sit doloremque accusamus atque rerum id cum sint eveniet repellat dolore vitae ipsa commodi iusto voluptatibus ea, non, dolorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quo iste sit doloremque accusamus atque rerum id cum sint eveniet repellat dolore vitae ipsa commodi iusto voluptatibus ea, non, dolorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quo iste sit doloremque accusamus atque rerum id cum sint eveniet repellat dolore vitae ipsa commodi iusto voluptatibus ea, non, dolorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quo iste sit doloremque accusamus atque rerum id cum sint eveniet repellat dolore vitae ipsa commodi iusto voluptatibus ea, non, dolorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quo iste sit doloremque accusamus atque rerum id cum sint eveniet repellat dolore vitae ipsa commodi iusto voluptatibus ea, non, dolorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quo iste sit doloremque accusamus atque rerum id cum sint eveniet repellat dolore vitae ipsa commodi iusto voluptatibus ea, non, dolorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quo iste sit doloremque accusamus atque rerum id cum sint eveniet repellat dolore vitae ipsa commodi iusto voluptatibus ea, non, dolorum.</p> -->
   <div class="objects-container">
 
     <div class="objects-header">
@@ -30,14 +31,10 @@
     <% @stories.each do |story| %>
       <div class="one-object margin-top-medium">
         <% if story == @first_story%>
-        <div class="one-story margin-bottom-big">
+        <div class="one-story">
         <% else %>
         <div class="one-story">
         <% end %>
-
-          <div class="story-image margin-bottom"
-            style="background-image: url('<%= cl_image_path story.photo %>')">
-          </div>
 
 
           <%#= cl_image_tag story.photo, height: 500, class:"story-image margin-bottom" %>
@@ -51,7 +48,11 @@
             <% end %>
           <% end %>
           </div>
-            <p class="published_at margin-bottom">Published on <%= "#{story.updated_at}" %></p>
+          <p class="published_at margin-bottom">Published on <%= "#{story.updated_at}" %></p>
+
+          <div class="story-image margin-bottom"
+            style="background-image: linear-gradient(-225deg, rgba(4, 43, 104, 0.5) 30%, rgba(4, 43, 104, 0.3) 50%), url('<%= cl_image_path story.photo %>'); background-size: cover;">
+          </div>
             <p><%= story.content %></p>
         </div>
         </div>
