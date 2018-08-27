@@ -1,6 +1,6 @@
 <div class="banner-pages"
   style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
-         url('<#%= cl_image_path Picture.fifth.photo %>')">
+         url('<%= cl_image_path Picture.fifth.photo %>')">
   <div class="banner-content-pages">
     <h1><strong>News</strong></h1>
   </div>
@@ -34,7 +34,13 @@
         <% else %>
         <div class="one-story">
         <% end %>
-          <%= cl_image_tag story.photo, class:"story-image margin-bottom" %>
+
+          <div class="story-image margin-bottom"
+            style="background-image: url('<%= cl_image_path story.photo %>')">
+          </div>
+
+
+          <%#= cl_image_tag story.photo, height: 500, class:"story-image margin-bottom" %>
           <div class="object-header">
             <p class="title margin-bottom-small"><strong><%= story.title %></strong></p>
             <% if current_user && current_user.id == 1 %>
