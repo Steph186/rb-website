@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/* line 1, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_form.scss */
+.form-actions {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* line 7, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_form.scss */
+.form-control-label  {
+  font-size: 30px !important;
+}
+
+/* line 11, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_form.scss */
+.divider {
+  border-top: 1px solid gray;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* line 17, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_form.scss */
+.btn-password-recovery {
+  width: 80%;
+}
+
+/* line 21, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_form.scss */
+.banner-form {
+  height: calc(100vh - 70px);
+}
+
+/* line 25, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_form.scss */
+.form-info p {
+  margin-left: 0px;
+}
+
+/* line 29, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_form.scss */
+.form-inputs {
+  padding: 0 40px;
+}
+
+/* line 33, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_form.scss */
+.banner-form-full-height {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+}

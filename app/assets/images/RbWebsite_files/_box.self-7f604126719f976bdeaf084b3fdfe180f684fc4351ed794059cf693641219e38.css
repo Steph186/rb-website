@@ -1,0 +1,9 @@
+/* line 1, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_box.scss */
+.one-research {
+  display: flex;
+}
+
+/* line 5, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_box.scss */
+.big-icon {
+  font-size: 100px;
+}

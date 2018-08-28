@@ -1,0 +1,11 @@
+/* line 1, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_collaborators.scss */
+.collaborator-picture {
+  height: 150px;
+  width: 150px;
+  crop: fill;
+}
+
+/* line 6, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_collaborators.scss */
+.collaborator-photo {
+  flex: 0 0 auto;
+}

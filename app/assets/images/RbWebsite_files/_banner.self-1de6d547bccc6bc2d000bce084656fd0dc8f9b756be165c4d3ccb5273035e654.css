@@ -1,0 +1,47 @@
+/* line 1, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_banner.scss */
+.banner-home {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 7, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_banner.scss */
+.banner-content-home {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* line 15, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_banner.scss */
+.banner-pages {
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 21, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_banner.scss */
+.banner-content-pages {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* line 29, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_banner.scss */
+.edit_picture_icon {
+  position: relative;
+  bottom: 50px;
+  font-size: 30px;
+  padding-left: 15px;
+}
+/* line 34, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_banner.scss */
+.edit_picture_icon a {
+  color: white;
+}
+/* line 37, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_banner.scss */
+.edit_picture_icon a:hover {
+  color: #2c6c81;
+}

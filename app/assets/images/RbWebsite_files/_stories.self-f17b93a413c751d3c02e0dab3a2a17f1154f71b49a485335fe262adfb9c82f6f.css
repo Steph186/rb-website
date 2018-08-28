@@ -1,0 +1,27 @@
+/* line 1, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_stories.scss */
+.story-image {
+  height: 150px;
+  width: 100%;
+}
+
+/* line 6, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_stories.scss */
+.one-story {
+  width: 100%;
+}
+
+/* line 10, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_stories.scss */
+.title {
+  font-size: 20px;
+}
+
+/* line 14, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_stories.scss */
+.published_at {
+  color: lightgray;
+  font-size: 14px;
+}
+
+/* line 19, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_stories.scss */
+.divider-stories {
+  border-top: 1px solid lightgray;
+  margin: 60px 300px;
+}

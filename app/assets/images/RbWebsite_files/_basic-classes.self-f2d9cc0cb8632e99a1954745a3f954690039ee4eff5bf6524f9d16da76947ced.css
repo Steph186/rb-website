@@ -1,0 +1,37 @@
+/* line 1, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic-classes.scss */
+.objects-container {
+  margin-top: 80px;
+}
+/* line 3, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic-classes.scss */
+.objects-container h2 {
+  margin-bottom: 30px;
+}
+
+/* line 8, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic-classes.scss */
+.one-object {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 15, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic-classes.scss */
+.object-header {
+  display: flex;
+}
+
+/* line 19, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic-classes.scss */
+.objects-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 24, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic-classes.scss */
+.object-content {
+  flex: 1 1 auto;
+}
+
+/* line 28, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic-classes.scss */
+.avatar {
+  border-radius: 50%;
+}

@@ -1,0 +1,5 @@
+/* line 1, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_flashes.scss */
+.flashes-replacement {
+  position: absolute !important;
+  top: 66px !important;
+}

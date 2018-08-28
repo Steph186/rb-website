@@ -1,0 +1,17 @@
+/* line 1, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_admin.scss */
+.admin-banner {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 5px 10px;
+  background-color: white;
+  color: #c15b7f;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 14, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_admin.scss */
+.admin-banner h2 {
+  color: #45608d;
+}

@@ -1,0 +1,46 @@
+/* line 1, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_footer.scss */
+#footer {
+  width: 100%;
+  background-color: #4f4f4f;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 150px;
+}
+
+/* line 11, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_footer.scss */
+.link-container {
+  display: flex;
+  margin: 0 30px;
+}
+/* line 16, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_footer.scss */
+.link-container i {
+  margin: 15px;
+  font-size: 20px;
+  color: white;
+}
+/* line 21, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_footer.scss */
+.link-container i:hover {
+  color: lightgray;
+}
+
+/* line 26, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_footer.scss */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+/* line 29, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_footer.scss */
+.logo-container div {
+  margin-left: 30px;
+}
+/* line 31, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_footer.scss */
+.logo-container div p {
+  color: white;
+  font-size: 12px;
+}
+
+/* line 38, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_footer.scss */
+.logo-img {
+  height: 70px;
+}

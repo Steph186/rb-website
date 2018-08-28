@@ -12,7 +12,7 @@
         </div>
         <div>
           <%= f.label :position %>
-          <%= f.text_field :position %>
+          <%= f.select :position, ["PI", "Lab Manager", "Post Doc", "PhD Student", "Research Assistant", "Master Student", "Undergraduate Student"] %>
         </div>
 
         <div>
@@ -28,6 +28,11 @@
         <div>
           <%= f.input :photo %>
           <%= f.input :photo_cache, as: :hidden %>
+        </div>
+
+        <div>
+          <%= f.label "Alumni?" %>
+          <%= f.select :alumni, [:true, :false] %>
         </div>
 
         <div class="text-center margin-bottom">

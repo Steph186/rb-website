@@ -1,0 +1,28 @@
+/* line 1, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_publications.scss */
+.publication-link {
+  padding: 5px 25px;
+  width: 100%;
+}
+/* line 4, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_publications.scss */
+.publication-link p {
+  color: black;
+}
+
+/* line 9, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_publications.scss */
+.publication-link:hover {
+  background-color: rgba(44, 108, 129, 0.1);
+}
+/* line 11, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_publications.scss */
+.publication-link:hover p {
+  color: black;
+}
+
+/* line 16, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_publications.scss */
+.publication-link:hover > * {
+  text-decoration: none;
+}
+
+/* line 20, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_publications.scss */
+.icon-container {
+  display: flex;
+}

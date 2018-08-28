@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400");
+/* line 52, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/config/_bootstrap_variables.scss */
+.invalid-feedback {
+  display: none;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #FF5D5D;
+}
+
+/* line 60, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/config/_bootstrap_variables.scss */
+.was-validated .form-control:invalid,
+.form-control.is-invalid,
+.was-validated .custom-select:invalid,
+.custom-select.is-invalid {
+  border-color: #FF5D5D;
+}
+
+/* line 67, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/config/_bootstrap_variables.scss */
+.was-validated .form-control:invalid ~ .invalid-feedback,
+.was-validated .form-control:invalid ~ .invalid-tooltip,
+.form-control.is-invalid ~ .invalid-feedback,
+.form-control.is-invalid ~ .invalid-tooltip,
+.was-validated .custom-select:invalid ~ .invalid-feedback,
+.was-validated .custom-select:invalid ~ .invalid-tooltip,
+.custom-select.is-invalid ~ .invalid-feedback,
+.custom-select.is-invalid ~ .invalid-tooltip {
+  display: block;
+}
+
+/* line 79, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/config/_bootstrap_variables.scss */
+.form-control {
+  background-color: white !important;
+  color: #333745 !important;
+}
+
+/* line 84, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/config/_bootstrap_variables.scss */
+.form-group {
+  margin-bottom: 0px !important;
+}

@@ -1,0 +1,28 @@
+/* line 1, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/devise/_session.scss */
+.white-wraper {
+  height: 100vh;
+  background: grey;
+}
+
+/* line 6, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/devise/_session.scss */
+.banner-form {
+  height: 100vh;
+  padding-top: 170px;
+}
+
+/* line 11, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/devise/_session.scss */
+.white-box {
+  background-color: white;
+}
+
+/* line 15, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/devise/_session.scss */
+.form-box {
+  border-radius: 3px;
+  padding: 20px 20px;
+}
+
+/* line 21, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/devise/_session.scss */
+label {
+  display: block !important;
+  padding-top: 20px;
+}

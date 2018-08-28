@@ -1,0 +1,86 @@
+/* line 1, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_button.scss */
+.btn-big {
+  flex: 0 1 auto;
+  font-size: 18px;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 9, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_button.scss */
+.btn-small {
+  flex: 0 0 80px;
+  padding: 8px 15px;
+  font-size: 12px;
+  text-decoration: none;
+  margin-left: 20px;
+  text-align: center;
+}
+
+/* line 18, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_button.scss */
+.btn-pink {
+  background-color: #c15b7f;
+  color: white;
+  opacity: 1;
+}
+
+/* line 24, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_button.scss */
+.btn-pink:hover {
+  opacity: 0.8;
+  text-decoration: none;
+  color: white;
+}
+
+/* line 30, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_button.scss */
+.btn-blue {
+  background-color: #45608d;
+  color: white;
+  opacity: 1;
+}
+
+/* line 36, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_button.scss */
+.btn-blue:hover {
+  opacity: 0.8;
+  text-decoration: none;
+  color: white;
+}
+
+/* line 42, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_button.scss */
+.btn-hidden {
+  color: #686767;
+  font-size: 8px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+/* line 49, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_button.scss */
+.btn-hidden:hover {
+  color: #c15b7f;
+  text-decoration: none;
+}
+
+/* line 54, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_button.scss */
+.btn-icon {
+  text-decoration: none;
+  margin-left: 15px;
+  color: #45608d;
+}
+
+/* line 60, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_button.scss */
+.btn-icon:hover {
+  margin-left: 15px;
+  color: #c15b7f;
+}
+
+/* line 65, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_button.scss */
+.btn-icon-white {
+  text-decoration: none;
+  margin-left: 15px;
+  color: white;
+}
+
+/* line 71, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_button.scss */
+.btn-icon-white:hover {
+  margin-left: 15px;
+  color: #45608d;
+}

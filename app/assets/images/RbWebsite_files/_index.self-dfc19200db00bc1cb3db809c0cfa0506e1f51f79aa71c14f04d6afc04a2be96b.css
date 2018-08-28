@@ -1,0 +1,144 @@
+/* line 2, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_home.scss */
+.landing-page-content {
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 9, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_home.scss */
+.outside-banner-page {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 14, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_home.scss */
+.icons-card {
+  margin-top: 20px;
+  font-size: 30px;
+  background: white;
+  padding: 40px 20px;
+}
+/* line 20, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_home.scss */
+.icons-card p {
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+/* line 25, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_home.scss */
+.icons-card .icon {
+  font-size: 36px;
+}
+
+/* line 30, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_home.scss */
+.wrapper-white {
+  background-color: white;
+}
+
+/* line 34, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_home.scss */
+.wrapper-gray {
+  background-color: lightgray;
+}
+
+/* line 38, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_home.scss */
+.wrapper-margin {
+  margin-bottom: 30px;
+}
+
+/* line 42, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_home.scss */
+.categories {
+  margin-top: 50px;
+}
+
+/* line 48, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_home.scss */
+.icons-card:hover .icon-content p {
+  -webkit-text-decoration: underline solid white;
+          text-decoration: underline solid white;
+  color: #47608c;
+}
+
+/* line 56, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_home.scss */
+.icon-content p {
+  color: black;
+  margin-top: 0px;
+  padding-top: 0px;
+  font-size: 22px;
+}
+
+/* line 1, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_publications.scss */
+.publication-link {
+  padding: 5px 25px;
+  width: 100%;
+}
+/* line 4, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_publications.scss */
+.publication-link p {
+  color: black;
+}
+
+/* line 9, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_publications.scss */
+.publication-link:hover {
+  background-color: rgba(44, 108, 129, 0.1);
+}
+/* line 11, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_publications.scss */
+.publication-link:hover p {
+  color: black;
+}
+
+/* line 16, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_publications.scss */
+.publication-link:hover > * {
+  text-decoration: none;
+}
+
+/* line 20, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_publications.scss */
+.icon-container {
+  display: flex;
+}
+
+/* line 1, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_contact.scss */
+.image-text-container {
+  display: flex;
+}
+
+/* line 5, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_contact.scss */
+.contact-image {
+  height: 170px;
+}
+
+/* line 1, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_stories.scss */
+.story-image {
+  height: 150px;
+  width: 100%;
+}
+
+/* line 6, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_stories.scss */
+.one-story {
+  width: 100%;
+}
+
+/* line 10, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_stories.scss */
+.title {
+  font-size: 20px;
+}
+
+/* line 14, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_stories.scss */
+.published_at {
+  color: lightgray;
+  font-size: 14px;
+}
+
+/* line 19, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_stories.scss */
+.divider-stories {
+  border-top: 1px solid lightgray;
+  margin: 60px 300px;
+}
+
+/* line 1, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_collaborators.scss */
+.collaborator-picture {
+  height: 150px;
+  width: 150px;
+  crop: fill;
+}
+
+/* line 6, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/static/_collaborators.scss */
+.collaborator-photo {
+  flex: 0 0 auto;
+}
