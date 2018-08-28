@@ -17,8 +17,20 @@
   text-align: center;
 }
 
-.btn-blue {
+.btn-pink {
   background-color: #c15b7f;
+  color: white;
+  opacity: 1;
+}
+
+.btn-pink:hover {
+  opacity: 0.8;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-blue {
+  background-color: #45608d;
   color: white;
   opacity: 1;
 }
@@ -42,6 +54,7 @@
 }
 
 .btn-icon {
+  text-decoration: none;
   margin-left: 15px;
   color: #45608d;
 }
@@ -49,4 +62,15 @@
 .btn-icon:hover {
   margin-left: 15px;
   color: #c15b7f;
+}
+
+.btn-icon-white {
+  text-decoration: none;
+  margin-left: 15px;
+  color: white;
+}
+
+.btn-icon-white:hover {
+  margin-left: 15px;
+  color: #45608d;
 }
