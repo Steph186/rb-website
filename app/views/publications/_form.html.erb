@@ -11,8 +11,10 @@
           <%= f.text_field :title %>
         </div>
         <div>
-          <%= f.label :year %>
-          <%= f.text_field :year %>
+          <%#= f.label :year %>
+          <%#= f.text_field :year %>
+          <!-- AS STRING required for datepicker in active record! -->
+          <%= f.input :year, as: :string, input_html: { class:"datepicker"} %>
         </div>
 
         <div>

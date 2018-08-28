@@ -23,3 +23,10 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
+// CSS Partials
+@import "components/index";
+@import "devise/index";
+@import "layout/index";
+@import "shared/index";
+@import "static/index";
