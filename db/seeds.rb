@@ -181,7 +181,9 @@ collaborator_attr = [
 ]
 
 collaborator_attr.each do |collaborator_details|
-  Collaborator.create!(collaborator_details)
+  this_collaborator = Collaborator.new(collaborator_details)
+  this_collaborator.remote_photo_url = this_collaborator.avatar
+  this_collaborator.save
 end
 
 User.create!(email: "robi@gmail.com", password: "123456")
@@ -209,32 +211,32 @@ research_attr.each do |research_details|
 end
 
 url = "https://res.cloudinary.com/did3jv3n4/image/upload/v1535101667/pa5swnbi9ioiqxxllbyt.png"
-picture = Picture.new(page: "home")
+picture = Picture.new(page: "BottiniLab")
 picture.remote_photo_url = url
 picture.save
 
-url = "https://res.cloudinary.com/did3jv3n4/image/upload/v1535101589/n5vi105mnioyrtdhe6ss.jpg"
-picture = Picture.new(page: "researches")
+url = "https://www.pinterest.ie/pin/473089135826402471/"
+picture = Picture.new(page: "Research")
 picture.remote_photo_url = url
 picture.save
 
-url = "https://res.cloudinary.com/did3jv3n4/image/upload/v1535101832/jmicofz40lk9i9txtxwr.webp"
-picture = Picture.new(page: "people")
+url = "https://cdn.studentloanhero.com/wp-content/uploads/student-loan-debt-statistics.jpg"
+picture = Picture.new(page: "People")
 picture.remote_photo_url = url
 picture.save
 
-url = "https://res.cloudinary.com/did3jv3n4/image/upload/v1535101633/xm4jvfghslswhmvrl5h8.jpg"
-picture = Picture.new(page: "publications")
+url = "http://omicscentre.com/wp-content/uploads/2012/12/imatge_publications-650x395.jpg"
+picture = Picture.new(page: "Publications")
 picture.remote_photo_url = url
 picture.save
 
-url = "https://res.cloudinary.com/did3jv3n4/image/upload/v1535101926/eyk5rccav6wnaa9ryjpu.jpg"
-picture = Picture.new(page: "news")
+url = "http://www.synergydirectfunding.com/wp-content/uploads/2015/02/latestnews.png"
+picture = Picture.new(page: "News")
 picture.remote_photo_url = url
 picture.save
 
-url = "https://www.oliverwyman.com/content/dam/oliver-wyman/v2/expertise/Contact-us-1600x602.jpg.imgix.banner.jpg"
-picture = Picture.new(page: "contact")
+url = "http://www.bbhlegal.co.uk/wp-content/uploads/2018/04/contact.jpg"
+picture = Picture.new(page: "Contact")
 picture.remote_photo_url = url
 picture.save
 
@@ -251,6 +253,12 @@ stories_attr = [
 },
 ]
 
+# stories_attr.each do |story_details|
+#   Story.create!(story_details)
+# end
+
 stories_attr.each do |story_details|
-  Story.create!(story_details)
+  this_story = Story.new(story_details)
+  this_story.remote_photo_url = "https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/2214891/1160/773/m1/fpnw/wm0/confetti-congratulations-white-72-.jpg?1485917056&s=3dda06e08e3cc052a8b838b399ed0187"
+  this_story.save
 end

@@ -13,7 +13,7 @@
 </div>
 
 <div class="container">
-  <div class="objects-container">
+  <div class="objects-container margin-bottom-footer">
 
     <div class="objects-header">
       <h2>News</h2>
@@ -50,7 +50,7 @@
           <p class="published_at margin-bottom">Published on <%= "#{story.updated_at}" %></p>
 
           <div class="story-image margin-bottom"
-            style="background-image: linear-gradient(-225deg, rgba(4, 43, 104, 0.5) 30%, rgba(4, 43, 104, 0.3) 50%), url('<%= cl_image_path story.photo %>'); background-size: cover;">
+            style="background-image: linear-gradient(-225deg, rgba(4, 43, 104, 0.5) 30%, rgba(4, 43, 104, 0.3) 50%), url('<%= cl_image_path story.photo %>'); background-size: cover; background-position-y: 46%;">
           </div>
             <p><%= story.content %></p>
         </div>
