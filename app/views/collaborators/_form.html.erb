@@ -35,6 +35,12 @@
           <%= f.select :alumni, [:true, :false] %>
         </div>
 
+        <div>
+          <%= f.label :current_position %>
+          <%= f.text_area :current_position %>
+        </div>
+
+
         <div class="text-center margin-bottom">
           <div><%= f.submit "Save", class: "btn btn-pink btn-big margin-top" %>
           </div>

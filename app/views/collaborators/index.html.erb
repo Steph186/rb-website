@@ -63,7 +63,7 @@
       <div class="one-object margin-bottom margin-top">
         <div class="one-content">
           <div class="object-header">
-            <p><strong><%= "#{collaborator.first_name.capitalize} #{collaborator.last_name.capitalize}"%></strong> (<%= collaborator.position %>)</p>
+            <p><strong><%= "#{collaborator.first_name.capitalize} #{collaborator.last_name.capitalize}"%></strong> (<%= collaborator.position %>)<%= collaborator.current_position %></p>
             <% if current_user && current_user.id == 1 %>
               <%= link_to edit_collaborator_path(collaborator), class:"btn-icon" do %><i class="far fa-edit"></i>
               <% end %>
