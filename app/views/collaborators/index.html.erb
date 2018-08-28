@@ -1,7 +1,7 @@
 <div class="banner-pages"
   style="background-image: linear-gradient(-225deg, rgba(4, 43, 104, 0.7) 30%, rgba(4, 43, 104, 0.5) 50%),
          url('<%= cl_image_path Picture.third.photo %>'); background-size: cover; background-position-y: 47%;">  <div class="banner-content-pages">
-    <h1><strong>People</strong></h1>
+    <h1><strong><%= Picture.third.page %></strong></h1>
   </div>
   <% if current_user && current_user.id == 1 %>
     <p class="edit_picture_icon">
@@ -44,11 +44,10 @@
           <p class="margin-bottom"><%= collaborator.description_one %></p>
           <p class="margin-bottom"><%= collaborator.description_two %></p>
         </div>
-          <%#= image_tag collaborator.avatar, class: "margin-left" %>
-          <%= cl_image_tag collaborator.photo, height: 300, width: 400, crop: :fill %>
+        <div class="collaborator-photo margin-left">
+          <%= cl_image_tag collaborator.photo, height: 150, width: 150, crop: :fill %>
         </div>
-
-
+      </div>
     <% end %>
   </div>
 </div>

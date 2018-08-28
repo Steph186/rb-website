@@ -2,7 +2,7 @@
   style="background-image: linear-gradient(-225deg, rgba(4, 43, 104, 0.7) 30%, rgba(4, 43, 104, 0.5) 50%),
          url('<%= cl_image_path Picture.last.photo %>'); background-size: cover; background-position-y: 47%;">
   <div class="banner-content-pages">
-    <h1><strong>Contact</strong></h1>
+    <h1><strong><%= Picture.last.page %></strong></h1>
   </div>
   <% if current_user && current_user.id == 1 %>
     <p class="edit_picture_icon">
@@ -29,5 +29,29 @@
         </div>
       </div>
     </div>
+
+
+<div id="Contact" class="contact-line">
+  <div class="container">
+    <h1 class="section_header section_center">Contact</h1>
+    <hr class="center-line2">
+    <div class="row">
+      <div class="col-sm-offset-2 col-sm-4 padd_bot">
+        <input type="text" class="form-control" placeholder="Enter your Name">
+      </div>
+      <div class="col-sm-4 padd_bot">
+        <input type="text" class="form-control" placeholder="Enter your e-mail">
+      </div>
+    </div><!-- end row for name and email-->
+    <div class="row padd_bot">
+      <div class="col-sm-offset-2 col-sm-8">
+        <textarea class="form-control" id="exampleTextarea" rows="5" placeholder="Enter your message"></textarea>
+      </div>
+    </div> <!--end row for message-->
+
+    <button type="submit" class="btn btn-default center-block">Send</button>
+  </div>
+</div>
+
   </div>
 </div>
