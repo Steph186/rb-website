@@ -7,8 +7,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
 
 // Define fonts for body and headers
-$body-font: "Montserrat", "sans-serif";
-$headers-font: "Ubuntu", "sans-serif";
+$headers-font: "Montserrat", "sans-serif";
+$body-font: "Ubuntu", "sans-serif";
 
 
 // MAIN APP colors
@@ -34,12 +34,12 @@ $dark-gray: #333745;
 
 // General style
 $font-family-sans-serif:  $body-font;
-$headings-font-family:    $headers-font;
-$body-bg:                 $light-gray;
-$font-size-base: 18px;
+$headings-font-family:    $body-font;
+$body-bg:                 white;
+$font-size-base:          18px;
 
 // Colors
-$gray-base:       $gray;
+$gray-base:       black;
 $brand-primary:   $blue;
 $brand-success:   $green;
 $brand-info:      $yellow;
@@ -47,9 +47,7 @@ $brand-danger:    $red;
 $brand-warning:   $orange;
 
 // Buttons & inputs' radius
-$border-radius-base:  2px;
-$border-radius-large: 2px;
-$border-radius-small: 2px;
+$border-radius-base:  5px;
 
 // Patch to make simple_form compatible with bootstrap 3
 .invalid-feedback {
