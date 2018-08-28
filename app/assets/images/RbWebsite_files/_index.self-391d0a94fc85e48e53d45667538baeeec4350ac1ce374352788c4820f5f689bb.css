@@ -1,0 +1,119 @@
+/* line 1, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic.scss */
+h1, h2, h3, p {
+  margin: 0px !important;
+}
+
+/* line 5, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic.scss */
+.margin-top {
+  margin-top: 20px !important;
+}
+
+/* line 9, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic.scss */
+.margin-left {
+  margin-left: 40px !important;
+}
+
+/* line 13, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic.scss */
+.margin-right {
+  margin-right: 40px !important;
+}
+
+/* line 17, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic.scss */
+.margin-bottom {
+  margin-bottom: 20px !important;
+}
+
+/* line 21, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic.scss */
+.margin-bottom-small {
+  margin-bottom: 5px !important;
+}
+
+/* line 25, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic.scss */
+.margin-top-big {
+  margin-top: 100px !important;
+}
+
+/* line 29, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic.scss */
+.margin-top-medium {
+  margin-top: 60px !important;
+}
+
+/* line 33, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic.scss */
+.margin-bottom-medium {
+  margin-bottom: 40px !important;
+}
+
+/* line 37, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic.scss */
+.margin-bottom-big {
+  margin-bottom: 100px !important;
+}
+
+/* line 40, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic.scss */
+.padding-top {
+  padding-top: 20px;
+}
+
+/* line 44, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic.scss */
+.padding-right {
+  padding-right: 20px;
+}
+
+/* line 48, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic.scss */
+.padding-left-right {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* line 53, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic.scss */
+.margin-left-right {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+/* line 58, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic.scss */
+.padding {
+  padding: 10px 30px;
+}
+
+/* line 62, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic.scss */
+.margin-bottom-footer {
+  margin-bottom: 150px !important;
+}
+
+/* line 1, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic-classes.scss */
+.objects-container {
+  margin-top: 80px;
+}
+/* line 3, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic-classes.scss */
+.objects-container h2 {
+  margin-bottom: 30px;
+}
+
+/* line 8, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic-classes.scss */
+.one-object {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 15, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic-classes.scss */
+.object-header {
+  display: flex;
+}
+
+/* line 19, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic-classes.scss */
+.objects-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 24, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic-classes.scss */
+.object-content {
+  flex: 1 1 auto;
+}
+
+/* line 28, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/layout/_basic-classes.scss */
+.avatar {
+  border-radius: 50%;
+}

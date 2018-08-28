@@ -3,16 +3,21 @@
     <%= form_for(@research) do |f| %>
       <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
       <div class="form-inputs padding-top">
+
+        <div>
+          <%= f.label :category %>
+          <%= f.select :category, ["Research topic", "Funding"] %>
+        </div>
         <div>
           <%= f.label :title %>
           <%= f.text_field :title %>
         </div>
         <div>
-          <%= f.label "Description 1" %>
+          <%= f.label "Description 1 / Year funded" %>
           <%= f.text_area :descr_one %>
         </div>
         <div>
-          <%= f.label "Description 2" %>
+          <%= f.label "Description 2 / Topic + Winners" %>
           <%= f.text_area :descr_two %>
         </div>
 

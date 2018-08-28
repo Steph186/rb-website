@@ -1,0 +1,162 @@
+/* line 1, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_navbar.scss */
+#navbar-home {
+  position: absolute;
+  position: fixed;
+  width: 100%;
+  transition: all 0.3s ease;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease-out;
+  z-index: 1000;
+}
+/* line 15, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_navbar.scss */
+#navbar-home ul {
+  margin-top: 13px;
+  padding-left: 0px;
+}
+
+/* line 21, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_navbar.scss */
+#navbar-home.scroll {
+  background-color: #45608d;
+  color: #eef;
+  z-index: 100;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07), 0 1px 0 0 rgba(0, 0, 0, 0.03);
+}
+/* line 26, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_navbar.scss */
+#navbar-home.scroll .navbar-links {
+  display: flex;
+  list-style-type: none;
+}
+/* line 29, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_navbar.scss */
+#navbar-home.scroll .navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+/* line 34, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_navbar.scss */
+#navbar-home.scroll .navbar-links a:hover {
+  text-decoration: none;
+  color: lightgray;
+}
+
+/* line 41, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_navbar.scss */
+.navbar-item {
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+/* line 46, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_navbar.scss */
+.navbar-logo {
+  height: 40px;
+}
+
+/* line 50, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_navbar.scss */
+.navbar-links {
+  display: flex;
+  list-style-type: none;
+}
+/* line 53, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_navbar.scss */
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+/* line 58, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_navbar.scss */
+.navbar-links a:hover {
+  text-decoration: none;
+  color: lightgray;
+}
+/* line 62, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_navbar.scss */
+.navbar-links i {
+  color: white;
+  font-size: 20px;
+  margin-top: 6px;
+}
+/* line 67, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_navbar.scss */
+.navbar-links i:hover {
+  color: lightgray;
+}
+
+/* line 72, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_navbar.scss */
+#rb-logo {
+  margin: 0 15px;
+}
+/* line 74, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_navbar.scss */
+#rb-logo a {
+  margin-left: 5px;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* line 1, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_admin.scss */
+.admin-banner {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 5px 10px;
+  background-color: white;
+  color: #c15b7f;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 14, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_admin.scss */
+.admin-banner h2 {
+  color: #45608d;
+}
+
+/* line 1, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_flashes.scss */
+.flashes-replacement {
+  position: absolute !important;
+  top: 66px !important;
+}
+
+/* line 1, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_footer.scss */
+#footer {
+  width: 100%;
+  background-color: #4f4f4f;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 10, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_footer.scss */
+.link-container {
+  display: flex;
+  margin: 0 30px;
+}
+/* line 15, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_footer.scss */
+.link-container i {
+  margin: 15px;
+  font-size: 20px;
+  color: white;
+}
+/* line 20, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_footer.scss */
+.link-container i:hover {
+  color: lightgray;
+}
+
+/* line 25, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_footer.scss */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+/* line 28, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_footer.scss */
+.logo-container div {
+  margin-left: 30px;
+}
+/* line 30, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_footer.scss */
+.logo-container div p {
+  color: white;
+  font-size: 12px;
+}
+
+/* line 37, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/shared/_footer.scss */
+.logo-img {
+  height: 70px;
+}

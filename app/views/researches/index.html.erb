@@ -25,38 +25,54 @@
       <% end %>
     </div>
 
-    <% @researches.each do |research| %>
-      <% if research.id.odd? %>
-        <div class="one-research margin-top-big">
+    <% @researches.each_with_index do |research, index| %>
+      <% if index.odd? %>
+      <div class="one-research margin-top-big">
+        <div class="big-icon margin-left-right">
+          <%= tag.p("", class: @icons[research.id-1]) %>
+        </div>
+      <% else %>
+      <div class="one-research margin-top-big">
+      <% end %>
+        <div>
+          <div class="object-header">
+            <h3><%= research.title %></h3>
+
+            <% if current_user && current_user.id == 1 %>
+              <%= link_to edit_research_path(research), class:"btn-icon" do %><i class="far fa-edit"></i>
+              <% end %>
+
+              <%= link_to research_path(research), method: :delete, data:{confirm: "Delete this research?"}, class:"btn-icon" do %><i class="far fa-trash-alt"></i>
+              <% end %>
+            <% end %>
+          </div>
+
+          <p><%= research.descr_one %></p>
+          <p><%= research.descr_two %></p>
+        </div>
+        <% if index.even? %>
           <div class="big-icon margin-left-right">
             <%= tag.p("", class: @icons[research.id-1]) %>
           </div>
-      <% else %>
-        <div class="one-research margin-top-big">
-      <% end %>
-          <div>
-            <div class="object-header">
-              <h3><%= research.title %></h3>
-
-              <% if current_user && current_user.id == 1 %>
-                <%= link_to edit_research_path(research), class:"btn-icon" do %><i class="far fa-edit"></i>
-                <% end %>
-
-                <%= link_to research_path(research), method: :delete, data:{confirm: "Delete this research?"}, class:"btn-icon" do %><i class="far fa-trash-alt"></i>
-                <% end %>
-              <% end %>
-            </div>
-
-            <p><%= research.descr_one %></p>
-            <p><%= research.descr_two %></p>
-          </div>
-          <% if research.id.even? %>
-            <div class="big-icon margin-left-right">
-              <%= tag.p("", class: @icons[research.id-1]) %>
-            </div>
-          <% end %>
+        <% end %>
         </div>
     <% end %>
   </div>
+
+
+  <% @fundings.each do |fund| %>
+    <p><%= fund.title %></p>
+
+    <% if current_user && current_user.id == 1 %>
+      <%= link_to edit_research_path(fund), class:"btn-icon" do %><i class="far fa-edit"></i>
+      <% end %>
+
+      <%= link_to research_path(fund), method: :delete, data:{confirm: "Delete this research?"}, class:"btn-icon" do %><i class="far fa-trash-alt"></i>
+      <% end %>
+    <% end %>
+
+    <p><%= fund.descr_one %></p>
+    <p><%= fund.descr_two %></p>
+  <% end %>
 </div>
 </div>

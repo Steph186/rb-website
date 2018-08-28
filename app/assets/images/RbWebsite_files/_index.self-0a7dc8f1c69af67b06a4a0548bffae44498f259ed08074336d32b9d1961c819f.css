@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/* line 1, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_banner.scss */
+.banner-home {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 7, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_banner.scss */
+.banner-content-home {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* line 15, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_banner.scss */
+.banner-pages {
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 21, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_banner.scss */
+.banner-content-pages {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* line 29, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_banner.scss */
+.edit_picture_icon {
+  position: relative;
+  bottom: 50px;
+  font-size: 30px;
+  padding-left: 15px;
+}
+/* line 34, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_banner.scss */
+.edit_picture_icon a {
+  color: white;
+}
+/* line 37, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_banner.scss */
+.edit_picture_icon a:hover {
+  color: #2c6c81;
+}
+
+/* line 1, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_form.scss */
+.form-actions {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* line 7, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_form.scss */
+.form-control-label  {
+  font-size: 30px !important;
+}
+
+/* line 11, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_form.scss */
+.divider {
+  border-top: 1px solid gray;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* line 17, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_form.scss */
+.btn-password-recovery {
+  width: 80%;
+}
+
+/* line 21, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_form.scss */
+.banner-form {
+  height: calc(100vh - 70px);
+}
+
+/* line 25, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_form.scss */
+.form-info p {
+  margin-left: 0px;
+}
+
+/* line 29, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_form.scss */
+.form-inputs {
+  padding: 0 40px;
+}
+
+/* line 33, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_form.scss */
+.banner-form-full-height {
+  height: 120vh;
+  width: 99.2vw;
+  z-index: 1;
+}
+
+/* line 1, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_button.scss */
+.btn-big {
+  flex: 0 1 auto;
+  font-size: 18px;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 9, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_button.scss */
+.btn-small {
+  flex: 0 0 80px;
+  padding: 8px 15px;
+  font-size: 12px;
+  text-decoration: none;
+  margin-left: 20px;
+  text-align: center;
+}
+
+/* line 18, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_button.scss */
+.btn-pink {
+  background-color: #c15b7f;
+  color: white;
+  opacity: 1;
+}
+
+/* line 24, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_button.scss */
+.btn-pink:hover {
+  opacity: 0.8;
+  text-decoration: none;
+  color: white;
+}
+
+/* line 30, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_button.scss */
+.btn-blue {
+  background-color: #45608d;
+  color: white;
+  opacity: 1;
+}
+
+/* line 36, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_button.scss */
+.btn-blue:hover {
+  opacity: 0.8;
+  text-decoration: none;
+  color: white;
+}
+
+/* line 42, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_button.scss */
+.btn-hidden {
+  color: #686767;
+  font-size: 8px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+/* line 49, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_button.scss */
+.btn-hidden:hover {
+  color: #c15b7f;
+  text-decoration: none;
+}
+
+/* line 54, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_button.scss */
+.btn-icon {
+  text-decoration: none;
+  margin-left: 15px;
+  color: #45608d;
+}
+
+/* line 60, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_button.scss */
+.btn-icon:hover {
+  margin-left: 15px;
+  color: #c15b7f;
+}
+
+/* line 65, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_button.scss */
+.btn-icon-white {
+  text-decoration: none;
+  margin-left: 15px;
+  color: white;
+}
+
+/* line 71, /home/steph/code/Steph186/rb-website/app/assets/stylesheets/components/_button.scss */
+.btn-icon-white:hover {
+  margin-left: 15px;
+  color: #45608d;
+}

@@ -3,7 +3,8 @@ skip_before_action :authenticate_user!, only: :index
   before_action :set_research, only: [:update, :destroy, :edit]
 
   def index
-    @researches = Research.all
+    @researches = Research.where('category = ?', "Research topic")
+    @fundings = Research.where('category = ?', "Funding")
     @icons = ["fas fa-atlas icon","far fa-comments icon","fas fa-brain icon"]
   end
 
@@ -62,6 +63,6 @@ skip_before_action :authenticate_user!, only: :index
   end
 
   def research_params
-    params.require(:research).permit(:title, :descr_one, :descr_two, :descr_three)
+    params.require(:research).permit(:title, :descr_one, :descr_two, :category)
   end
 end
