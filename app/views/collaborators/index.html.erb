@@ -43,10 +43,35 @@
           <p class="margin-bottom"><%= collaborator.position %></p>
           <p class="margin-bottom"><%= collaborator.description_one %></p>
           <p class="margin-bottom"><%= collaborator.description_two %></p>
-          <p class="margin-bottom"><%= collaborator.alumni%></p>
         </div>
         <div class="collaborator-photo margin-left">
           <%= cl_image_tag collaborator.photo, height: 150, width: 150, crop: :fill %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+    <div class="objects-container">
+
+    <div class="objects-header">
+      <% if !@alumni.empty? %>
+      <h2>Alumni</h2>
+      <% end %>
+    </div>
+
+    <% @alumni.each do |collaborator| %>
+      <div class="one-object margin-bottom margin-top">
+        <div class="one-content">
+          <div class="object-header">
+            <p><strong><%= "#{collaborator.first_name.capitalize} #{collaborator.last_name.capitalize}"%></strong> (<%= collaborator.position %>)</p>
+            <% if current_user && current_user.id == 1 %>
+              <%= link_to edit_collaborator_path(collaborator), class:"btn-icon" do %><i class="far fa-edit"></i>
+              <% end %>
+
+              <%= link_to collaborator_path(collaborator), method: :delete, data:{confirm: "Delete this collaborator?"}, class:"btn-icon" do %><i class="far fa-trash-alt"></i>
+            <% end %>
+          <% end %>
+          </div>
         </div>
       </div>
     <% end %>

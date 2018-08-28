@@ -4,16 +4,9 @@ skip_before_action :authenticate_user!, only: :index
 
   def index
     ordering = ["PI", "Lab Manager", "Post Doc", "PhD Student", "Research Assistant", "Master Student", "Undergraduate Student"]
-    @people = Collaborator.all.sort_by {|s| ordering.index(s.position) }
+    @people = Collaborator.where("alumni = ?", false).sort_by {|s| ordering.index(s.position) }
+    @alumni = Collaborator.where("alumni = ?", true).sort_by {|s| ordering.index(s.position) }
   end
-
-  arr = ["3R", "3C", "2C", "4C", "2L", "2R", "3L", "4R", "4L"] # Array to be sorted
-
-tmp_arr = ['L', 'C', 'R']
-
-arr.sort_by {|s| [s[0], tmp_arr.index(s[1])] }
-# => ["2L", "2C", "2R", "3L", "3C", "3R", "4L", "4C", "4R"]
-
 
   def edit
     # User that clicks has to be admin
@@ -70,6 +63,6 @@ arr.sort_by {|s| [s[0], tmp_arr.index(s[1])] }
   end
 
   def collaborator_params
-    params.require(:collaborator).permit(:first_name, :last_name, :position, :avatar, :description_one, :description_two, :photo)
+    params.require(:collaborator).permit(:first_name, :last_name, :position, :avatar, :description_one, :description_two, :photo, :alumni)
   end
 end
