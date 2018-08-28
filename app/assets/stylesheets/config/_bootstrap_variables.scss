@@ -31,7 +31,6 @@ $light-gray: #f6f6f6;
 $dark-gray: #333745;
 
 
-
 // General style
 $font-family-sans-serif:  $body-font;
 $headings-font-family:    $body-font;
@@ -78,5 +77,7 @@ $border-radius-base:  5px;
 
 // Override other variables below!
 .form-control {
+  background-color: white !important;
+  color: $dark-gray !important;
   // margin: 10px 0 0 0px;
 }
