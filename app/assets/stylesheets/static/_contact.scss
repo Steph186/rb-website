@@ -4,4 +4,10 @@
 
 .contact-image {
   height: 170px;
+  width: 210px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
 }

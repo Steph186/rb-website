@@ -9,7 +9,7 @@
   </div>
 
   <% # pages LINKS on the right for DESKTOP %>
-  <ul class="navbar-links d-none d-md-block d-xl-block">
+  <ul class="navbar-links hidden-xs hidden-sm">
     <%= link_to "Home", root_path, class: "navbar-item" %>
     <%= link_to "Research", researches_path, class: "navbar-item" %>
     <%= link_to "People", people_path, class: "navbar-item" %>
@@ -17,24 +17,22 @@
     <%= link_to "News", stories_path, class: "navbar-item" %>
     <%= link_to "Contact", contact_path, class: "navbar-item" %>
   </ul>
-</div>
-<!--
-<nav class="nav">
 
-  <div class="hamburger-container">
-    <ul class="hamburger">
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </div>
-
-  <ul id="menu">
-    <li><a href="#">One</a></li>
-    <li><a href="#">Two</a></li>
-    <li><a href="#">Three</a></li>
-    <li><a href="#">Four</a></li>
+  <% # avatar on phone %>
+  <!-- Dropdown appearing on mobile only -->
+  <!-- <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
   </ul>
-
-</nav>
- -->
+</div>
+  </div> -->
+</div>

@@ -5,7 +5,7 @@ skip_before_action :authenticate_user!, only: :index
   def index
     @researches = Research.where('category = ?', "Research topic")
     @fundings = Research.where('category = ?', "Funding")
-    @icons = ["fas fa-atlas icon","far fa-comments icon","fas fa-brain icon"]
+    @icons = {"Book"=>"fas fa-atlas icon", "Language"=>"fas fa-comments icon", "Brain"=>"fas fa-brain icon", "Poop"=>"fas fa-poop", "Cannabis"=>"fas fa-cannabis"}
   end
 
   def edit
@@ -63,6 +63,6 @@ skip_before_action :authenticate_user!, only: :index
   end
 
   def research_params
-    params.require(:research).permit(:title, :descr_one, :descr_two, :category)
+    params.require(:research).permit(:title, :descr_one, :descr_two, :category, :icon)
   end
 end

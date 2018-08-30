@@ -21,6 +21,11 @@
           <%= f.text_area :descr_two %>
         </div>
 
+        <div>
+          <%= f.label :icon %>
+          <%= f.select :icon, ["Book", "Language", "Brain", "Poop", "Cannabis"] %>
+        </div>
+
         <div class="text-center margin-bottom">
           <div><%= f.submit "Save", class: "btn btn-blue btn-big margin-top" %>
           </div>

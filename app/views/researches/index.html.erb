@@ -29,7 +29,11 @@
       <% if index.odd? %>
       <div class="one-research margin-top-big">
         <div class="big-icon margin-left-right">
-          <%= tag.p("", class: @icons[research.id-1]) %>
+          <% if @icons[research.icon].nil? %>
+            <%= tag.p("", class: "fas fa-globe") %>
+          <% else %>
+            <%= tag.p("", class: @icons[research.icon]) %>
+          <% end %>
         </div>
       <% else %>
       <div class="one-research margin-top-big">
@@ -52,17 +56,25 @@
         </div>
         <% if index.even? %>
           <div class="big-icon margin-left-right">
-            <%= tag.p("", class: @icons[research.id-1]) %>
+            <% if @icons[research.icon].nil? %>
+              <%= tag.p("", class: "fas fa-globe") %>
+            <% else %>
+              <%= tag.p("", class: @icons[research.icon]) %>
+            <% end %>
           </div>
         <% end %>
         </div>
     <% end %>
   </div>
 
+  <hr class="divider-stories padding-left-right">
 
+    <div class="objects-header">
+      <h2>Fundings</h2>
+    </div>
   <% @fundings.each do |fund| %>
+        <div class="one-research">
     <p><%= fund.title %></p>
-
     <% if current_user && current_user.id == 1 %>
       <%= link_to edit_research_path(fund), class:"btn-icon" do %><i class="far fa-edit"></i>
       <% end %>
@@ -70,6 +82,8 @@
       <%= link_to research_path(fund), method: :delete, data:{confirm: "Delete this research?"}, class:"btn-icon" do %><i class="far fa-trash-alt"></i>
       <% end %>
     <% end %>
+      </div>
+
 
     <p><%= fund.descr_one %></p>
     <p><%= fund.descr_two %></p>

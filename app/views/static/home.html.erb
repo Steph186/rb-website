@@ -11,8 +11,6 @@
   <% end %>
 </div>
 
-
-
 <div class="container">
   <div class="wrapper-white margin-top-big text-center">
     <h2>We do fundamental research in psychology and neuroscience to understand how the mind represents knowledge.</h2>
@@ -24,7 +22,11 @@
         <%=  link_to researches_path, class:"btn-icons" do %>
           <div class="icons-card">
             <div class="icon-content">
-              <%= tag.p("", class: @icons[research.id-1]) %>
+              <% if @icons[research.icon].nil? %>
+                <%= tag.p("", class: "fas fa-globe") %>
+              <% else %>
+                <%= tag.p("", class: @icons[research.icon]) %>
+              <% end %>
               <p><%= research.title %></p>
             </div>
           </div>
