@@ -27,7 +27,7 @@
 
     <% @publications.each do |publication| %>
       <div class="one-object publication-link">
-          <%= link_to publication.url do %>
+          <%= link_to publication.url, target: :_blank do %>
             <div class="object-content">
               <p><strong><%= "#{publication.authors} (#{publication.year.year}). "%></strong><%= publication.title %>
               <i><%= publication.journal %></i> [pdf]

@@ -12,8 +12,8 @@
       <div class="text-container">
         <div class="col-sm-4 col-md-4 margin-bottom padding-top padding-left-medium">
           <p>BottiniLab</p>
-          <p>Made by
-          <%= link_to "https://github.com/Steph186", class:"btn-icon-white" do %>Stephanie Cattoir <i class="fab fa-github"></i>
+          <p><i class="far fa-copyright"></i> 2018 - Made by
+          <%= link_to "https://github.com/Steph186", class:"btn-icon-white", target: :_blank do %>Stephanie Cattoir <i class="fab fa-github"></i>
           <% end %>
           </p>
           <% if !user_signed_in? %>
@@ -24,15 +24,15 @@
 
       <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0 margin-bottom padding-top">
         <div class="link-container">
-          <%= link_to "https://www.researchgate.net/profile/Roberto_Bottini" do %><i class="fab fa-researchgate"></i>
+          <%= link_to "https://www.researchgate.net/profile/Roberto_Bottini", target: :_blank do %><i class="fab fa-researchgate"></i>
           <% end %>
-          <%= link_to "#" do %><i class="fab fa-twitter"></i>
+          <%= link_to "#", target: :_blank do %><i class="fab fa-twitter"></i>
           <% end %>
-          <%= link_to "#" do %><i class="fab fa-slack-hash"></i>
+          <%= link_to "#", target: :_blank do %><i class="fab fa-slack-hash"></i>
           <% end %>
-          <%= link_to "#" do %><i class="fab fa-github"></i>
+          <%= link_to "#", target: :_blank do %><i class="fab fa-github"></i>
           <% end %>
-          <%= link_to "https://scholar.google.com/citations?user=_rV7XZgAAAAJ&hl=en" do %><i class="fas fa-graduation-cap"></i>
+          <%= link_to "https://scholar.google.com/citations?user=_rV7XZgAAAAJ&hl=en", target: :_blank do %><i class="fas fa-graduation-cap"></i>
           <% end %>
         </div>
       </div>

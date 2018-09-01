@@ -1,10 +1,18 @@
 #rb-logo {
   margin: 0 15px;
   a {
+    display: flex;
+    align-items: center;
     margin-left: 5px;
     color: white;
     font-size: 24px;
     text-decoration: none;
+  }
+  img {
+    height: 40px;
+  }
+  p {
+    margin: 0px 5px !important;
   }
 }
 
