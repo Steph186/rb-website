@@ -1,4 +1,5 @@
 // window.onscroll = () => {
-//   const nav = document.querySelector('#navbar-home');
-//   if(this.scrollY <= 5) nav.className = ''; else nav.className = 'scroll';
+//   let myNav = document.querySelector('.nav');
+//   console.log(myNav);
+//   if(this.scrollY <= 2) myNav.className = ''; else myNav.className = 'scroll';
 // };

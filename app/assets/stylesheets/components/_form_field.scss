@@ -4,6 +4,10 @@
 }
 
 // Research forms
+#research_category, #research_icon {
+  width: 100%;
+}
+
 #research_title {
   height: 60px;
   width: 100%;
@@ -15,12 +19,12 @@
 }
 
 // Pubication forms
-#publication_title, #publication_authors, #publication_journal, #publication_year {
+#publication_title, #publication_authors, #publication_journal, #publication_year, #publication_url {
   width: 100%;
 }
 
 // People forms
-#collaborator_first_name, #collaborator_last_name, #collaborator_position, #collaborator_avatar, #collaborator_photo, #collaborator_alumni {
+#collaborator_first_name, #collaborator_last_name, #collaborator_position, #collaborator_avatar, #collaborator_photo, #collaborator_alumni, #collaborator_current_position {
   width: 100%;
 }
 

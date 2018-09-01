@@ -5,7 +5,7 @@ skip_before_action :authenticate_user!, only: :index
   def index
     @researches = Research.where('category = ?', "Research topic")
     @fundings = Research.where('category = ?', "Funding")
-    @icons = {"Book"=>"fas fa-atlas icon", "Language"=>"fas fa-comments icon", "Brain"=>"fas fa-brain icon", "Poop"=>"fas fa-poop", "Cannabis"=>"fas fa-cannabis"}
+    @icons = {"Book"=>"fas fa-atlas icon", "Language"=>"fas fa-comments icon", "Brain"=>"fas fa-brain icon"}
   end
 
   def edit
