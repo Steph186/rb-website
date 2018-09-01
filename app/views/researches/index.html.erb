@@ -27,7 +27,7 @@
 
     <% @researches.each_with_index do |research, index| %>
       <% if index.odd? %>
-      <div class="one-research margin-top-big">
+      <div class="research-odd margin-top-medium">
         <div class="big-icon margin-left-right">
           <% if @icons[research.icon].nil? %>
             <%= tag.p("", class: "fas fa-globe") %>
@@ -36,7 +36,7 @@
           <% end %>
         </div>
       <% else %>
-      <div class="one-research margin-top-big">
+      <div class="research-even margin-top-medium">
       <% end %>
         <div>
           <div class="object-header">

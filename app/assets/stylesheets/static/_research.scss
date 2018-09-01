@@ -1,0 +1,22 @@
+.research-even {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.research-odd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.big-icon {
+  font-size: 100px;
+}
+
+
+@media screen and (min-width: 750px) {
+  .research-odd, .research-even {
+    flex-direction: row;
+  }
+}
