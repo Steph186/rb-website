@@ -1,16 +1,17 @@
-.collaborator-photo {
-  display: none;
-}
-
 .one-collaborator {
   margin-bottom: 20px;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
 }
 
 @media screen and (min-width: 750px) {
+  .one-collaborator {
+    flex-direction: row;
+    align-items: flex-start;
+  }
   .collaborator-photo {
-    display: block;
+    margin-right: 40px;
   }
 }

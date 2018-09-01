@@ -29,7 +29,7 @@
 
     <% @people.each do |collaborator| %>
       <div class="one-collaborator margin-bottom margin-top">
-        <div class="collaborator-photo margin-right">
+        <div class="collaborator-photo margin-bottom">
           <%= cl_image_tag collaborator.photo, height: 150, width: 150, crop: :fill %>
         </div>
         <div class="one-content">
