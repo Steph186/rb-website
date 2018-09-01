@@ -3,6 +3,7 @@
 }
 
 .contact-image {
+  display: none;
   height: 170px;
   width: 210px;
 }
@@ -10,4 +11,11 @@
 .contact-container {
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (min-width: 500px) {
+  .contact-image {
+  display: block;
+}
+
 }

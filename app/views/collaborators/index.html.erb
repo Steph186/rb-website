@@ -28,7 +28,10 @@
     </div>
 
     <% @people.each do |collaborator| %>
-      <div class="one-object margin-bottom margin-top">
+      <div class="one-collaborator margin-bottom margin-top">
+        <div class="collaborator-photo margin-right">
+          <%= cl_image_tag collaborator.photo, height: 150, width: 150, crop: :fill %>
+        </div>
         <div class="one-content">
           <div class="object-header">
             <p><strong><%= "#{collaborator.first_name.capitalize} #{collaborator.last_name.capitalize}"%></strong></p>
@@ -43,9 +46,6 @@
           <p class="margin-bottom"><%= collaborator.position %></p>
           <p class="margin-bottom"><%= collaborator.description_one %></p>
           <p class="margin-bottom"><%= collaborator.description_two %></p>
-        </div>
-        <div class="collaborator-photo margin-left">
-          <%= cl_image_tag collaborator.photo, height: 150, width: 150, crop: :fill %>
         </div>
       </div>
     <% end %>
