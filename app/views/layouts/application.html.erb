@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
     <!-- To enable Bootstrap responsiveness -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>RbWebsite</title>
     <!--  -->
@@ -13,8 +13,7 @@
 
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= stylesheet_pack_tag 'application' %>
-    <!-- for javascript located in assets -->
-    <%= javascript_include_tag 'application', defer: true %>
+    <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
   </head>
   <body>
     <% if user_signed_in? %>
@@ -23,7 +22,7 @@
     <%= render 'shared/navbar' %>
     <%= yield %>
     <%= render 'shared/footer' %>
-    <!-- for application.js located in app > javascript > packs -->
-    <%= javascript_pack_tag 'application', defer: true %>
+    <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
   </body>
 </html>
+</body>

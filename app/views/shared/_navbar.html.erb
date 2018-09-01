@@ -1,38 +1,69 @@
-<div id="navbar-home">
+<!-- <div id="navbar-home">
 
   <% # LOGO on the left, send to root page %>
   <div id="rb-logo">
-    <%= link_to root_path, target: "_self" do %>
+    <%#= link_to root_path, target: "_self" do %>
       <i class="far fa-dot-circle"></i>
       BottiniLab
-    <% end %>
+    <%# end %>
   </div>
 
   <% # pages LINKS on the right for DESKTOP %>
   <ul class="navbar-links hidden-xs hidden-sm">
-    <%= link_to "Home", root_path, class: "navbar-item" %>
-    <%= link_to "Research", researches_path, class: "navbar-item" %>
-    <%= link_to "People", people_path, class: "navbar-item" %>
-    <%= link_to "Publications", publications_path, class: "navbar-item"%>
-    <%= link_to "News", stories_path, class: "navbar-item" %>
-    <%= link_to "Contact", contact_path, class: "navbar-item" %>
+    <%#= link_to "Home", root_path, class: "navbar-item" %>
+    <%#= link_to "Research", researches_path, class: "navbar-item" %>
+    <%#= link_to "People", people_path, class: "navbar-item" %>
+    <%#= link_to "Publications", publications_path, class: "navbar-item"%>
+    <%#= link_to "News", stories_path, class: "navbar-item" %>
+    <%#= link_to "Contact", contact_path, class: "navbar-item" %>
   </ul>
 
   <% # avatar on phone %>
-  <!-- Dropdown appearing on mobile only -->
-  <!-- <div class="navbar-wagon-item hidden-md hidden-lg">
-    <div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Dropdown
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
+    <div class="navbar-item hidden-md hidden-lg navbar-phone">
+      <div class="dropdown">
+        <i class="fa fa-bars dropdown-toggle navbar-item navbar-link" data-toggle="dropdown"></i>
+
+        <ul id="dropdown-list" class="dropdown-menu dropdown-menu-right navbar-dropdown-menu">
+          <li class="text-center"><#%= link_to "Home", root_path, class: "navbar-item" %></li>
+          <li class="text-center"><#%= link_to "Research", researches_path, class: "navbar-item" %></li>
+          <li class="text-center"><%#= link_to "People", people_path, class: "navbar-item" %></li>
+          <li  class="text-center"><%#= link_to "Publications", publications_path, class: "navbar-item"%></li>
+          <li class="text-center"><%#= link_to "News", stories_path, class: "navbar-item" %></li>
+          <li class="text-center"><#%= link_to "Contact", contact_path, class: "navbar-item" %></li>
+        </ul>
+      </div>
+    </div>
+
 </div>
-  </div> -->
-</div>
+ -->
+
+
+<nav class="nav">
+  <div id="navbar-elements">
+    <% # LOGO on the left, send to root page %>
+    <div id="rb-logo">
+      <%= link_to root_path, target: "_self" do %>
+        <i class="far fa-dot-circle"></i>
+        BottiniLab
+      <% end %>
+    </div>
+
+    <% # hamburger ICON on the right %>
+    <div class="hamburger-container">
+      <ul class="hamburger">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <ul id="menu">
+      <li><%= link_to "Home", root_path, class: "navbar-item" %></li>
+      <li><%= link_to "Research", researches_path, class: "navbar-item" %></li>
+      <li><%= link_to "People", people_path, class: "navbar-item" %></li>
+      <li><%= link_to "Publications", publications_path, class: "navbar-item"%></li>
+      <li><%= link_to "News", stories_path, class: "navbar-item" %></li>
+      <li><%= link_to "Contact", contact_path, class: "navbar-item" %></li>
+    </ul>
+  </div>
+</nav>

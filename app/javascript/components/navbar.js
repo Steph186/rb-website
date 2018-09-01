@@ -1,30 +1,38 @@
 // $(document).ready(function() {
-//   //toggle menu
-//   $(".hamburger-container").click(function() {
-//     $("#menu").slideToggle();
-//   });
+  //toggle menu
+  let hamburgerMenu = document.querySelector(".hamburger-container")
+  let menu = document.querySelector("#menu")
+  let flexbox = document.querySelector("#navbar-elements")
+  let logo = document.querySelector("#rb-logo")
 
-//   //to fix issue that toggle adds style(hides) to nav
-//   $(window).resize(function() {
-//     if (window.innerWidth > 1024) {
-//       $("#menu").removeAttr("style");
-//     }
-//   });
+  let topBar = document.querySelector(".hamburger li:nth-child(1)");
+  let middleBar = document.querySelector(".hamburger li:nth-child(2)");
+  let bottomBar = document.querySelector(".hamburger li:nth-child(3)");
 
-//   //icon animation
-//   var topBar = $(".hamburger li:nth-child(1)"),
-//     middleBar = $(".hamburger li:nth-child(2)"),
-//     bottomBar = $(".hamburger li:nth-child(3)");
+  hamburgerMenu.addEventListener('click', function() {
+    console.log(hamburgerMenu)
 
-//   $(".hamburger-container").on("click", function() {
-//     if (middleBar.hasClass("rot-45deg")) {
-//       topBar.removeClass("rot45deg");
-//       middleBar.removeClass("rot-45deg");
-//       bottomBar.removeClass("hidden");
-//     } else {
-//       bottomBar.addClass("hidden");
-//       topBar.addClass("rot45deg");
-//       middleBar.addClass("rot-45deg");
-//     }
-//   });
-// });
+    if (middleBar.classList.contains("rot-45deg") === true) {
+      topBar.classList.remove("rot45deg");
+      middleBar.classList.remove("rot-45deg");
+      bottomBar.classList.remove("hidden");
+    } else {
+      bottomBar.classList.add("hidden");
+      topBar.classList.add("rot45deg");
+      middleBar.classList.add("rot-45deg");
+    }
+
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+      flexbox.style.display = "flex";
+      flexbox.style.justifyContent = "space-between";
+      flexbox.style.alignItems = "center";
+      logo.style.display = "block";
+    } else {
+      menu.style.display = "block";
+      flexbox.style.display = "block";
+      flexbox.style.justifyContent = "none";
+      flexbox.style.alignItems = "none";
+      logo.style.display = "none";
+    }
+  });
