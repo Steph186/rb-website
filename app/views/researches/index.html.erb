@@ -13,7 +13,7 @@
 </div>
 
 <div class="container">
-  <div class="objects-container margin-bottom-footer">
+  <div class="objects-container">
     <div class="objects-header">
       <h2>Research</h2>
       <% if current_user && current_user.id == 1 %>
@@ -71,22 +71,33 @@
 
     <div class="objects-header">
       <h2>Fundings</h2>
-    </div>
-  <% @fundings.each do |fund| %>
-        <div class="one-research">
-    <p><%= fund.title %></p>
-    <% if current_user && current_user.id == 1 %>
-      <%= link_to edit_research_path(fund), class:"btn-icon" do %><i class="far fa-edit"></i>
-      <% end %>
-
-      <%= link_to research_path(fund), method: :delete, data:{confirm: "Delete this research?"}, class:"btn-icon" do %><i class="far fa-trash-alt"></i>
-      <% end %>
-    <% end %>
+      <% if current_user && current_user.id == 1 %>
+      <div class="button-container">
+          <%= link_to new_research_path, class: "btn btn-big btn-pink" do %>
+            <i class="fas fa-plus"></i> Add a new funding
+          <% end %>
       </div>
+      <% end %>
+    </div>
+    <div class="objects-container margin-bottom-footer">
+      <div class="row">
+        <% @fundings.each do |fund| %>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="one-research">
+            <p><%= fund.title %></p>
+            <% if current_user && current_user.id == 1 %>
+              <%= link_to edit_research_path(fund), class:"btn-icon" do %><i class="far fa-edit"></i>
+              <% end %>
 
-
-    <p><%= fund.descr_one %></p>
-    <p><%= fund.descr_two %></p>
-  <% end %>
+              <%= link_to research_path(fund), method: :delete, data:{confirm: "Delete this research?"}, class:"btn-icon" do %><i class="far fa-trash-alt"></i>
+              <% end %>
+            <% end %>
+              </div>
+            <p><%= fund.descr_one %></p>
+            <p><%= fund.descr_two %></p>
+          </div>
+        <% end %>
+      </div>
+    </div>
 </div>
 </div>
