@@ -27,7 +27,7 @@
 
           <% @links.each do |link| %>
             <div class="one-link">
-              <%= link_to link.title do %>
+              <%= link_to link.title, class:"icon-footer" do %>
                 <% if @icons[link.icon].nil? %>
                   <%= tag.p("", class: "fas fa-globe") %>
                 <% else %>
@@ -36,11 +36,13 @@
               <% end %>
 
               <% if current_user && current_user.id == 1 %>
-                <%= link_to edit_research_path(link), class:"btn-icon" do %><i class="far fa-edit"></i>
-              <% end %>
+                <div class="edit-icon-footer">
+                  <%= link_to edit_research_path(link) do %><i class="far fa-edit"></i>
+                  <% end %>
 
-                <%= link_to research_path(link), method: :delete, data:{confirm: "Delete this research?"}, class:"btn-icon" do %><i class="far fa-trash-alt"></i>
-                <% end %>
+                  <%= link_to research_path(link), method: :delete, data:{confirm: "Delete this research?"} do %><i class="far fa-trash-alt"></i>
+                  <% end %>
+                </div>
               <% end %>
 
             <%# end one-link %>

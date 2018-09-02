@@ -5,18 +5,48 @@ footer {
   }
 }
 
+.edit-icon-footer {
+  display: flex;
+  flex-direction: column;
+  i {
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+  }
+
+  i:hover {
+  color: #c15b7f;
+  font-size: 12px;
+  }
+}
+
+.one-link {
+  display: flex;
+  align-items: center;
+}
+
+.icon-footer {
+  margin: 0px 5px;
+  p {
+    font-size: 28px;
+  }
+  p:hover {
+    color: lightgray;
+  }
+}
+
 .link-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   // padding: 0 30px;
-  i {
-    font-size: 20px;
-    color: white;
-  }
-  i:hover {
-    color: lightgray;
-  }
+  // i {
+  //   font-size: 20px;
+  //   color: white;
+  // }
+  // i:hover {
+  //   color: lightgray;
+  // }
 }
 
 .logo-img {
