@@ -5,11 +5,9 @@ skip_before_action :authenticate_user!, only: :index
   def index
     @researches = Research.where('category = ?', "Research topic")
     @fundings = Research.where('category = ?', "Funding")
-    # @icons = {"Book"=>"fas fa-atlas icon", "Language"=>"fas fa-comments icon", "Brain"=>"fas fa-brain icon"}
   end
 
   def edit
-    # User that clicks has to be admin
     if current_user.id == 1
     # go to edit view
     else
@@ -42,6 +40,7 @@ skip_before_action :authenticate_user!, only: :index
   def new
     if current_user.id == 1
       @research = Research.new
+      @research.category = params["category"]
     else
       redirect_to researches_path
     end

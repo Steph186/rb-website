@@ -9,16 +9,19 @@
           <%= f.select :category, ["Research topic", "Funding", "Footer link"] %>
         </div>
         <div>
-          <%= f.label :title, class:"footer_hide" %>
+          <%= f.label "Topic of research", class:"funding_hide footer_hide"  %>
+          <%= f.label "Funding name", class:"research_hide footer_hide"  %>
           <%= f.label "Link", class:"footer_show" %>
           <%= f.text_field :title %>
         </div>
         <div>
-          <%= f.label "Description 1 / Year funded", class:"footer_hide"  %>
+          <%= f.label "Description 1", class:"funding_hide footer_hide"  %>
+          <%= f.label "Year funded", class:"research_hide footer_hide"  %>
           <%= f.text_area :descr_one, class:"footer_hide" %>
         </div>
         <div>
-          <%= f.label "Description 2 / Topic + Winners", class:"footer_hide"  %>
+          <%= f.label "Description 2", class:"funding_hide footer_hide"  %>
+          <%= f.label "Topic + Awarded to", class:"research_hide footer_hide"  %>
           <%= f.text_area :descr_two, class:"footer_hide" %>
         </div>
 

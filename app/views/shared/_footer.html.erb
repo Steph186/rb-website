@@ -52,7 +52,7 @@
 
           <% if current_user && current_user.id == 1 %>
           <div class="button-container">
-              <%= link_to new_research_path, class: "btn btn-big btn-pink" do %>
+              <%= link_to new_research_path(category: "Footer link"), class: "btn btn-big btn-pink" do %>
                 <i class="fas fa-plus"></i>
               <% end %>
           </div>
