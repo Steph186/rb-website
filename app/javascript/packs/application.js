@@ -13,4 +13,8 @@ import 'plugins/flatpickr'
 import 'bootstrap';
 import 'components/navbar';
 
+import { initFormChanger } from 'components/research_form.js';
+
 console.log('Hello World from Webpacker')
+
+initFormChanger();

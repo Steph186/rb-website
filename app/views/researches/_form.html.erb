@@ -6,24 +6,25 @@
 
         <div>
           <%= f.label :category %>
-          <%= f.select :category, ["Research topic", "Funding"] %>
+          <%= f.select :category, ["Research topic", "Funding", "Footer link"] %>
         </div>
         <div>
-          <%= f.label :title %>
+          <%= f.label :title, class:"footer_hide" %>
+          <%= f.label "Link", class:"footer_show" %>
           <%= f.text_field :title %>
         </div>
         <div>
-          <%= f.label "Description 1 / Year funded" %>
-          <%= f.text_area :descr_one %>
+          <%= f.label "Description 1 / Year funded", class:"footer_hide"  %>
+          <%= f.text_area :descr_one, class:"footer_hide" %>
         </div>
         <div>
-          <%= f.label "Description 2 / Topic + Winners" %>
-          <%= f.text_area :descr_two %>
+          <%= f.label "Description 2 / Topic + Winners", class:"footer_hide"  %>
+          <%= f.text_area :descr_two, class:"footer_hide" %>
         </div>
 
         <div>
           <%= f.label :icon %>
-          <%= f.select :icon, ["Book", "Language", "Brain"] %>
+          <%= f.select :icon, ["Book", "Language", "Brain","Research Gate", "Twitter", "GitHub", "Google Scholar", "Slack"]%>
         </div>
 
         <div class="text-center margin-bottom">
