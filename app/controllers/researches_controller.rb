@@ -4,7 +4,7 @@ skip_before_action :authenticate_user!, only: :index
 
   def index
     @researches = Research.where('category = ?', "Research topic")
-    @fundings = Research.where('category = ?', "Funding")
+    @fundings = Research.where('category = ?', "Funding").order('descr_one')
   end
 
   def edit

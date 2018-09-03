@@ -83,7 +83,10 @@
       <div class="row">
         <% @fundings.each do |fund| %>
           <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="one-research">
+            <div class="one-research">
+              <% if !fund.icon.nil? && @icons[fund.icon].nil? %>
+                <%= image_tag asset_path(fund.icon), class:"contact-image margin-top" %>
+              <% end %>
             <p><%= fund.title %></p>
             <% if current_user && current_user.id == 1 %>
               <%= link_to edit_research_path(fund), class:"btn-icon" do %><i class="far fa-edit"></i>
