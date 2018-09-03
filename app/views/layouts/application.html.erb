@@ -21,7 +21,7 @@
     <% end %>
     <%= render 'shared/navbar' %>
     <%= yield %>
-    <%#= render 'shared/footer', links: @links  %>
+    <%= render 'shared/footer', links: @links  %>
     <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
   </body>
 </html>
