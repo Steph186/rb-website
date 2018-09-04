@@ -1,4 +1,5 @@
 function initFormChanger() {
+  // Update the form of research
   if (document.getElementById("research_category")) {
     let category = document.getElementById("research_category");
     let first_option = category.options[category.selectedIndex].value;
@@ -15,6 +16,23 @@ function initFormChanger() {
       let option = selected.options[selected.selectedIndex].value;
 
       hideShowAll(option, footer_hide, footer_show, research_hide, funding_hide)
+    });
+  };
+  // Update the form of collaborators
+  if (document.getElementById("collaborator_alumni")) {
+    let alumni = document.getElementById("collaborator_alumni");
+    let alumni_option = alumni.options[alumni.selectedIndex].value;
+
+    let alumni_hide = document.querySelectorAll(".alumni_hide");
+    let alumni_show = document.querySelectorAll(".alumni_show");
+
+    hideShowAlumni(alumni_option, alumni_hide, alumni_show);
+
+    alumni.addEventListener('click', function() {
+      let selected = document.getElementById("collaborator_alumni");
+      let option = selected.options[selected.selectedIndex].value;
+
+      hideShowAlumni(option, alumni_hide, alumni_show);
     });
   };
 }
@@ -45,5 +63,19 @@ function hideShowAll(option, footer_hide, footer_show, research_hide, funding_hi
     hide(research_hide);
   }
 }
+
+function hideShowAlumni(option, alumni_hide, alumni_show) {
+  if (option == "true") {
+    hide(alumni_hide);
+    show(alumni_show);
+    console.log("This is true");
+  } else if (option == "false") {
+    hide(alumni_show);
+    show(alumni_hide);
+    console.log("This is false");
+  }
+  console.log("This is over");
+}
+
 
 export { initFormChanger };

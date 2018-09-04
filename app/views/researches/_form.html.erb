@@ -4,33 +4,33 @@
       <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
       <div class="form-inputs padding-top">
 
-        <div>
+        <div class="col-sm-12">
           <%= f.label :category %>
           <%= f.select :category, ["Research topic", "Funding", "Footer link"] %>
         </div>
-        <div>
-          <%= f.label "Topic of research", class:"funding_hide footer_hide"  %>
-          <%= f.label "Funding name", class:"research_hide footer_hide"  %>
+        <div class="col-sm-12">
+          <%= f.label "Topic of research", class:"funding_hide footer_hide" %>
+          <%= f.label "Funding name", class:"research_hide footer_hide" %>
           <%= f.label "Link (needs \"http(s)://\" or link won't work)", class:"footer_show" %>
           <%= f.text_field :title %>
         </div>
-        <div>
+        <div class="col-sm-12">
           <%= f.label "Description 1", class:"funding_hide footer_hide"  %>
           <%= f.label "Year funded", class:"research_hide footer_hide"  %>
           <%= f.text_area :descr_one, class:"footer_hide" %>
-        </div>
-        <div>
+        </div class="col-sm-12">
+        <div class="col-sm-12">
           <%= f.label "Description 2", class:"funding_hide footer_hide"  %>
           <%= f.label "Topic + Awarded to", class:"research_hide footer_hide"  %>
           <%= f.text_area :descr_two, class:"footer_hide" %>
         </div>
 
-        <div>
+        <div class="col-sm-12">
           <%= f.label :icon %>
           <%= f.select :icon, ["Book", "Language", "Brain","Research Gate", "Twitter", "GitHub", "Google Scholar", "Slack", "ERC.jpg", "PRIN.jpg", "MCURIE.jpg"]%>
         </div>
 
-        <div class="text-center margin-bottom">
+        <div class="col-sm-12 text-center margin-bottom">
           <div><%= f.submit "Save", class: "btn btn-blue btn-big margin-top" %>
           </div>
         </div>
