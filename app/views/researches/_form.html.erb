@@ -10,7 +10,7 @@
         </div>
         <div class="col-xs-12 col-sm-6">
           <%= f.label :icon %>
-          <%= f.select :icon, ["Book", "Language", "Brain","Research Gate", "Twitter", "GitHub", "Google Scholar", "Slack", "ERC.jpg", "PRIN.jpg", "MCURIE.jpg"]%>
+          <%= f.select :icon, grouped_options_for_select(@icons_choices, selected_key = @research.icon) %>
         </div>
         <div class="col-sm-12">
           <%= f.label "Topic of research", class:"funding_hide footer_hide" %>

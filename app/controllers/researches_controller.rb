@@ -1,6 +1,7 @@
 class ResearchesController < ApplicationController
-skip_before_action :authenticate_user!, only: :index
+  skip_before_action :authenticate_user!, only: :index
   before_action :set_research, only: [:update, :destroy, :edit]
+  before_action :set_choices, only: [:edit, :new]
 
   def index
     @researches = Research.where('category = ?', "Research topic")
@@ -63,5 +64,13 @@ skip_before_action :authenticate_user!, only: :index
 
   def research_params
     params.require(:research).permit(:title, :descr_one, :descr_two, :category, :icon)
+  end
+
+  def set_choices
+    @icons_choices = {
+      "Research topic" => ["Book", "Language", "Brain"],
+      "Funding" =>["Research Gate", "Twitter", "GitHub", "Google Scholar", "Slack"],
+      "Footer link" => ["ERC.jpg", "PRIN.jpg", "MCURIE.jpg"]
+    }
   end
 end
