@@ -4,9 +4,13 @@
       <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
       <div class="form-inputs padding-top">
 
-        <div class="col-sm-12">
+        <div class="col-xs-12 col-sm-6">
           <%= f.label :category %>
           <%= f.select :category, ["Research topic", "Funding", "Footer link"] %>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <%= f.label :icon %>
+          <%= f.select :icon, ["Book", "Language", "Brain","Research Gate", "Twitter", "GitHub", "Google Scholar", "Slack", "ERC.jpg", "PRIN.jpg", "MCURIE.jpg"]%>
         </div>
         <div class="col-sm-12">
           <%= f.label "Topic of research", class:"funding_hide footer_hide" %>
@@ -24,12 +28,6 @@
           <%= f.label "Topic + Awarded to", class:"research_hide footer_hide"  %>
           <%= f.text_area :descr_two, class:"footer_hide" %>
         </div>
-
-        <div class="col-sm-12">
-          <%= f.label :icon %>
-          <%= f.select :icon, ["Book", "Language", "Brain","Research Gate", "Twitter", "GitHub", "Google Scholar", "Slack", "ERC.jpg", "PRIN.jpg", "MCURIE.jpg"]%>
-        </div>
-
         <div class="col-sm-12 text-center margin-bottom">
           <div><%= f.submit "Save", class: "btn btn-blue btn-big margin-top" %>
           </div>

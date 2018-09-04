@@ -68,13 +68,10 @@ function hideShowAlumni(option, alumni_hide, alumni_show) {
   if (option == "true") {
     hide(alumni_hide);
     show(alumni_show);
-    console.log("This is true");
   } else if (option == "false") {
     hide(alumni_show);
     show(alumni_hide);
-    console.log("This is false");
   }
-  console.log("This is over");
 }
 
 
