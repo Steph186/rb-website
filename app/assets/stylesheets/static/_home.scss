@@ -1,31 +1,31 @@
-// Specific CSS for your home-page
-.landing-page-content {
-  height: calc(100vh - 70px);
-  display: flex;
-  flex-direction: column;
-  // justify-content: center;
-}
+// // Specific CSS for your home-page
+// .landing-page-content {
+//   height: calc(100vh - 70px);
+//   display: flex;
+//   flex-direction: column;
+//   // justify-content: center;
+// }
 
-.outside-banner-page {
-  display: flex;
-  flex-direction: column;
-}
+// .outside-banner-page {
+//   display: flex;
+//   flex-direction: column;
+// }
 
-.icons-card {
-  margin-top: 20px;
-  font-size: 30px;
-  background: white;
-  // height: 200px;
-  padding: 40px 20px;
-  p {
-    padding-top: 10px;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  .icon {
-    font-size: 36px;
-  }
-}
+// .icons-card {
+//   margin-top: 20px;
+//   font-size: 30px;
+//   background: white;
+//   // height: 200px;
+//   padding: 40px 20px;
+//   p {
+//     padding-top: 10px;
+//     font-size: 18px;
+//     font-weight: bold;
+//   }
+//   .icon {
+//     font-size: 36px;
+//   }
+// }
 
 .wrapper-white {
   background-color: white;
@@ -43,21 +43,21 @@
   margin-top: 50px;
 }
 
-.icons-card:hover {
-  .icon-content {
-    p {
-      text-decoration: underline solid white;
-      color: #47608c;
-    }
-  }
-}
+// .icons-card:hover {
+//   .icon-content {
+//     p {
+//       text-decoration: underline solid white;
+//       color: #47608c;
+//     }
+//   }
+// }
 
-.icon-content {
-  p {
-    color:black;
-    margin-top: 0px;
-    padding-top: 0px;
-    font-size: 22px;
-  }
-}
+// .icon-content {
+//   p {
+//     color:black;
+//     margin-top: 0px;
+//     padding-top: 0px;
+//     font-size: 22px;
+//   }
+// }
 
