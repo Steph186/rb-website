@@ -11,10 +11,12 @@
 // layout file, like app/views/layouts/application.html.erb
 import 'plugins/flatpickr'
 import 'bootstrap';
-import 'components/navbar';
-
+import { initResponsiveNavbar } from 'components/navbar.js';
 import { initFormChanger } from 'components/research_form.js';
+import { initUpdateNavbarOnScroll } from 'components/navbar_scroll.js';
 
 console.log('Hello World from Webpacker')
 
+initResponsiveNavbar();
 initFormChanger();
+initUpdateNavbarOnScroll();

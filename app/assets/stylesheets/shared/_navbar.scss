@@ -22,10 +22,6 @@
   padding: 0;
 }
 
-body {
-  font-family: "Montserrat";
-  background-color: #fff;
-}
 body ul li {
   list-style-type: none;
 }
@@ -36,12 +32,14 @@ body ul li {
   position: fixed;
   z-index: 10;
   clear: both;
+  font-family: "Montserrat";
 }
 
 ul#menu {
   display: none;
   margin-bottom: 0px;
 }
+
 ul#menu li a {
   width: 100%;
   display: block;
@@ -60,20 +58,6 @@ ul#menu a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-@media screen and (min-width: 1024px) {
-  .hamburger-container {
-    display: none;
-  }
-
-  .nav ul#menu {
-    display: inline;
-  }
-  .nav ul#menu li {
-    display: inline-block;
-    margin-right: -5px;
-  }
 }
 
 ul.hamburger li {
@@ -119,3 +103,44 @@ ul.hamburger li:nth-child(3) {
 }
 
 
+@media screen and (min-width: 1024px) {
+  .hamburger-container {
+    display: none;
+  }
+
+  .nav ul#menu {
+    display: inline;
+  }
+  .nav ul#menu li {
+    display: inline-block;
+    margin-right: -5px;
+  }
+
+  // blue navbar on phone becomes transparent on big screens
+  .nav {
+    background-color: transparent;
+  }
+
+  ul#menu li a {
+    background-color: transparent;
+    border-bottom: 3px solid transparent;
+    font-size: 1.1em;
+    padding: 0.8em 1.4em;
+  }
+
+  ul#menu a:hover {
+    color: lightgray;
+    background-color: transparent;
+    border-bottom: 3px solid lightgray;
+  }
+}
+
+
+.navbar-blue {
+  .nav {
+    background-color: #45608d;
+  }
+  ul#menu a:hover {
+    background-color: #45608d;
+  }
+}
