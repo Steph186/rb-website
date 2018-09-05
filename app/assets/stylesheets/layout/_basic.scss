@@ -1,10 +1,33 @@
-h1, h2, h3, p {
+h1 {
   margin: 0px !important;
+  font-size: 2em;
 }
+
+h2 {
+  margin: 0px !important;
+  font-size: 1.3em;
+}
+
+
+h3 {
+  margin: 0px !important;
+  font-size: 1.2em;
+}
+
+p {
+  margin: 0px !important;
+  font-size: 1.1em;
+}
+
 
 .margin-top {
   margin-top: 20px !important;
 }
+
+.margin-top-small {
+  margin-top: 10px !important;
+}
+
 
 .margin-left {
   margin-left: 40px !important;

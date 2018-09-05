@@ -5,11 +5,11 @@
     align-items: center;
     margin-left: 5px;
     color: white;
-    font-size: 24px;
+    font-size: 1.1em;
     text-decoration: none;
   }
   img {
-    height: 40px;
+    height: 30px;
   }
   p {
     margin: 0px 5px !important;
@@ -27,7 +27,7 @@ body ul li {
 }
 
 .nav {
-  background-color: #45608d;
+  background-color: transparent;
   width: 100%;
   position: fixed;
   z-index: 10;
@@ -46,7 +46,7 @@ ul#menu li a {
   background-color: #45608d;
   color: #fff;
   font-size: 1em;
-  padding: 1.2em 1.6em;
+  padding: 1em 1.2em;
   transition: background 0.2s;
   text-decoration: none;
 }
@@ -102,8 +102,16 @@ ul.hamburger li:nth-child(3) {
   float: right;
 }
 
+.navbar-blue {
+  .nav {
+    background-color: #45608d;
+  }
+  ul#menu a:hover {
+    background-color: #45608d;
+  }
+}
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .hamburger-container {
     display: none;
   }
@@ -115,19 +123,16 @@ ul.hamburger li:nth-child(3) {
     display: inline-block;
     margin-right: -5px;
   }
-
   // blue navbar on phone becomes transparent on big screens
   .nav {
     background-color: transparent;
   }
-
   ul#menu li a {
     background-color: transparent;
     border-bottom: 3px solid transparent;
-    font-size: 1.1em;
-    padding: 1em 1.4em;
+    font-size: 1em;
+    padding: 1em 1.2em;
   }
-
   ul#menu a:hover {
     color: lightgray;
     background-color: transparent;
@@ -136,11 +141,16 @@ ul.hamburger li:nth-child(3) {
 }
 
 
-.navbar-blue {
-  .nav {
-    background-color: #45608d;
+@media screen and (min-width: 900px) {
+
+  #rb-logo {
+    img {
+      height: 40px;
+    }
   }
-  ul#menu a:hover {
-    background-color: #45608d;
+
+  ul#menu li a {
+    font-size: 1.1em;
+    padding: 1em 1.4em;
   }
 }

@@ -1,22 +1,10 @@
-.research-even {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
+.icon {
+  font-size: 40px;
 }
 
-.research-odd {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.funding-image {
+  height: 170px;
+  width: 210px;
+  object-fit: contain;
 }
 
-.big-icon {
-  font-size: 100px;
-}
-
-
-@media screen and (min-width: 750px) {
-  .research-odd, .research-even {
-    flex-direction: row;
-  }
-}
