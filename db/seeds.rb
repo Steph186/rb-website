@@ -194,7 +194,8 @@ end
 puts "Creating pictures"
 
 url = "https://www.pinterest.ie/pin/473089135826402471/"
-picture = Picture.new(page: "Research")
+picture = Picture.new(page: "We do fundamental research in psychology and neuroscience to understand how
+the mind represents knowledge.")
 # picture.remote_photo_url = url
 picture.save
 
