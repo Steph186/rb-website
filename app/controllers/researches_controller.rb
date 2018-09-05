@@ -63,7 +63,7 @@ class ResearchesController < ApplicationController
   end
 
   def research_params
-    params.require(:research).permit(:title, :descr_one, :descr_two, :category, :icon)
+    params.require(:research).permit(:title, :descr_one, :descr_two, :descr_three, :category, :icon)
   end
 
   def set_choices

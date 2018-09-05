@@ -50,8 +50,9 @@
               <%= link_to research_path(research), method: :delete, data:{confirm: "Delete this research?"}, class:"btn-icon" do %><i class="far fa-trash-alt"></i>
               <% end %>
             <% end %>
-          <p><%= research.descr_one %></p>
+          <p><i><%= research.descr_one %></p></i>
           <p><%= research.descr_two %></p>
+          <p><%= research.descr_three %></p>
         </div>
       </div>
     </div>

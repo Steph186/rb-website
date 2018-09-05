@@ -19,7 +19,7 @@
           <%= f.text_field :title %>
         </div>
         <div class="col-sm-12">
-          <%= f.label "Description 1", class:"funding_hide footer_hide"  %>
+          <%= f.label "Description 1 - Italic", class:"funding_hide footer_hide"  %>
           <%= f.label "Year funded", class:"research_hide footer_hide"  %>
           <%= f.text_area :descr_one, class:"footer_hide" %>
         </div class="col-sm-12">
@@ -27,6 +27,11 @@
           <%= f.label "Description 2", class:"funding_hide footer_hide"  %>
           <%= f.label "Topic + Awarded to", class:"research_hide footer_hide"  %>
           <%= f.text_area :descr_two, class:"footer_hide" %>
+        </div>
+        <div class="col-sm-12">
+          <%= f.label "Description 3", class:"funding_hide footer_hide"  %>
+          <%= f.label "Extra field", class:"research_hide footer_hide"  %>
+          <%= f.text_area :descr_three, class:"footer_hide" %>
         </div>
         <div class="col-sm-12 text-center margin-bottom">
           <div><%= f.submit "Save", class: "btn btn-blue btn-big margin-top" %>
