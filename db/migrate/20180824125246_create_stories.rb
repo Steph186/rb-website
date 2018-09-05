@@ -3,6 +3,7 @@ class CreateStories < ActiveRecord::Migration[5.2]
     create_table :stories do |t|
       t.string :title
       t.text :content
+      t.string :photo
 
       t.timestamps
     end

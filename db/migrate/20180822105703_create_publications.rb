@@ -5,6 +5,7 @@ class CreatePublications < ActiveRecord::Migration[5.2]
       t.datetime :year
       t.string :title
       t.string :journal
+      t.string :url
 
       t.timestamps
     end

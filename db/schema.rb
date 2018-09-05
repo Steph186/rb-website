@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_05_110945) do
+ActiveRecord::Schema.define(version: 2018_08_24_125246) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,18 +22,18 @@ ActiveRecord::Schema.define(version: 2018_09_05_110945) do
     t.string "avatar"
     t.text "description_one"
     t.text "description_two"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.string "photo"
     t.boolean "alumni", default: false, null: false
     t.string "current_position"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "pictures", force: :cascade do |t|
     t.string "page"
+    t.string "photo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "photo"
   end
 
   create_table "publications", force: :cascade do |t|
@@ -41,28 +41,28 @@ ActiveRecord::Schema.define(version: 2018_09_05_110945) do
     t.datetime "year"
     t.string "title"
     t.string "journal"
+    t.string "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "url"
   end
 
   create_table "researches", force: :cascade do |t|
     t.string "title"
     t.text "descr_one"
     t.text "descr_two"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.text "descr_three"
     t.string "category"
     t.string "icon"
-    t.text "descr_three"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "stories", force: :cascade do |t|
     t.string "title"
     t.text "content"
+    t.string "photo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "photo"
   end
 
   create_table "users", force: :cascade do |t|
