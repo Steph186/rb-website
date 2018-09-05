@@ -5,6 +5,7 @@ before_action :set_story, only: [:update, :destroy, :edit]
   def index
     @stories = Story.all.order('updated_at DESC')
     @first_story = Story.first
+    @image = !Picture.fourth.photo.file.nil? ? Picture.fourth.photo : "https://picsum.photos/200/300"
   end
 
   def edit

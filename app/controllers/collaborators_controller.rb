@@ -6,6 +6,7 @@ skip_before_action :authenticate_user!, only: :index
     ordering = ["PI", "Lab Manager", "Post Doc", "PhD Student", "Research Assistant", "Master Student", "Undergraduate Student"]
     @people = Collaborator.where("alumni = ?", false).sort_by {|s| ordering.index(s.position) }
     @alumni = Collaborator.where("alumni = ?", true).sort_by {|s| ordering.index(s.position) }
+    @image = !Picture.second.photo.file.nil? ? Picture.second.photo : "https://picsum.photos/200/300"
   end
 
   def edit

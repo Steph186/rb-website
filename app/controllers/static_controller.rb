@@ -6,6 +6,7 @@ class StaticController < ApplicationController
   end
 
   def contact
+    @image = !Picture.last.photo.file.nil? ? Picture.last.photo : "https://picsum.photos/200/300"
   end
 
   def news

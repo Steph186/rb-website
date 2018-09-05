@@ -4,6 +4,7 @@ before_action :set_publication, only: [:update, :destroy, :edit]
 
   def index
     @publications = Publication.all.order('year DESC')
+    @image = !Picture.third.photo.file.nil? ? Picture.third.photo : "https://picsum.photos/200/300"
   end
 
   def edit
