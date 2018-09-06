@@ -4,7 +4,7 @@ class ResearchesController < ApplicationController
   before_action :set_choices, only: [:edit, :new]
 
   def index
-    @researches = Research.where('category = ?', "Research topic")
+    @researches = Research.where('category = ?', "Research topic").order('icon')
     @fundings = Research.where('category = ?', "Funding").order('descr_one')
     @image = !Picture.first.photo.file.nil? ? Picture.first.photo : "https://picsum.photos/200/300"
   end
@@ -69,9 +69,9 @@ class ResearchesController < ApplicationController
 
   def set_choices
     @icons_choices = {
-      "Research topic" => ["Book", "Language", "Brain"],
-      "Funding" =>["Research Gate", "Twitter", "GitHub", "Google Scholar", "Slack"],
-      "Footer link" => ["ERC.jpg", "PRIN.jpg", "MCURIE.jpg"]
+      "Research topic" => ["1 Book", "2 Language", "3 Brain"],
+      "Funding" =>["ERC.jpg", "PRIN.jpg", "MCURIE.jpg"],
+      "Footer link" => ["Research Gate", "Twitter", "GitHub", "Google Scholar", "Slack"]
     }
   end
 end
