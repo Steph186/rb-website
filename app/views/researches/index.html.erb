@@ -19,11 +19,12 @@
   <div class="objects-container">
 
     <div class="objects-header">
+      <div class="empty"></div>
       <% if current_user && current_user.id == 1 %>
         <div class="button-container">
-            <%= link_to new_research_path(category: "Research topic"), class: "btn btn-big btn-pink" do %>
-              <i class="fas fa-plus"></i> Add a new research
-            <% end %>
+          <%= link_to new_research_path(category: "Research topic"), class: "btn btn-big btn-pink" do %>
+            <i class="fas fa-plus"></i> Add a new research
+          <% end %>
         </div>
       <% end %>
     </div>

@@ -29,9 +29,15 @@
       <div class="one-object publication-link">
           <%= link_to publication.url, target: :_blank do %>
             <div class="object-content">
-              <p><strong><%= "#{publication.authors} (#{publication.year.year}). "%></strong><%= publication.title %>
+              <% if !publication.year.nil? %>
+              <p><%= "#{publication.authors} (#{publication.year.year}). "%><strong><%= publication.title %></strong>
               <i><%= publication.journal %></i> [pdf]
               </p>
+            <% else %>
+              <p><%= publication.authors %> (<i>under review</i>). <strong><%= publication.title %></strong>
+              <i><%= publication.journal %></i> [pdf]
+              </p>
+            <% end %>
             </div>
           <% end %>
           <div class="icon-container">
