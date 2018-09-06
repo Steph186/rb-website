@@ -19,11 +19,11 @@
   <div class="objects-container">
     <div class="objects-header">
       <% if current_user && current_user.id == 1 %>
-      <div class="button-container">
-          <%= link_to new_research_path(category: "Research topic"), class: "btn btn-big btn-pink" do %>
-            <i class="fas fa-plus"></i> Add a new research
-          <% end %>
-      </div>
+        <div class="button-container">
+            <%= link_to new_research_path(category: "Research topic"), class: "btn btn-big btn-pink" do %>
+              <i class="fas fa-plus"></i> Add a new research
+            <% end %>
+        </div>
       <% end %>
     </div>
 
@@ -33,27 +33,29 @@
 
 
       <div class="margin-top-medium">
-        <div class="icon text-center margin-top-medium margin-bottom">
+        <div class="text-center margin-top-medium margin-bottom">
           <% if @icons[research.icon].nil? %>
-            <%= tag.p("", class: "fas fa-globe") %>
+            <%= tag.p("", id:"icon", class: "fas fa-globe") %>
           <% else %>
-            <%= tag.p("", class: @icons[research.icon]) %>
+            <%= tag.p("", id:"icon",class: @icons[research.icon]) %>
+          <% end %>
+
+          <% if current_user && current_user.id == 1 %>
+            <%= link_to edit_research_path(research), class:"btn-icon" do %><i class="far fa-edit"></i>
+            <% end %>
+
+            <%= link_to research_path(research), method: :delete, data:{confirm: "Delete this research?"}, class:"btn-icon" do %><i class="far fa-trash-alt"></i>
+            <% end %>
           <% end %>
         </div>
+
         <div>
-            <h2 class="text-center margin-bottom-medium"><%= research.title %></h2>
-
-            <% if current_user && current_user.id == 1 %>
-              <%= link_to edit_research_path(research), class:"btn-icon" do %><i class="far fa-edit"></i>
-              <% end %>
-
-              <%= link_to research_path(research), method: :delete, data:{confirm: "Delete this research?"}, class:"btn-icon" do %><i class="far fa-trash-alt"></i>
-              <% end %>
-            <% end %>
+          <h2 class="text-center margin-bottom-medium"><%= research.title %></h2>
           <p><i><%= research.descr_one %></p></i>
           <p class="margin-top"><%= research.descr_two %></p>
           <p class="margin-top"><%= research.descr_three %></p>
         </div>
+
       </div>
     </div>
     <% end %> <!-- end of researches loop -->
@@ -81,21 +83,23 @@
               <% if !fund.icon.nil? && @icons[fund.icon].nil? %>
                 <%= image_tag asset_path(fund.icon), class:"funding-image margin-top margin-bottom" %>
               <% end %>
-            <h3 class="margin-top"><%= fund.title %></h3>
-            <% if current_user && current_user.id == 1 %>
-              <%= link_to edit_research_path(fund), class:"btn-icon" do %><i class="far fa-edit"></i>
-              <% end %>
+              <h3 class="margin-top"><%= fund.title %></h3>
+              <% if current_user && current_user.id == 1 %>
+                <%= link_to edit_research_path(fund), class:"btn-icon" do %><i class="far fa-edit"></i>
+                <% end %>
 
-              <%= link_to research_path(fund), method: :delete, data:{confirm: "Delete this research?"}, class:"btn-icon" do %><i class="far fa-trash-alt"></i>
-              <% end %>
-            <% end %>
-              </div>
+                <%= link_to research_path(fund), method: :delete, data:{confirm: "Delete this research?"}, class:"btn-icon" do %><i class="far fa-trash-alt"></i>
+                  <% end %>
+                <% end %>
+            </div>
             <p class="margin-top-small"><%= fund.descr_one %></p>
             <p class="margin-top-small"><%= fund.descr_two %></p>
           </div>
         <% end %>
-      </div>
-    </div> <!-- end of fundings loop -->
+      </div> <!-- end of fundings loop -->
+    </div>
+
+
 </div>
 
 </div> <!-- end of container -->
