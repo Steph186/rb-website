@@ -5,8 +5,16 @@
 
 .contact-image {
   display: none;
-  height: 170px;
-  width: 210px;
+  height: 190px;
+  width: 230px;
+  object-fit: cover;
+}
+
+.one-block {
+  display: flex;
+  .contact-icon {
+    padding: 5px 20px;
+  }
 }
 
 .contact-container {
