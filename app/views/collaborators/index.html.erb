@@ -5,7 +5,7 @@
   </div>
   <% if current_user && current_user.id == 1 %>
     <p class="edit_picture_icon">
-    <%= link_to edit_picture_path(Picture.third) do %><i class="far fa-edit"></i>
+    <%= link_to edit_picture_path(Picture.second) do %><i class="far fa-edit"></i>
       <% end %>
     </p>
   <% end %>
