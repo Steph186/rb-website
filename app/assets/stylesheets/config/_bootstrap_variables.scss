@@ -7,18 +7,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
 
 // Define fonts for body and headers
-$headers-font: "Montserrat", "sans-serif";
+$headers-font: "Ubuntu", "sans-serif";
 $body-font: "Ubuntu", "sans-serif";
-
-
-// MAIN APP colors
-$blue: #276c82;
-// $light-gray: #7f7f7f;
-// $dark-gray: #363636;
-// Secondary colors
-
-
-// Define variables for your color scheme
 
 // For example:
 $red: #FF5D5D;
@@ -30,10 +20,9 @@ $gray: #bdbdbd;
 $light-gray: #f6f6f6;
 $dark-gray: #333745;
 
-
 // General style
 $font-family-sans-serif:  $body-font;
-$headings-font-family:    $body-font;
+$headings-font-family:    $headers-font;
 $body-bg:                 white;
 $font-size-base:          18px;
 
