@@ -6,20 +6,32 @@
 
         <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
           <%= f.error_notification %>
-          <div class="form-inputs padding-top">
-            <%= f.input :email, required: true, autofocus: true, label: "Enter your email adress" %>
-          </div>
 
-          <div class="form-actions padding-left-right">
-            <div class="form-button-container">
-              <%= f.button :submit, "Reset password", class: "btn-blue btn-big" %>
+            <div class="form-inputs padding-top">
+              <div class="col-sm-12">
+                <%= f.input :email, required: true, autofocus: true, label: "Enter your email adress" %>
+              </div>
+
+              <div class="col-sm-12 text-center margin-bottom">
+                <div><%= f.submit "Reset Password", class: "btn-blue btn-big margin-top margin-bottom" %>
+                </div>
+              </div>
+
+              <div class="text-center">
+                <%= link_to "Go Back to Log In", new_user_session_path %>
+              </div>
+
+              <hr class="divider padding-left-right">
+
+              <div class="text-center">
+                <%= link_to "Return to website", root_path %>
+              </div>
             </div>
-            <hr class="divider padding-left-right">
-            <div>
-              <%= link_to "Return to main page", root_path %>
-            </div>
-          </div>
+
         <% end %>
       </div>
   </div>
 </div>
+
+
+

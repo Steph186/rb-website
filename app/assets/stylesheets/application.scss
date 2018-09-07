@@ -18,15 +18,16 @@
 @import "config/font";
 @import "config/bootstrap_variables";
 
-// // External libraries
-@import "bootstrap-sprockets";
-@import "bootstrap";
-@import "font-awesome-sprockets";
-@import "font-awesome";
-
 // CSS Partials
 @import "components/index";
 @import "devise/index";
 @import "layout/index";
 @import "shared/index";
 @import "static/index";
+
+// // External libraries
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+

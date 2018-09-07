@@ -2,21 +2,21 @@
     <%= simple_form_for(@story) do |f| %>
       <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
       <div class="form-inputs padding-top">
-        <div>
+        <div class="col-sm-12">
           <%= f.label :title %>
           <%= f.text_field :title %>
         </div>
-        <div>
+        <div class="col-sm-12">
           <%= f.label :content %>
           <%= f.text_area :content %>
         </div>
-        <div>
+        <div class="col-sm-12">
           <%= f.input :photo %>
           <%= f.input :photo_cache, as: :hidden %>
         </div>
 
-        <div class="text-center margin-bottom">
-          <div><%= f.submit "Save", class: "btn btn-blue btn-big margin-top" %>
+        <div class="col-sm-12 text-center margin-bottom">
+          <div><%= f.submit "Save", class: "btn-blue btn-big-wide margin-top" %>
           </div>
         </div>
         <hr class="divider padding-left-right">
