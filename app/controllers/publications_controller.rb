@@ -62,6 +62,6 @@ before_action :set_publication, only: [:update, :destroy, :edit]
   end
 
   def publication_params
-    params.require(:publication).permit(:authors, :year, :title, :journal)
+    params.require(:publication).permit(:authors, :year, :title, :journal, :url)
   end
 end
