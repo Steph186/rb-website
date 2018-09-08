@@ -32,7 +32,7 @@
     <div class="row">
       <% @researches.each_with_index do |research, index| %>
         <div class="col-xs-12 col-md-4 padding-left-right">
-          <div class="margin-top-medium">
+          <div class="icon-card margin-top-medium">
 
             <div class="text-center margin-top-medium margin-bottom">
               <% if @icons[research.icon].nil? %>
@@ -50,14 +50,14 @@
               <% end %>
             </div>
 
-            <div class="">
               <h2 class="text-center margin-bottom-medium"><%= research.title %></h2>
+          </div>
+            <div class="padding-left-right-small">
               <p><i><%= research.descr_one %></i></p>
               <p class="margin-top"><%= research.descr_two %></p>
               <p class="margin-top"><%= research.descr_three %></p>
             </div>
 
-          </div>
         </div>
       <% end %> <!-- end of researches loop -->
     </div>  <!-- end of row -->

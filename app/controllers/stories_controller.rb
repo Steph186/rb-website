@@ -13,16 +13,16 @@ before_action :set_story, only: [:update, :destroy, :edit]
     if current_user.id == 1
     # go to edit view
     else
-      redirect_to stories_path
+      redirect_to news_path
     end
   end
 
   def update
     if current_user.id == 1
       @story.update(story_params)
-      redirect_to stories_path
+      redirect_to news_path
     else
-      redirect_to stories_path
+      redirect_to news_path
     end
   end
 
@@ -30,12 +30,12 @@ before_action :set_story, only: [:update, :destroy, :edit]
     if current_user.id == 1
       @story = Story.new(story_params)
       if @story.save
-        redirect_to stories_path
+        redirect_to news_path
       else
         render :new
       end
     else
-      redirect_to stories_path
+      redirect_to news_path
     end
   end
 
@@ -43,16 +43,16 @@ before_action :set_story, only: [:update, :destroy, :edit]
     if current_user.id == 1
       @story = Story.new
     else
-      redirect_to stories_path
+      redirect_to news_path
     end
   end
 
   def destroy
     if current_user.id == 1
       @story.destroy
-      redirect_to stories_path
+      redirect_to news_path
     else
-      redirect_to stories_path
+      redirect_to news_path
     end
   end
 
