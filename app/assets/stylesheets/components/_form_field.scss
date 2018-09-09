@@ -56,7 +56,12 @@
 }
 
 //
-#picture_page, #picture_photo, #picture_focus {
+#picture_page, #picture_photo, #picture_focus_picture {
+  width: 100%;
+}
+
+// labs forms
+#lab_title, #lab_university, #lab_street, #lab_city, #lab_zipcode, #lab_country, #lab_phone, #lab_email {
   width: 100%;
 }
 

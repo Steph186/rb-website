@@ -1,0 +1,48 @@
+<div class="padding-all">
+    <%= simple_form_for(@lab) do |f| %>
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      <div class="form-inputs padding-top">
+        <div class="col-sm-12">
+          <%= f.label "Name of center" %>
+          <%= f.text_field :title %>
+        </div>
+        <div class="col-sm-12">
+          <%= f.label :university %>
+          <%= f.text_field :university %>
+        </div>
+        <div class="col-sm-12">
+          <%= f.label :street, :autocomplete => :off %>
+          <%= f.text_field :street, :autocomplete => :off %>
+        </div>
+        <div class="col-sm-4">
+          <%= f.label :zipcode %>
+          <%= f.text_field :zipcode %>
+        </div>
+        <div class="col-sm-8">
+          <%= f.label :city %>
+          <%= f.text_field :city %>
+        </div>
+        <div class="col-sm-12">
+          <%= f.label :country %>
+          <%= f.text_field :country %>
+        </div>
+        <div class="col-sm-12">
+          <%= f.label :phone %>
+          <%= f.text_field :phone %>
+        </div>
+        <div class="col-sm-12">
+          <%= f.label :email %>
+          <%= f.select :email, ["unitn"] %>
+        </div>
+
+        <div class="col-sm-12 text-center margin-bottom">
+          <div><%= f.submit "Save", class: "btn-blue btn-big-wide margin-top" %>
+          </div>
+        </div>
+        <hr class="divider padding-left-right">
+        <div class="text-center">
+          <%= link_to "Go Back", contact_path %>
+        </div>
+      </div>
+    <% end %>
+</div>

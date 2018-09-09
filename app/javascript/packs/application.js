@@ -23,3 +23,6 @@ initUpdateNavbarOnScroll();
 
 import { initMap } from 'packs/map.js';
 initMap();
+
+import { autocomplete } from 'components/autocomplete.js';
+autocomplete();
