@@ -32,7 +32,10 @@ ActiveRecord::Schema.define(version: 2018_09_09_105738) do
   create_table "labs", force: :cascade do |t|
     t.string "title"
     t.string "university"
-    t.string "adress"
+    t.string "street"
+    t.string "zipcode"
+    t.string "city"
+    t.string "country"
     t.string "phone"
     t.string "email"
     t.datetime "created_at", null: false

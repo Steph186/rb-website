@@ -4,13 +4,14 @@ class LabsController < ApplicationController
 
   def index
     @labs = Lab.all
-    results = Geocoder.search("Center for Mind/Brain Sciences, University of Trento, Mattarello, Trente")
-    @markers = [
+    # results = Geocoder.search("Center for Mind/Brain Sciences, University of Trento, Mattarello, Trente")
+    @markers = @labs.map do |lab|
       {
-        lat: results.first.coordinates[0],
-        lng: results.first.coordinates[1]#,
+        lat: lab.latitude,
+        lng: lab.longitude#,
+        # infoWindow: { content: render_to_string(partial: "/flats/map_box", locals: { flat: flat }) }
       }
-    ]
+    end
   end
 
   def edit
@@ -68,6 +69,6 @@ class LabsController < ApplicationController
   end
 
   def lab_params
-    params.require(:lab).permit(:title, :university, :adress, :email, :phone, :latitude, :longitude)
+    params.require(:lab).permit(:title, :university, :street, :zipcode, :city, :country, :email, :phone, :latitude, :longitude)
   end
 end

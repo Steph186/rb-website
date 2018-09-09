@@ -3,7 +3,10 @@ class CreateLabs < ActiveRecord::Migration[5.2]
     create_table :labs do |t|
       t.string :title
       t.string :university
-      t.string :adress
+      t.string :street
+      t.string :zipcode
+      t.string :city
+      t.string :country
       t.string :phone
       t.string :email
 

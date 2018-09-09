@@ -26,62 +26,47 @@
     </div>
 
     <% @labs.each do |lab| %>
-        <div class="col-xs-12">
-          <div class="margin-top-medium">
 
-            <div class="margin-top-medium margin-bottom">
-
-              <% if current_user && current_user.id == 1&& %>
-                <%= link_to edit_lab_path(lab), class:"btn-icon" do %><i class="far fa-edit"></i>
+      <div class="image-text-container">
+        <%= image_tag asset_path('Maso2.JPG'), class:"contact-image margin-top-medium" %>
+        <div class="padding-left margin-top-medium">
+          <div class="one-block">
+            <i class="fas fa-map-marker-alt contact-icon"></i>
+            <div class="adress">
+              <p><%= lab.university %>
+                <% if current_user && current_user.id == 1 %>
+                  <%= link_to edit_lab_path(lab), class:"btn-icon" do %><i class="far fa-edit"></i>
+                  <% end %>
+                <%= link_to lab_path(lab), method: :delete, data:{confirm: "Delete this lab?"}, class:"btn-icon" do %><i class="far fa-trash-alt"></i>
                 <% end %>
-
-                <%= link_to lab_path(lab), method: :delete, data:{confirm: "Delete this research?"}, class:"btn-icon" do %><i class="far fa-trash-alt"></i>
                 <% end %>
-              <% end %>
+              </p>
+
+              <p><%= lab.title %></p>
+              <p><%= lab.street %></p>
+              <p><%= lab.city_country %></p>
             </div>
-
-              <h2 class="margin-bottom-medium"><%= lab.title %></h2>
           </div>
-            <div class="padding-left-right-small">
-              <p><i><%= lab.university %></i></p>
-              <p class="margin-top"><%= lab.phone %></p>
-              <p class="margin-top"><%= lab.adress %></p>
-            </div>
-
-        </div>
-    <% end %>
-
-    <div class="image-text-container">
-      <%= image_tag asset_path('Maso2.JPG'), class:"contact-image margin-top" %>
-      <div class="padding-left margin-top">
-        <div class="one-block">
-          <i class="fas fa-map-marker-alt contact-icon"></i>
-          <div class="adress">
-            <p> University of Trento</p>
-            <p>CIMeC - Mind/Brain Sciences Center</p>
-            <p>via delle Regole, 101</p>
-            <p>Trento, 38122 - ITALY</p>
+          <br>
+          <div class="one-block">
+            <i class="fas fa-phone contact-icon"></i>
+            <p><%= lab.phone %></p>
           </div>
-        </div>
-        <br>
-        <div class="one-block">
-          <i class="fas fa-phone contact-icon"></i>
-          <p>0461 282778</p>
-        </div>
-        <div class="one-block">
-          <i class="fas fa-envelope contact-icon"></i>
-          <p> &#114;&#111;&#098;&#101;&#114;&#116;&#111;<i id="dot" class="fas fa-circle"></i>&#098;&#111;&#116;&#116;&#105;&#110;&#105;<i class="fas fa-at"></i>&#117;&#110;&#105;&#116;&#110;<i id="dot" class="fas fa-circle"></i>&#105;&#116;</p>
+          <div class="one-block">
+            <i class="fas fa-envelope contact-icon"></i>
+            <p> &#114;&#111;&#098;&#101;&#114;&#116;&#111;<i id="dot" class="fas fa-circle"></i>&#098;&#111;&#116;&#116;&#105;&#110;&#105;<i class="fas fa-at"></i>&#117;&#110;&#105;&#116;&#110;<i id="dot" class="fas fa-circle"></i>&#105;&#116;</p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    <% end %>
 
   <div
   id="map";
-  class="margin-bottom-big";
+  class="margin-bottom-big margin-top-medium";
   style="width: 100%;
-  height: 600px;"
+  height: 400px;"
   data-markers="<%= @markers.to_json %>"
 ></div>
+</div>
 </div>
 
