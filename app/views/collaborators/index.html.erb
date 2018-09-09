@@ -1,6 +1,6 @@
 <div class="banner-pages"
   style="background-image: linear-gradient(-225deg, rgba(4, 43, 104, 0.7) 30%, rgba(4, 43, 104, 0.5) 50%),
-         url('<%= cl_image_path Picture.second.photo %>'); background-size: cover; background-position-y: <%= Picture.second.focus %>;">  <div class="banner-content-pages">
+         url('<%= cl_image_path Picture.second.photo %>'); background-size: cover; background-position-y: <%= Picture.second.focus_picture %>;">  <div class="banner-content-pages">
     <h1><strong><%= Picture.second.page %></strong></h1>
   </div>
   <% if current_user && current_user.id == 1 %>

@@ -25,6 +25,6 @@ before_action :set_picture, only: [:update, :edit]
   end
 
   def picture_params
-    params.require(:picture).permit(:page, :photo, :focus)
+    params.require(:picture).permit(:page, :photo, :focus_picture)
   end
 end
