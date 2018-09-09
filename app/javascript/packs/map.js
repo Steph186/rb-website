@@ -12,7 +12,7 @@ function initMap() {
       map.setCenter({lat: 46.008938, lng: 11.133872});
     } else if (markers.length === 1) {
       map.setCenter(markers[0].lat, markers[0].lng);
-      map.setZoom(14);
+      map.setZoom(16);
     } else {
       map.fitLatLngBounds(markers);
     }
