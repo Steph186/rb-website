@@ -14,7 +14,43 @@
 
 <div class="container">
   <div class="objects-container margin-bottom-footer">
-    <h2>Contact information</h2>
+    <div class="objects-header">
+      <h2>Contact information</h2>
+      <% if current_user && current_user.id == 1 %>
+        <div class="button-container">
+          <%= link_to new_lab_path, class: "btn-big btn-pink" do %>
+            <i class="fas fa-plus"></i> Add a contact lab
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+
+    <% @labs.each do |lab| %>
+        <div class="col-xs-12">
+          <div class="margin-top-medium">
+
+            <div class="margin-top-medium margin-bottom">
+
+              <% if current_user && current_user.id == 1&& %>
+                <%= link_to edit_lab_path(lab), class:"btn-icon" do %><i class="far fa-edit"></i>
+                <% end %>
+
+                <%= link_to lab_path(lab), method: :delete, data:{confirm: "Delete this research?"}, class:"btn-icon" do %><i class="far fa-trash-alt"></i>
+                <% end %>
+              <% end %>
+            </div>
+
+              <h2 class="margin-bottom-medium"><%= lab.title %></h2>
+          </div>
+            <div class="padding-left-right-small">
+              <p><i><%= lab.university %></i></p>
+              <p class="margin-top"><%= lab.phone %></p>
+              <p class="margin-top"><%= lab.adress %></p>
+            </div>
+
+        </div>
+    <% end %>
+
     <div class="image-text-container">
       <%= image_tag asset_path('Maso2.JPG'), class:"contact-image margin-top" %>
       <div class="padding-left margin-top">
