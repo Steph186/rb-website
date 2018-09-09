@@ -38,6 +38,8 @@ gem 'cloudinary'
 # allows cloudinary on user side
 gem 'carrierwave', '~> 1.2'
 
+gem 'geocoder'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

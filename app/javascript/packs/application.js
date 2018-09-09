@@ -20,3 +20,6 @@ console.log('Hello World from Webpacker')
 initResponsiveNavbar();
 initFormChanger();
 initUpdateNavbarOnScroll();
+
+import { initMap } from 'packs/map.js';
+initMap();
