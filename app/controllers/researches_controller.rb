@@ -6,7 +6,6 @@ class ResearchesController < ApplicationController
   def index
     @researches = Research.where('category = ?', "Research topic").order('icon')
     @fundings = Research.where('category = ?', "Funding").order('descr_one')
-    @image = !Picture.first.photo.file.nil? ? Picture.first.photo : "https://picsum.photos/200/300"
   end
 
   def edit

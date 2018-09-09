@@ -31,7 +31,8 @@ ActiveRecord::Schema.define(version: 2018_08_24_125246) do
 
   create_table "pictures", force: :cascade do |t|
     t.string "page"
-    t.string "photo"
+    t.string "photo", default: "https://picsum.photos/200/300", null: false
+    t.string "focus", default: "0%", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -11,6 +11,11 @@
           <%= f.input :photo_cache, as: :hidden %>
         </div>
 
+        <div class="col-sm-12">
+          <%= f.label "Focus of the picture: between 0% (up) and 100% (down)" %>
+          <%= f.text_field :focus %>
+        </div>
+
         <div class="col-sm-12 text-center margin-bottom">
           <div><%= f.submit "Save", class: "btn-blue btn-big-wide margin-top" %>
           </div>
