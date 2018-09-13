@@ -1,7 +1,16 @@
 .objects-container {
-  margin-top: 80px;
+  margin-top: 30px;
   h2 {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .objects-container {
+    margin-top: 80px;
+    h2 {
+      margin-bottom: 30px;
+    }
   }
 }
 

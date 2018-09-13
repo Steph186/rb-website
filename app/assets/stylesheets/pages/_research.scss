@@ -9,6 +9,12 @@
 }
 
 .icon-card {
-  height: 190px;
+  height: 110px;
   padding: auto;
+}
+
+@media screen and (min-width: 764px) {
+  .icon-card {
+  height: 190px;
+  }
 }

@@ -1,44 +1,63 @@
 h1 {
   margin: 0px !important;
-  font-size: 2em;
+  font-size: 28px !important;
 }
 
 h2 {
   margin: 0px !important;
-  font-size: 1.3em;
+  font-size: 25px !important;
 }
 
 
 h3 {
   margin: 0px !important;
-  font-size: 1.2em;
+  font-size: 15px
 }
 
 p {
   margin: 0px !important;
-  font-size: 1.1em;
+  font-size: 13px;
+}
+
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 46px !important;
+  }
+
+  h2 {
+    font-size: 38px  !important;
+  }
+
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
 }
 
 
 .margin-top {
-  margin-top: 20px !important;
+  margin-top: 30px !important;
 }
 
 .margin-top-small {
-  margin-top: 10px !important;
+  margin-top: 8px !important;
 }
 
 
 .margin-left {
-  margin-left: 40px !important;
+  margin-left: 25px !important;
 }
 
 .margin-right {
-  margin-right: 40px !important;
+  margin-right: 25px !important;
 }
 
 .margin-bottom {
-  margin-bottom: 20px !important;
+  margin-bottom: 30px !important;
 }
 
 .margin-bottom-small {
@@ -46,7 +65,7 @@ p {
 }
 
 .margin-top-big {
-  margin-top: 100px !important;
+  margin-top: 70px !important;
 }
 
 .margin-top-medium {
@@ -54,50 +73,135 @@ p {
 }
 
 .margin-bottom-medium {
-  margin-bottom: 40px !important;
+  margin-bottom: 25px !important;
 }
 
 .margin-bottom-big {
-  margin-bottom: 100px !important;
+  margin-bottom: 70px !important;
 }
 .padding-top {
-  padding-top: 20px !important;
+  padding-top: 15px !important;
 }
 
 .padding-top-medium {
-  padding-top: 40px !important;
+  padding-top: 25px !important;
 }
 
 .padding-right {
-  padding-right: 20px;
+  padding-right: 15px;
 }
 
 .padding-left {
-  padding-left: 20px;
+  padding-left: 15px;
 }
 .padding-left-medium {
-  padding-left: 40px !important;
+  padding-left: 25px !important;
 }
 
 .padding-left-right {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .padding-left-right-small {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .margin-left-right {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .padding {
-  padding: 10px 30px;
+  padding: 8px 20px;
 }
 
 .margin-bottom-footer {
-  margin-bottom: 150px !important;
+  margin-bottom: 100px !important;
+}
+
+
+@media screen and (min-width: 700px) {
+  .margin-top {
+    margin-top: 20px !important;
+  }
+
+  .margin-top-small {
+    margin-top: 10px !important;
+  }
+
+
+  .margin-left {
+    margin-left: 40px !important;
+  }
+
+  .margin-right {
+    margin-right: 40px !important;
+  }
+
+  .margin-bottom {
+    margin-bottom: 20px !important;
+  }
+
+  .margin-bottom-small {
+    margin-bottom: 5px !important;
+  }
+
+  .margin-top-big {
+    margin-top: 100px !important;
+  }
+
+  .margin-top-medium {
+    margin-top: 40px !important;
+  }
+
+  .margin-bottom-medium {
+    margin-bottom: 40px !important;
+  }
+
+  .margin-bottom-big {
+    margin-bottom: 100px !important;
+  }
+  .padding-top {
+    padding-top: 20px !important;
+  }
+
+  .padding-top-medium {
+    padding-top: 40px !important;
+  }
+
+  .padding-right {
+    padding-right: 20px;
+  }
+
+  .padding-left {
+    padding-left: 20px;
+  }
+  .padding-left-medium {
+    padding-left: 40px !important;
+  }
+
+  .padding-left-right {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .padding-left-right-small {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .margin-left-right {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .padding {
+    padding: 10px 30px;
+  }
+
+  .margin-bottom-footer {
+    margin-bottom: 150px !important;
+  }
 }
