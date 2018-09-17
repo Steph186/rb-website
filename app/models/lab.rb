@@ -1,6 +1,6 @@
 class Lab < ApplicationRecord
-  geocoded_by :address
-  after_validation :geocode, if: :will_save_change_to_street?
+  # geocoded_by :address
+  # after_validation :geocode
 
   def address
     "#{street}, #{zipcode}, #{city}, #{country}"

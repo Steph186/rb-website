@@ -11,8 +11,8 @@
           <%= f.text_field :university %>
         </div>
         <div class="col-sm-12">
-          <%= f.label :street, :autocomplete => :off %>
-          <%= f.text_field :street, :autocomplete => :off %>
+          <%= f.label :street, :autofill => :off %>
+          <%= f.text_field :street, :autofill => :off %>
         </div>
         <div class="col-sm-4">
           <%= f.label :zipcode %>
@@ -34,7 +34,14 @@
           <%= f.label :email %>
           <%= f.select :email, ["unitn"] %>
         </div>
-
+        <div class="col-sm-6">
+          <%= f.label :longitude %>
+          <%= f.text_field :longitude %>
+        </div>
+        <div class="col-sm-6">
+          <%= f.label :latitude %>
+          <%= f.text_field :latitude %>
+        </div>
         <div class="col-sm-12 text-center margin-bottom">
           <div><%= f.submit "Save", class: "btn-blue btn-big-wide margin-top" %>
           </div>
