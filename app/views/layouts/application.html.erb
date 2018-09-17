@@ -21,7 +21,7 @@
 
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= stylesheet_pack_tag 'application' %>
-    <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
+    <%= javascript_include_tag "application", 'data-turbolinks-track': 'reload' %> <!-- from app/assets/javascripts/application.js -->
   </head>
   <body>
     <% if user_signed_in? %>
@@ -30,8 +30,8 @@
     <%= render 'shared/navbar' %>
     <%= yield %>
     <%= render 'shared/footer', links: @links  %>
-    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?libraries=places&key=#{ENV['GOOGLE_API_BROWSER_KEY']}" %>
-    <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
+    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?libraries=places&key=#{ENV['GOOGLE_API_BROWSER_KEY']}", 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag "application", 'data-turbolinks-track': 'reload' %>    <!-- from app/javascript/packs/application.js -->
   </body>
 </html>
 </body>

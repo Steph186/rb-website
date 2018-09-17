@@ -12,5 +12,6 @@
 //
 //= require rails-ujs
 //= require activestorage
-//= require turbolinks
 //= require_tree .
+
+// to solve double API loading, removed turbolink for the moment

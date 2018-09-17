@@ -20,3 +20,5 @@ function initMap() {
 }
 
 export { initMap };
+
+
