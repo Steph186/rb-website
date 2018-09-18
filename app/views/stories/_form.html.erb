@@ -10,6 +10,10 @@
           <%= f.label :content %>
           <%= f.text_area :content %>
         </div>
+        <div class="col-xs-12 col-sm-12">
+          <%= f.label "Display a picture?" %>
+          <%= f.select :display_picture, [:true, :false] %>
+        </div>
         <div class="col-sm-12">
           <%= f.input :photo %>
           <%= f.input :photo_cache, as: :hidden %>

@@ -77,6 +77,7 @@ ActiveRecord::Schema.define(version: 2018_09_09_105738) do
     t.string "title"
     t.text "content"
     t.string "photo"
+    t.boolean "display_picture", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

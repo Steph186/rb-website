@@ -4,6 +4,7 @@ class CreateStories < ActiveRecord::Migration[5.2]
       t.string :title
       t.text :content
       t.string :photo
+      t.boolean :display_picture, default: false, null: true
 
       t.timestamps
     end

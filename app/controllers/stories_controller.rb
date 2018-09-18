@@ -62,6 +62,6 @@ before_action :set_story, only: [:update, :destroy, :edit]
   end
 
   def story_params
-    params.require(:story).permit(:title, :content, :photo)
+    params.require(:story).permit(:title, :content, :photo, :display_picture)
   end
 end

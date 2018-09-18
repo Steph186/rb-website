@@ -47,7 +47,7 @@
           </div>
           <p class="published_at margin-bottom">Published on <%= "#{story.updated_at}" %></p>
           <div class="margin-bottom">
-            <%= cl_image_tag story.photo, class:"story-image margin-bottom" %>
+            <%= cl_image_tag story.photo, class:"story-image margin-bottom" if story.display_picture == true %>
           </div>
             <p><%= story.content %></p>
         </div>

@@ -203,8 +203,8 @@ publications_attr.each do |publication_details|
   Publication.create!(publication_details)
 end
 
-puts "Creating user"
-User.create!(email: "robi@gmail.com", password: "123456")
+puts "Not creating user"
+# User.create!(email: "robi@gmail.com", password: "123456")
 
 research_attr = [
   {
@@ -230,6 +230,42 @@ research_attr = [
     descr_two: "What is the role of consciousness in language processing and it relations with semantics? Why is Siri not yet conscious?",
     descr_three: "We think that our research on knowledge and semantics may help to provide and answer to these fundamental questions.",
     icon: "3 Brain",
+  },
+
+  {
+    category: "Footer link",
+    title: "https://www.github.com",
+    icon: "GitHub",
+  },
+
+  {
+    category: "Footer link",
+    title: "https://www.google.com",
+    icon: "Google Scholar",
+  },
+
+  {
+    category: "Footer link",
+    title: "https://www.researchgate.com",
+    icon: "Research Gate",
+  },
+
+  {
+    category: "Footer link",
+    title: "https://www.slack.com",
+    icon: "Slack",
+  },
+
+  {
+    category: "Footer link",
+    title: "https://www.twitter.com",
+    icon: "Twitter",
+  },
+
+  {
+    category: "Funding",
+    title: "ERC - Starting grant",
+    icon: "ERC.jpg",
   }
 ]
 
@@ -269,11 +305,13 @@ puts "Creating stories"
 stories_attr = [
   {
     title: "Robi got his ERC! congratulations to him!!",
-    content: "Robi is going to start a new lab with his newly acquired ERC. His has funding for five years. Best of luck to him ad his team. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate rem ratione, similique, culpa deserunt sit vero aperiam officia ducimus vel maxime cumque tempore soluta rerum tempora incidunt quisquam iusto asperiores."
+    content: "Robi is going to start a new lab with his newly acquired ERC. His has funding for five years. Best of luck to him ad his team. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate rem ratione, similique, culpa deserunt sit vero aperiam officia ducimus vel maxime cumque tempore soluta rerum tempora incidunt quisquam iusto asperiores.",
+    display_picture: false,
   },
   {
     title: "The lab is hiring a post-doc",
-    content: "Open position: we are looking for a new post-doc, for a three years position. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sequi hic animi necessitatibus nobis eligendi repellendus veniam laboriosam. Nam, tempore fuga assumenda quisquam accusantium cumque labore facere necessitatibus in illo."
+    content: "Open position: we are looking for a new post-doc, for a three years position. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sequi hic animi necessitatibus nobis eligendi repellendus veniam laboriosam. Nam, tempore fuga assumenda quisquam accusantium cumque labore facere necessitatibus in illo.",
+    display_picture: false,
   },
 ]
 
