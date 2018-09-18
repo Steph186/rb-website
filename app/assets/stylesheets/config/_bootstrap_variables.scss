@@ -4,11 +4,11 @@
 // 3. You can override them below!
 
 // Import Google fonts
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
-
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
 // Define fonts for body and headers
-$headers-font: "Ubuntu", "sans-serif";
-$body-font: "Ubuntu", "sans-serif";
+$headers-font: 'Roboto Condensed', sans-serif;
+$body-font: 'Roboto Condensed', sans-serif;
 
 // For example:
 $red: #FF5D5D;
