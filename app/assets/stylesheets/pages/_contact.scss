@@ -33,3 +33,37 @@
 }
 
 }
+
+
+// // // // // // // // // // // //
+
+/* FORM CLASSES*/
+.contact-form {
+  flex: 1 0 auto;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 36px;
+  padding: 6px 12px;
+  margin-bottom: 14px;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #555555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.form-control:focus {
+  border-color:  #6ad48a;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.text-white {
+  color: white;
+}

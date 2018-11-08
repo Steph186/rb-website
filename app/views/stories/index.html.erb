@@ -17,7 +17,6 @@
 
     <div class="objects-header">
       <h2></h2>
-
       <% if current_user && current_user.id == 1 %>
         <div class="button-container">
           <%= link_to new_story_path, class: "btn-big btn-pink" do %>
@@ -29,11 +28,10 @@
 
     <% @stories.each do |story| %>
       <div class="one-object margin-top-medium">
-        <% if story == @first_story%>
+        <div class="margin-bottom">
+          <%= cl_image_tag story.photo, class:"story-image margin-bottom" if story.display_picture == true %>
+        </div>
         <div class="one-story">
-        <% else %>
-        <div class="one-story">
-        <% end %>
 
           <div class="object-header">
             <p class="title margin-bottom-small"><strong><%= story.title %></strong></p>
@@ -46,15 +44,10 @@
           <% end %>
           </div>
           <p class="published_at margin-bottom">Published on <%= "#{story.updated_at}" %></p>
-          <div class="margin-bottom">
-            <%= cl_image_tag story.photo, class:"story-image margin-bottom" if story.display_picture == true %>
-          </div>
             <p><%= story.content %></p>
         </div>
         </div>
-        <% if story != @first_story%>
         <hr class="divider-stories padding-left-right">
-        <% end %>
     <% end %>
   </div>
 </div>

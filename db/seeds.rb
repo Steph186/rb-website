@@ -203,8 +203,8 @@ publications_attr.each do |publication_details|
   Publication.create!(publication_details)
 end
 
-puts "Not creating user"
-# User.create!(email: "robi@gmail.com", password: "123456")
+puts "Creating user"
+User.create!(email: "robi@gmail.com", password: "123456")
 
 research_attr = [
   {
