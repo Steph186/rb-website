@@ -4,7 +4,7 @@
   <div class="banner-content-pages">
     <h1><strong><%= Picture.third.page %></strong></h1>
   </div>
-  <% if current_user && current_user.id == 1 %>
+  <% if current_user %>
     <p class="edit_picture_icon">
     <%= link_to edit_picture_path(Picture.third) do %><i class="far fa-edit"></i>
       <% end %>
@@ -16,7 +16,7 @@
   <div class="objects-container margin-bottom-footer">
     <div class="objects-header margin-bottom">
       <h2></h2>
-      <% if current_user && current_user.id == 1 %>
+      <% if current_user %>
       <div class="button-container">
           <%= link_to new_publication_path, class: "btn-big btn-pink" do %>
             <i class="fas fa-plus"></i> Add a new publication
@@ -41,7 +41,7 @@
             </div>
           <% end %>
           <div class="icon-container">
-            <% if current_user && current_user.id == 1 %>
+            <% if current_user %>
             <%= link_to edit_publication_path(publication), class:"btn-icon" do %><i class="far fa-edit"></i>
               <% end %>
             <%= link_to publication_path(publication), method: :delete, data:{confirm: "Delete this publication?"}, class:"btn-icon" do %><i class="far fa-trash-alt"></i>

@@ -3,7 +3,7 @@
          url('<%= cl_image_path Picture.second.photo %>'); background-size: cover; background-position-y: <%= Picture.second.focus_picture %>;">  <div class="banner-content-pages">
     <h1><strong><%= Picture.second.page %></strong></h1>
   </div>
-  <% if current_user && current_user.id == 1 %>
+  <% if current_user %>
     <p class="edit_picture_icon">
     <%= link_to edit_picture_path(Picture.second) do %><i class="far fa-edit"></i>
       <% end %>
@@ -18,7 +18,7 @@
     <div class="objects-header">
       <h2></h2>
 
-      <% if current_user && current_user.id == 1 %>
+      <% if current_user %>
         <div class="button-container">
           <%= link_to new_collaborator_path, class: "btn-big btn-pink" do %>
             <i class="fas fa-plus"></i> Add a new collaborator
@@ -35,7 +35,7 @@
         <div class="one-content">
           <div class="object-header">
             <p><strong><%= "#{collaborator.first_name.capitalize} #{collaborator.last_name.capitalize}"%></strong></p>
-            <% if current_user && current_user.id == 1 %>
+            <% if current_user %>
               <%= link_to edit_collaborator_path(collaborator), class:"btn-icon" do %><i class="far fa-edit"></i>
               <% end %>
 
@@ -64,7 +64,7 @@
         <div class="one-content">
           <div class="object-header">
             <p><strong><%= "#{collaborator.first_name.capitalize} #{collaborator.last_name.capitalize}"%></strong> (<%= collaborator.position %>)<%= collaborator.current_position %></p>
-            <% if current_user && current_user.id == 1 %>
+            <% if current_user %>
               <%= link_to edit_collaborator_path(collaborator), class:"btn-icon" do %><i class="far fa-edit"></i>
               <% end %>
 

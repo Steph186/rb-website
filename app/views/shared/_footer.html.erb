@@ -35,7 +35,7 @@
                 <% end %>
               <% end %>
 
-              <% if current_user && current_user.id == 1 %>
+              <% if current_user %>
                 <div class="edit-icon-footer">
                   <%= link_to edit_research_path(link) do %><i class="far fa-edit"></i>
                   <% end %>
@@ -50,7 +50,7 @@
           <%# end @link.each %>
           <% end %>
 
-          <% if current_user && current_user.id == 1 %>
+          <% if current_user %>
           <div class="button-container">
               <%= link_to new_research_path(category: "Footer link"), class: "btn-big btn-pink" do %>
                 <i class="fas fa-plus"></i>
