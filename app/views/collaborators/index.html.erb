@@ -4,10 +4,8 @@
     <h1><strong><%= Picture.second.page %></strong></h1>
   </div>
   <% if current_user %>
-    <p class="edit_picture_icon">
-    <%= link_to edit_picture_path(Picture.second) do %><i class="far fa-edit"></i>
+    <%= link_to edit_picture_path(Picture.second), class: "btn-edit_picture" do %><i class="far fa-edit"></i>
       <% end %>
-    </p>
   <% end %>
 </div>
 

@@ -4,10 +4,8 @@
   <div class="banner-content-home">
   </div>
   <% if current_user %>
-    <p class="edit_picture_icon">
-    <%= link_to edit_picture_path(Picture.first) do %><i class="far fa-edit"></i>
+    <%= link_to edit_picture_path(Picture.first), class: "btn-edit_picture" do %><i class="far fa-edit"></i>
       <% end %>
-    </p>
   <% end %>
 </div>
 

@@ -5,10 +5,8 @@
     <h1><strong><%= Picture.last.page %></strong></h1>
   </div>
   <% if current_user %>
-    <p class="edit_picture_icon">
-    <%= link_to edit_picture_path(Picture.last) do %><i class="far fa-edit"></i>
+    <%= link_to edit_picture_path(Picture.last), class: "btn-edit_picture" do %><i class="far fa-edit"></i>
       <% end %>
-    </p>
   <% end %>
 </div>
 
@@ -55,7 +53,7 @@
             </div>
           </div>
           <br>
-          <% if !lab.phone.empty? %>
+          <% unless lab.phone.empty? %>
             <div class="one-block">
               <i class="fas fa-phone contact-icon"></i>
               <p><%= lab.phone %></p>
@@ -69,40 +67,7 @@
       </div>
     <% end %>
 
-  <div
-  id="map";
-  class="margin-bottom-big margin-top-big";
-  style="width: 100%;
-  height: 400px;"
-  data-markers="<%= @markers.to_json %>"
-></div>
-
-<!--   <div class="contact-form">
-    <div class="row">
-      <form action="https://formspree.io/&#114;&#111;&#098;&#101;&#114;&#116;&#111;&#046;&#098;&#111;&#116;&#116;&#105;&#110;&#105;&#064;&#117;&#110;&#105;&#116;&#110;&#046;&#105;&#116;" method="POST">
-
-        <div class="col-xs-6">
-          <input class="name form-control" type="text" name="name" placeholder="Name">
-        </div>
-        <div class="col-xs-6">
-          <input class="email form-control" type="email" name="_replyto" placeholder="your-email@gmail.com">
-        </div>
-
-        <div class="col-xs-12">
-          <input name="object" class="object form-control" placeholder="Object of the message">
-        </div>
-        <div class="col-xs-12">
-          <textarea name="message" class="message form-control" rows="5" placeholder="Any messages, comments, ideas, feedbacks? "></textarea>
-        </div>
-        <input type="hidden" name="_subject" value="New message from your website!"/>
-        <input type="text" name="_gotcha" style="display:none">
-        <div class="col-xs-12">
-          <input type="submit" value="Send" class="btn-primary">
-        </div>
-      </form>
-    </div>
-  </div> -->
-
+  <div id="map"; class="margin-bottom-big margin-top-big"; style="width: 100%; height: 400px;" data-markers="<%= @markers.to_json %>"></div>
 
 </div>
 </div>

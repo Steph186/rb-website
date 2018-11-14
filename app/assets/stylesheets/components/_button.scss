@@ -29,19 +29,13 @@
   opacity: 1;
 }
 
-.btn-pink:hover {
-  opacity: 0.8;
-  text-decoration: none;
-  color: white;
-}
-
 .btn-blue {
   background-color: #45608d;
   color: white;
   opacity: 1;
 }
 
-.btn-blue:hover {
+.btn-blue:hover, .btn-pink:hover {
   opacity: 0.8;
   text-decoration: none;
   color: white;
@@ -80,5 +74,18 @@
   margin-left: 5px;
   color: lightgray;
   text-decoration: none;
+}
+
+.btn-edit_picture {
+  // takes position down-left compared to parent
+  position: relative;
+  bottom: 50px;
+  font-size: 30px;
+  padding-left: 15px;
+  color: white;
+}
+
+.btn-edit_picture:hover {
+  color: lightgray;
 }
 
