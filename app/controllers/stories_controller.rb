@@ -9,7 +9,7 @@ before_action :set_story, only: [:update, :destroy, :edit]
 
   def edit
     # User that clicks has to be admin
-    if current_user.id == 1
+    if current_user
     # go to edit view
     else
       redirect_to news_path
@@ -17,7 +17,7 @@ before_action :set_story, only: [:update, :destroy, :edit]
   end
 
   def update
-    if current_user.id == 1
+    if current_user
       @story.update(story_params)
       redirect_to news_path
     else
@@ -26,7 +26,7 @@ before_action :set_story, only: [:update, :destroy, :edit]
   end
 
   def create
-    if current_user.id == 1
+    if current_user
       @story = Story.new(story_params)
       if @story.save
         redirect_to news_path
@@ -39,7 +39,7 @@ before_action :set_story, only: [:update, :destroy, :edit]
   end
 
   def new
-    if current_user.id == 1
+    if current_user
       @story = Story.new
     else
       redirect_to news_path
@@ -47,7 +47,7 @@ before_action :set_story, only: [:update, :destroy, :edit]
   end
 
   def destroy
-    if current_user.id == 1
+    if current_user
       @story.destroy
       redirect_to news_path
     else

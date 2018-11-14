@@ -7,8 +7,8 @@ before_action :set_publication, only: [:update, :destroy, :edit]
   end
 
   def edit
-    # User that clicks has to be admin
-    if current_user.id == 1
+    # User has to be admin, only user
+    if current_user
     # go to edit view
     else
       redirect_to publications_path
@@ -16,7 +16,7 @@ before_action :set_publication, only: [:update, :destroy, :edit]
   end
 
   def update
-    if current_user.id == 1
+    if current_user
       @publication.update(publication_params)
       redirect_to publications_path
     else
@@ -25,7 +25,7 @@ before_action :set_publication, only: [:update, :destroy, :edit]
   end
 
   def create
-    if current_user.id == 1
+    if current_user
       @publication = Publication.new(publication_params)
       if @publication.save
         redirect_to publications_path
@@ -38,7 +38,7 @@ before_action :set_publication, only: [:update, :destroy, :edit]
   end
 
   def new
-    if current_user.id == 1
+    if current_user
       @publication = Publication.new
     else
       redirect_to publications_path
@@ -46,7 +46,7 @@ before_action :set_publication, only: [:update, :destroy, :edit]
   end
 
   def destroy
-    if current_user.id == 1
+    if current_user
       @publication.destroy
       redirect_to publications_path
     else
