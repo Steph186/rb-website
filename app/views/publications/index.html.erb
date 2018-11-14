@@ -5,10 +5,8 @@
     <h1><strong><%= Picture.third.page %></strong></h1>
   </div>
   <% if current_user %>
-    <p class="edit_picture_icon">
-    <%= link_to edit_picture_path(Picture.third) do %><i class="far fa-edit"></i>
+    <%= link_to edit_picture_path(Picture.third), class: "btn-edit_picture" do %><i class="far fa-edit"></i>
       <% end %>
-    </p>
   <% end %>
 </div>
 
@@ -29,7 +27,7 @@
       <div class="one-object publication-link">
           <%= link_to publication.url, target: :_blank do %>
             <div class="object-content">
-              <% if !publication.year.nil? %>
+              <% unless publication.year.nil? %>
               <p><%= "#{publication.authors} (#{publication.year.year}). "%><strong><%= publication.title %></strong>
               <i><%= publication.journal %></i> [pdf]
               </p>
