@@ -3,7 +3,7 @@
          url('<%= cl_image_path Picture.first.photo %>'); background-size: cover; background-position-y: <%= Picture.first.focus_picture %>;">
   <div class="banner-content-home">
   </div>
-  <% if current_user && current_user.id == 1 %>
+  <% if current_user %>
     <p class="edit_picture_icon">
     <%= link_to edit_picture_path(Picture.first) do %><i class="far fa-edit"></i>
       <% end %>
@@ -20,7 +20,7 @@
 
     <div class="objects-header">
       <div class="empty"></div>
-      <% if current_user && current_user.id == 1 %>
+      <% if current_user %>
         <div class="button-container">
           <%= link_to new_research_path(category: "Research topic"), class: "btn-big btn-pink" do %>
             <i class="fas fa-plus"></i> Add a new research
@@ -41,7 +41,7 @@
                 <%= tag.p("", id:"icon",class: @icons[research.icon]) %>
               <% end %>
 
-              <% if current_user && current_user.id == 1&& %>
+              <% if current_user %>
                 <%= link_to edit_research_path(research), class:"btn-icon" do %><i class="far fa-edit"></i>
                 <% end %>
 
@@ -67,7 +67,7 @@
 
   <div class="objects-header">
     <h3>Funding</h3>
-    <% if current_user && current_user.id == 1 %>
+    <% if current_user %>
       <div class="button-container">
         <%= link_to new_research_path(category: "Funding"), class: "btn-big btn-pink" do %>
           <i class="fas fa-plus"></i> Add a new funding
@@ -85,7 +85,7 @@
               <%= image_tag asset_path(fund.icon), class:"funding-image margin-top margin-bottom" %>
             <% end %>
             <h3 class="margin-top"><%= fund.title %></h3>
-            <% if current_user && current_user.id == 1 %>
+            <% if current_user %>
               <%= link_to edit_research_path(fund), class:"btn-icon" do %><i class="far fa-edit"></i>
               <% end %>
 

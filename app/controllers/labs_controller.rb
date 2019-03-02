@@ -8,7 +8,7 @@ class LabsController < ApplicationController
     @markers = @labs.map do |lab|
       {
         lat: lab.latitude,
-        lng: lab.longitude#,
+        lng: lab.longitude
         # infoWindow: { content: render_to_string(partial: "/flats/map_box", locals: { flat: flat }) }
       }
     end
@@ -16,7 +16,7 @@ class LabsController < ApplicationController
 
   def edit
     # User that clicks has to be admin
-    if current_user.id == 1
+    if current_user
     # go to edit view
     else
       redirect_to contact_path
@@ -24,7 +24,7 @@ class LabsController < ApplicationController
   end
 
   def update
-    if current_user.id == 1
+    if current_user.id
       @lab.update(lab_params)
       redirect_to contact_path
     else
@@ -33,7 +33,7 @@ class LabsController < ApplicationController
   end
 
   def create
-    if current_user.id == 1
+    if current_user
       @lab = Lab.new(lab_params)
       if @lab.save
         redirect_to contact_path
@@ -46,7 +46,7 @@ class LabsController < ApplicationController
   end
 
   def new
-    if current_user.id == 1
+    if current_user
       @lab = Lab.new
     else
       redirect_to contact_path
@@ -54,7 +54,7 @@ class LabsController < ApplicationController
   end
 
   def destroy
-    if current_user.id == 1
+    if current_user
       @lab.destroy
       redirect_to contact_path
     else

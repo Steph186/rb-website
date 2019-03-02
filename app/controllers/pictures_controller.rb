@@ -2,7 +2,7 @@ class PicturesController < ApplicationController
 before_action :set_picture, only: [:update, :edit]
   def edit
     # User that clicks has to be admin
-    if current_user.id == 1
+    if current_user
     # go to edit view
     else
       redirect_to root_path
@@ -10,7 +10,7 @@ before_action :set_picture, only: [:update, :edit]
   end
 
   def update
-    if current_user.id == 1
+    if current_user
       @picture.update(picture_params)
       redirect_to root_path
     else

@@ -9,8 +9,8 @@ skip_before_action :authenticate_user!, only: :index
   end
 
   def edit
-    # User that clicks has to be admin
-    if current_user.id == 1
+    # if User, it is the admni --> only unser
+    if current_user
     # go to edit view
     else
       redirect_to people_path
@@ -18,7 +18,7 @@ skip_before_action :authenticate_user!, only: :index
   end
 
   def update
-    if current_user.id == 1
+    if current_user
       @collaborator.update(collaborator_params)
       redirect_to people_path
     else
@@ -27,7 +27,7 @@ skip_before_action :authenticate_user!, only: :index
   end
 
   def create
-    if current_user.id == 1
+    if current_user
       @collaborator = Collaborator.new(collaborator_params)
       if @collaborator.save
         redirect_to people_path
@@ -40,7 +40,7 @@ skip_before_action :authenticate_user!, only: :index
   end
 
   def new
-    if current_user.id == 1
+    if current_user
       @collaborator = Collaborator.new
     else
       redirect_to people_path
@@ -48,7 +48,7 @@ skip_before_action :authenticate_user!, only: :index
   end
 
   def destroy
-    if current_user.id == 1
+    if current_user
       @collaborator.destroy
       redirect_to people_path
     else

@@ -9,7 +9,7 @@ class ResearchesController < ApplicationController
   end
 
   def edit
-    if current_user.id == 1
+    if current_user
     # go to edit view
     else
       redirect_to root_path
@@ -17,7 +17,7 @@ class ResearchesController < ApplicationController
   end
 
   def update
-    if current_user.id == 1
+    if current_user
       @research.update(research_params)
       redirect_to root_path
     else
@@ -26,7 +26,7 @@ class ResearchesController < ApplicationController
   end
 
   def create
-    if current_user.id == 1
+    if current_user
       @research = Research.new(research_params)
       if @research.save
         redirect_to root_path
@@ -39,7 +39,7 @@ class ResearchesController < ApplicationController
   end
 
   def new
-    if current_user.id == 1
+    if current_user
       @research = Research.new
       @research.category = params["category"]
     else
@@ -48,7 +48,7 @@ class ResearchesController < ApplicationController
   end
 
   def destroy
-    if current_user.id == 1
+    if current_user
       @research.destroy
       redirect_to root_path
     else
