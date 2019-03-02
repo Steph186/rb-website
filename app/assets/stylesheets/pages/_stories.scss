@@ -34,6 +34,14 @@
   }
 }
 
-.story-link:hover > * {
+.story-link:hover * {
+  text-decoration: none;
+}
+
+.story-link > a:focus * {
+  text-decoration: none;
+}
+
+.story-link > a:focus {
   text-decoration: none;
 }
