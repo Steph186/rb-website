@@ -13,7 +13,25 @@
   font-size: 20px;
 }
 
-.published_at {
+.published_at.published_at {
   color: lightgray;
   font-size: 14px;
+}
+
+
+.story-link {
+  p {
+    color: #333333;
+  }
+}
+
+.story-link:hover {
+  background-color: rgba(44, 108, 129, 0.04);
+  p {
+    color: #333333;
+  }
+}
+
+.story-link:hover > * {
+  text-decoration: none;
 }

@@ -10,6 +10,10 @@
           <%= f.label :content %>
           <%= f.text_area :content %>
         </div>
+        <div class="col-sm-12">
+          <%= f.label "Add link to the news? (needs \"http(s)://\")" %>
+          <%= f.text_field :url %>
+        </div>
         <div class="col-xs-12 col-sm-12">
           <%= f.label "Display a picture?" %>
           <%= f.select :display_picture, [:true, :false] %>
