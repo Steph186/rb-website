@@ -20,12 +20,14 @@
 
 
 .story-link {
+  text-decoration: none;
   p {
     color: #333333;
   }
 }
 
 .story-link:hover {
+  text-decoration: none;
   background-color: rgba(44, 108, 129, 0.04);
   p {
     color: #333333;
