@@ -9,7 +9,7 @@
       <% if current_user %>
         <%= link_to edit_story_path(story), class:"btn-icon" do %><i class="far fa-edit"></i>
         <% end %>
-        <%= link_to edit_story_path(story), method: :delete, data:{confirm: "Delete this news?"}, class:"btn-icon" do %><i class="far fa-trash-alt"></i>
+        <%= link_to story_path(story), method: :delete, data:{confirm: "Delete this news?"}, class:"btn-icon" do %><i class="far fa-trash-alt"></i>
       <% end %>
     <% end %>
   </div>
