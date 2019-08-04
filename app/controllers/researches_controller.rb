@@ -1,11 +1,16 @@
 class ResearchesController < ApplicationController
-  skip_before_action :authenticate_user!, only: :index
+  skip_before_action :authenticate_user!, only: [:index, :index_join]
   before_action :set_research, only: [:update, :destroy, :edit]
   before_action :set_choices, only: [:edit, :new]
 
   def index
     @researches = Research.where('category = ?', "Research topic").order('icon')
     @fundings = Research.where('category = ?', "Funding").order('descr_one')
+  end
+
+  def index_join
+    @pic = Picture.where(page: "Join the lab").first
+    @join_lab = Research.where('category = ?', "Join the lab").first
   end
 
   def edit
