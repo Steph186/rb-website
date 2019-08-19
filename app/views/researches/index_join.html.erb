@@ -11,7 +11,7 @@
 </div>
 
 <div class="container">
-
+  <div class="objects-container margin-bottom-footer">
     <div class="objects-header">
       <div class="empty"></div>
       <% if current_user && !@join_lab.present? %>
@@ -25,9 +25,9 @@
 
     <div class="row full-height">
       <% if @join_lab.present? %>
-        <div class="icon-card"></div>
+
         <div class="padding-left-right-small margin-bottom-footer">
-          <div class="object-header">
+          <div class="object-header margin-top-medium">
             <p><strong><%= @join_lab.title %></strong></p>
             <% if current_user %>
               <%= link_to edit_research_path(@join_lab), class:"btn-icon" do %><i class="far fa-edit"></i>
@@ -37,10 +37,11 @@
               <% end %>
             <% end %>
           </div>
-          <p class="margin-top"><%= @join_lab.descr_one %></p>
-          <p class="margin-top"><%= @join_lab.descr_two %></p>
-          <p class="margin-top"><%= @join_lab.descr_three %></p>
+          <p class="margin-top-medium"><%= @join_lab.descr_one %></p>
+          <p class="margin-top-medium"><%= @join_lab.descr_two %></p>
+          <p class="margin-top-medium "><%= @join_lab.descr_three %></p>
         </div>
       <% end %>
     </div>
+  </div>
 </div>
