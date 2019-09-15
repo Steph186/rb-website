@@ -57,7 +57,7 @@ function hideShowAll(option, footer_hide, footer_show, research_hide, funding_hi
     show(footer_hide);
     hide(footer_show);
     hide(funding_hide);
-  } else if (option == "Research topic") {
+  } else if (option == "Research topic" || option == "Join the lab") {
     show(footer_hide);
     hide(footer_show);
     hide(research_hide);

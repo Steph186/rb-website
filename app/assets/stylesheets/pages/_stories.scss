@@ -1,19 +1,48 @@
 .story-image {
   height: 180px;
   width: 240px;
-  margin: 30px 30px 0 0;
+  margin: 0px 30px 0 0;
   object-fit: cover;
 }
 
 .one-story {
   width: 100%;
+  margin: 10px;
 }
 
 .title {
   font-size: 20px;
 }
 
-.published_at {
+.published_at.published_at {
   color: lightgray;
   font-size: 14px;
+}
+
+
+.story-link {
+  text-decoration: none;
+  p {
+    color: #333333;
+  }
+}
+
+.story-link:hover {
+  text-decoration: none;
+  background-color: rgba(44, 108, 129, 0.04);
+  p {
+    color: #333333;
+  }
+}
+
+.story-link:hover * {
+  text-decoration: none;
+}
+
+.story-link > a:focus * {
+  text-decoration: none;
+}
+
+.story-link > a:focus {
+  text-decoration: none;
 }

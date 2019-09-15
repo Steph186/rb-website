@@ -1,11 +1,16 @@
 class ResearchesController < ApplicationController
-  skip_before_action :authenticate_user!, only: :index
+  skip_before_action :authenticate_user!, only: [:index, :index_join]
   before_action :set_research, only: [:update, :destroy, :edit]
-  before_action :set_choices, only: [:edit, :new]
+  before_action :set_choices, only: [:edit]
 
   def index
     @researches = Research.where('category = ?', "Research topic").order('icon')
     @fundings = Research.where('category = ?', "Funding").order('descr_one')
+  end
+
+  def index_join
+    @pic = Picture.where(page: "Join the lab").first
+    @join_lab = Research.where('category = ?', "Join the lab").first
   end
 
   def edit
@@ -42,6 +47,7 @@ class ResearchesController < ApplicationController
     if current_user
       @research = Research.new
       @research.category = params["category"]
+      set_choices
     else
       redirect_to root_path
     end
@@ -67,10 +73,15 @@ class ResearchesController < ApplicationController
   end
 
   def set_choices
-    @icons_choices = {
-      "Research topic" => ["1 Book", "2 Language", "3 Brain"],
-      "Funding" =>["ERC.jpg", "PRIN.jpg", "MCURIE.jpg"],
-      "Footer link" => ["Research Gate", "Twitter", "GitHub", "Google Scholar", "Slack"]
-    }
+    case @research.category
+    when "Research topic"
+      @icons_choices = Research::ICONS_TOPICS
+    when "Funding"
+      @icons_choices = Research::IMAGES_FUNDING
+    when "Footer link"
+      @icons_choices = Research::ICONS_LINKS
+    else
+      @icons_choices = []
+    end
   end
 end

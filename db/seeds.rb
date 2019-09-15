@@ -301,6 +301,11 @@ picture = Picture.new(page: "Contact")
 # picture.remote_photo_url = url
 picture.save
 
+url = "http://omicscentre.com/wp-content/uploads/2012/12/imatge_publications-650x395.jpg"
+picture = Picture.new(page: "Join the lab")
+# picture.remote_photo_url = url
+picture.save
+
 puts "Creating stories"
 stories_attr = [
   {

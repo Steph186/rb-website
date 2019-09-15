@@ -16,6 +16,8 @@
 
 .one-object {
   margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,6 +34,7 @@
 
 .object-content {
   flex: 1 1 auto;
+  width: 100%;
 }
 
 .avatar {
@@ -46,4 +49,8 @@
 .divider-page {
   border-top: 1.5px solid lightgray;
   margin: 90px 15%;
+}
+
+.full-height {
+  height: calc(100hw - 250px);
 }

@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get 'news', to: "stories#index"
   resources :stories, only: [:create, :edit, :update, :new, :destroy]
   resources :pictures, only: [:edit, :update]
+  get 'join', to: "researches#index_join"
   get 'contact', to: "labs#index"
   resources :labs, only: [:create, :edit, :update, :new, :destroy]
 end

@@ -1,0 +1,20 @@
+<div class="one-collaborator margin-top-medium">
+  <div class="margin-bottom">
+    <%= cl_image_tag story.photo, class:"story-image small-margins" if story.display_picture == true %>
+  </div>
+
+  <div class="one-story">
+    <div class="object-header">
+      <p class="title margin-bottom-small"><strong><%= story.title %></strong></p>
+      <% if current_user %>
+        <%= link_to edit_story_path(story), class:"btn-icon" do %><i class="far fa-edit"></i>
+        <% end %>
+        <%= link_to story_path(story), method: :delete, data:{confirm: "Delete this news?"}, class:"btn-icon" do %><i class="far fa-trash-alt"></i>
+      <% end %>
+    <% end %>
+  </div>
+
+  <p class="published_at margin-bottom">Published on <%= "#{story.updated_at.strftime("%m/%d/%Y")}" %></p>
+    <p class="justify-text"><%= story.content %></p>
+  </div>
+</div>

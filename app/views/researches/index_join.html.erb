@@ -1,0 +1,47 @@
+<div class="banner-pages"
+  style="background-image: linear-gradient(-225deg, rgba(4, 43, 104, 0.7) 30%, rgba(4, 43, 104, 0.5) 50%),
+         url('<%= cl_image_path @pic.photo %>'); background-size: cover; background-position-y: <%= @pic.focus_picture %>;">
+  <div class="banner-content-pages">
+    <h1><strong><%= @pic.page %></strong></h1>
+  </div>
+  <% if current_user %>
+    <%= link_to edit_picture_path(@pic), class: "btn-edit_picture" do %><i class="far fa-edit"></i>
+      <% end %>
+  <% end %>
+</div>
+
+<div class="container">
+  <div class="objects-container margin-bottom-footer">
+    <div class="objects-header">
+      <div class="empty"></div>
+      <% if current_user && !@join_lab.present? %>
+        <div class="button-container">
+          <%= link_to new_research_path(category: "Join the lab"), class: "btn-big btn-pink" do %>
+            <i class="fas fa-plus"></i> Add a new text for "Join the lab"
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="row full-height">
+      <% if @join_lab.present? %>
+
+        <div class="padding-left-right-small margin-bottom-footer">
+          <div class="object-header margin-top-medium">
+            <h3><%= @join_lab.title %></h3>
+            <% if current_user %>
+              <%= link_to edit_research_path(@join_lab), class:"btn-icon" do %><i class="far fa-edit"></i>
+              <% end %>
+
+              <%= link_to research_path(@join_lab), method: :delete, data:{confirm: "Delete this text?"}, class:"btn-icon" do %><i class="far fa-trash-alt"></i>
+              <% end %>
+            <% end %>
+          </div>
+          <p class="margin-top-medium"><%= @join_lab.descr_one %></p>
+          <p class="margin-top-medium"><%= @join_lab.descr_two %></p>
+          <p class="margin-top-medium "><%= @join_lab.descr_three %></p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
