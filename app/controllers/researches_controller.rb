@@ -6,11 +6,13 @@ class ResearchesController < ApplicationController
   def index
     @researches = Research.where('category = ?', "Research topic").order('icon')
     @fundings = Research.where('category = ?', "Funding").order('descr_one')
+    @home_picture = Picture.where(category: 'home').first
   end
 
   def index_join
     @pic = Picture.where(page: "Join the lab").first
     @join_lab = Research.where('category = ?', "Join the lab").first
+    @join_picture = Picture.where(category: 'join').first
   end
 
   def edit

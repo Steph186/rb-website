@@ -1,17 +1,17 @@
 <div class="banner-home"
   style="background-image: linear-gradient(-225deg, rgba(4, 43, 104, 0.7) 30%, rgba(4, 43, 104, 0.5) 50%),
-         url('<%= cl_image_path Picture.first.photo %>'); background-size: cover; background-position-y: <%= Picture.first.focus_picture %>;">
+         url('<%= cl_image_path @home_picture.photo %>'); background-size: cover; background-position-y: <%= @home_picture.focus_picture %>;">
   <div class="banner-content-home">
   </div>
   <% if current_user %>
-    <%= link_to edit_picture_path(Picture.first), class: "btn-edit_picture" do %><i class="far fa-edit"></i>
+    <%= link_to edit_picture_path(@home_picture), class: "btn-edit_picture" do %><i class="far fa-edit"></i>
       <% end %>
   <% end %>
 </div>
 
 <div class="container">
   <div class="wrapper-white margin-top-big text-center">
-    <h1><%= Picture.first.page %></h1>
+    <h1><%= @home_picture.page %></h1>
   </div>
 
   <div class="objects-container">

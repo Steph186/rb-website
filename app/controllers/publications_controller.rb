@@ -4,6 +4,7 @@ before_action :set_publication, only: [:update, :destroy, :edit]
 
   def index
     @publications = Publication.all.order('year DESC')
+    @publication_picture = Picture.where(category: 'publication').first
   end
 
   def edit
