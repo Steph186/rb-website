@@ -7,6 +7,7 @@ function initMap() {
     const map = new GMaps({ el: '#map', lat: 0, lng: 0 });
     const markers = JSON.parse(mapElement.dataset.markers);
     map.addMarkers(markers);
+    map.setMapTypeId('satellite')
     if (markers.length === 0) {
       map.setZoom(16);
       map.setCenter({lat: 46.008938, lng: 11.133872});
